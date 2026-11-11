@@ -1,10 +1,10 @@
 <div align="center">
 
-# 👨‍💻 Портфолио Junior QA Engineer
+# 👨‍💻 Junior QA Engineer Portfolio
 
-### Ручное тестирование | API | SQL | Обеспечение качества
+### Manual Testing | API Testing | SQL | Quality Assurance
 
-**Добро пожаловать в моё профессиональное QA-портфолио!**
+**Welcome to my professional QA portfolio!**
 
 [English](README.md) | [Русский](README_RU.md)
 
@@ -12,71 +12,75 @@
 
 </div>
 
-## 👋 Обо мне
+## 👋 About Me
 
-Я начинающий специалист в области тестирования программного обеспечения (Junior QA Engineer), развивающий практические навыки обеспечения качества ПО.
+I am an aspiring **Junior QA Engineer** focused on developing practical software testing skills.
 
-В этом репозитории представлены мои знания и практические работы по ручному тестированию, проектированию тестов, оформлению дефектов, тестированию API и проверке баз данных.
+This repository demonstrates my knowledge of manual testing, test design, bug reporting, API testing and database validation through practical assignments and testing scenarios.
 
-Моя цель — развивать профессиональные навыки тестировщика и участвовать в создании качественного и надёжного программного обеспечения.
+My goal is to develop strong QA skills and contribute to delivering reliable, high-quality software.
 
-## 🛠️ Навыки и технологии
+## 🛠️ Skills & Technologies
 
-| Направление | Навыки и инструменты |
+| Area | Skills & Tools |
 |---|---|
-| Ручное тестирование | Функциональное, регрессионное, Smoke, Retesting |
-| Тест-дизайн | Тест-кейсы, чек-листы, BVA, классы эквивалентности |
-| Работа с дефектами | Баг-репорты, Severity, Priority, Jira |
-| Тестирование API | Postman, Swagger, OpenAPI, REST API |
-| Тестирование БД | SQL, SELECT, JOIN, GROUP BY, HAVING |
-| Браузерные инструменты | Chrome DevTools, Network, Application, Performance |
-| Прокси-инструменты | Charles Proxy, Map Local, Block List |
+| Manual Testing | Functional, Regression, Smoke, Retesting |
+| Test Design | Test Cases, Checklists, BVA, Equivalence Partitioning |
+| Bug Tracking | Bug Reports, Severity, Priority, Jira |
+| API Testing | Postman, Swagger, OpenAPI, REST API |
+| Database Testing | SQL, SELECT, JOIN, GROUP BY, HAVING |
+| Browser Testing | Chrome DevTools, Network, Application, Performance |
+| Proxy Tools | Charles Proxy, Map Local, Block List |
 
-## 📂 Содержание портфолио
+## 📂 Portfolio Contents
 
-| Папка | Описание |
+| Directory | Description |
 |---|---|
-| 📁 Test-Cases | Сценарии ручного тестирования |
-| 📁 Checklists | Чек-листы функционального тестирования |
-| 📁 Bug-Reports | Документированные программные дефекты |
-| 📁 SQL | SQL-запросы и тестирование баз данных |
-| 📁 API-Testing | Сценарии и примеры тестирования API |
+| 📁 Test-Cases | Manual testing scenarios |
+| 📁 Checklists | Functional testing checklists |
+| 📁 Bug-Reports | Documented software defects |
+| 📁 SQL | SQL queries and database testing |
+| 📁 API-Testing | API testing scenarios and examples |
 
-## 🧪 Практические проекты
+## 🧪 Practical Projects
 
-### 01. Регистрация и авторизация пользователей
-- Позитивное и негативное тестирование
-- Проверка уникальности Email
-- Восстановление пароля
-- Проверка блокировки аккаунта
+### 01. User Registration & Authorization
+- Positive and negative testing
+- Email uniqueness validation
+- Password recovery
+- Account lockout scenarios
 
-### 02. Тестирование интернет-магазина
-- Проверка каталога товаров
-- Тестирование корзины покупок
-- Проверка оформления заказа
-- Управление заказами
+### 02. E-commerce Application Testing
+- Product catalog testing
+- Shopping cart validation
+- Checkout process
+- Order management
 
-### 03. Тестирование баз данных
-- Написание SQL-запросов
-- INNER JOIN и LEFT JOIN
-- Проверка корректности данных
-- Проверка цепочки UI → API → База данных
+### 03. Database Testing
+- SQL queries
+- INNER JOIN and LEFT JOIN
+- Data validation
+- UI → API → Database verification
 
-### 04. Тестирование API
-- Методы GET, POST, PUT, PATCH, DELETE
-- Проверка запросов и ответов
-- Проверка HTTP-статусов
-- Работа с документацией Swagger / OpenAPI
+### 04. API Testing
+- GET, POST, PUT, PATCH, DELETE
+- Request and response validation
+- HTTP status codes
+- Swagger / OpenAPI documentation
 
-## 🎯 Карьерная цель
+## 🎯 Career Objective
 
-Начать профессиональную карьеру в качестве **Junior QA Engineer**, применять полученные знания на реальных проектах и постоянно совершенствовать технические навыки.
+To start my professional career as a **Junior QA Engineer**, apply my testing knowledge in real-world projects and continuously improve my technical skills.
 
 ---
 
 <div align="center">
 
-**Спасибо за посещение моего портфолио!**
+**Thank you for visiting my portfolio!**
+
+*Quality is not an accident. It is the result of testing.*
+
+</div>
 
 *Качество — это результат систематической работы и тестирования.*
 
