@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Node.js
+node_modules/
