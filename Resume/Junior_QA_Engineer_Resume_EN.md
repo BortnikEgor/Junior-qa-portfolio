@@ -165,7 +165,7 @@ Graduation Year: 2012
 
 **Russian**
 
-Proficiency level: [Specify level]
+Native language
 
 </td>
 <td width="50%">
