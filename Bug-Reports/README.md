@@ -1,77 +1,77 @@
 🐞 Bug Reports
 
-This section contains practical bug reports created as part of my Junior QA Engineer training and portfolio development.
+<p align="center">
+  <img src="https://img.shields.io/badge/QA-Manual%20Testing-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Documentation-Bug%20Reports-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Level-Junior%20QA-success?style=for-the-badge" />
+</p>
 
-The reports demonstrate my ability to identify, analyze, document, and classify software defects.
+<p align="center">
+  <strong>Practical software testing | Defect identification | Bug documentation</strong>
+</p>
 
-📋 Bug Report Categories
+📌 About This Section
 
-Registration and authorization
+This section contains practical bug reports prepared as part of my Junior QA Engineer training and portfolio development.
 
-Password recovery
+Each report demonstrates the ability to identify defects, analyze application behavior, reproduce issues, and document findings in a structured professional format.
 
-User profile management
+🔍 Testing Areas
 
-Shopping cart functionality
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>👤 User Account</h3>
+      <ul>
+        <li>Registration</li>
+        <li>Authorization</li>
+        <li>Password recovery</li>
+        <li>Profile management</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h3>🛒 E-commerce</h3>
+      <ul>
+        <li>Product catalog</li>
+        <li>Shopping cart</li>
+        <li>Order processing</li>
+        <li>Checkout validation</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-Order processing and checkout
+📝 Bug Report Documentation
 
-Data validation
+Each defect is documented using the following structure:
 
-📝 Bug Report Structure
+<table>
+  <tr>
+    <td width="35%"><strong>Identification</strong></td>
+    <td>Bug ID, Title, Environment</td>
+  </tr>
+  <tr>
+    <td><strong>Test Conditions</strong></td>
+    <td>Preconditions, Steps to Reproduce</td>
+  </tr>
+  <tr>
+    <td><strong>Results</strong></td>
+    <td>Actual Result, Expected Result</td>
+  </tr>
+  <tr>
+    <td><strong>Classification</strong></td>
+    <td>Severity, Priority, Reproducibility</td>
+  </tr>
+  <tr>
+    <td><strong>Evidence</strong></td>
+    <td>Screenshots and supporting information</td>
+  </tr>
+</table>
 
-Each bug report includes the following information:
+🎯 Portfolio Objective
 
-Field
+To demonstrate practical knowledge of defect reporting, analytical thinking, attention to detail, and the ability to communicate software issues clearly and effectively.
 
-Description
-
-Bug ID
-
-Unique defect identifier
-
-Title
-
-Short description of the issue
-
-Environment
-
-Testing environment
-
-Preconditions
-
-Conditions required before testing
-
-Steps to Reproduce
-
-Actions needed to reproduce the defect
-
-Actual Result
-
-Observed application behavior
-
-Expected Result
-
-Expected application behavior
-
-Severity
-
-Impact of the defect
-
-Priority
-
-Urgency of fixing the defect
-
-Reproducibility
-
-How consistently the defect occurs
-
-Attachments
-
-Screenshots or other evidence
-
-🎯 Purpose
-
-The purpose of this section is to demonstrate practical bug reporting skills, attention to detail, and understanding of the software testing process.
-
-All examples are prepared for educational and portfolio purposes.
+<p align="center">
+  <strong>Every defect is an opportunity to improve software quality.</strong>
+</p>
