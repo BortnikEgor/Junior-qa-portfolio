@@ -13,10 +13,6 @@ You can find my professional resume in the following languages:
 </td>
 <td align="center" width="50%">
 
-### 🇷🇺 Русский
-
-[Посмотреть резюме на русском](Resume/Junior_QA_Engineer_Resume_RU.md)
-
 </td>
 </tr>
 </table>
