@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🧪 CL-002
 ## Registration Form Validation Checklist
 
