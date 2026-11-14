@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 CL-008
+# 🧪 CL-001
 ## Product Catalog Checklist
 
 <img src="https://img.shields.io/badge/MODULE-CATALOG-blue?style=for-the-badge">
