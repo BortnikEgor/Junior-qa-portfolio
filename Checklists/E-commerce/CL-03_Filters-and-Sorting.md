@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 CL-010
+# 🧪 CL-03
 ## Product Filters and Sorting Checklist
 
 <img src="https://img.shields.io/badge/MODULE-FILTERS-blue?style=for-the-badge">
@@ -14,7 +14,7 @@
 
 <h2>📌 01. Checklist Overview</h2>
 <table>
-<tr><td width="30%"><b>Checklist ID</b></td><td>CL-010</td></tr>
+<tr><td width="30%"><b>Checklist ID</b></td><td>CL-03</td></tr>
 <tr><td><b>Title</b></td><td>Product Filters and Sorting</td></tr>
 <tr><td><b>Module</b></td><td>Catalog Filters</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
@@ -48,91 +48,91 @@
 
 <h2>🔄 05. Test Checklist</h2>
 
-<h3>CL-010-01. Filter Panel Availability</h3>
+<h3>CL-03-01. Filter Panel Availability</h3>
 <p><b>Test Scenario:</b> Open the catalog and inspect the filter controls.</p>
 <p><b>Expected Result:</b> Available filters are displayed and can be used.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-02. Apply Single Filter</h3>
+<h3>CL-03-02. Apply Single Filter</h3>
 <p><b>Test Scenario:</b> Apply one filter, such as product category.</p>
 <p><b>Expected Result:</b> Only products matching the selected filter are displayed.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-03. Apply Multiple Filters</h3>
+<h3>CL-03-03. Apply Multiple Filters</h3>
 <p><b>Test Scenario:</b> Apply two or more filters simultaneously.</p>
 <p><b>Expected Result:</b> The displayed products satisfy all active filter conditions.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-04. Remove One Active Filter</h3>
+<h3>CL-03-04. Remove One Active Filter</h3>
 <p><b>Test Scenario:</b> Remove one filter while keeping other filters active.</p>
 <p><b>Expected Result:</b> Only the selected filter is removed and the results are updated correctly.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-05. Clear All Filters</h3>
+<h3>CL-03-05. Clear All Filters</h3>
 <p><b>Test Scenario:</b> Apply multiple filters and use the Clear All control.</p>
 <p><b>Expected Result:</b> All active filters are removed and the unfiltered catalog is displayed.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-06. Minimum Price Filter</h3>
+<h3>CL-03-06. Minimum Price Filter</h3>
 <p><b>Test Scenario:</b> Enter a minimum price value.</p>
 <p><b>Expected Result:</b> Products below the minimum price are excluded.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-07. Maximum Price Filter</h3>
+<h3>CL-03-07. Maximum Price Filter</h3>
 <p><b>Test Scenario:</b> Enter a maximum price value.</p>
 <p><b>Expected Result:</b> Products above the maximum price are excluded.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-08. Minimum and Maximum Price Range</h3>
+<h3>CL-03-08. Minimum and Maximum Price Range</h3>
 <p><b>Test Scenario:</b> Apply a minimum and maximum price together.</p>
 <p><b>Expected Result:</b> Only products within the specified price range are displayed, including boundary values if permitted by requirements.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-09. Invalid Price Range</h3>
+<h3>CL-03-09. Invalid Price Range</h3>
 <p><b>Test Scenario:</b> Enter a minimum price greater than the maximum price.</p>
 <p><b>Expected Result:</b> The application rejects the invalid range or displays a clear validation message.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-10. Filters with No Results</h3>
+<h3>CL-03-10. Filters with No Results</h3>
 <p><b>Test Scenario:</b> Apply filter conditions that match no products.</p>
 <p><b>Expected Result:</b> An appropriate no-results message is displayed.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-11. Sort by Price Ascending</h3>
+<h3>CL-03-11. Sort by Price Ascending</h3>
 <p><b>Test Scenario:</b> Select sorting by price from low to high.</p>
 <p><b>Expected Result:</b> Products are displayed in ascending price order.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-12. Sort by Price Descending</h3>
+<h3>CL-03-12. Sort by Price Descending</h3>
 <p><b>Test Scenario:</b> Select sorting by price from high to low.</p>
 <p><b>Expected Result:</b> Products are displayed in descending price order.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
 <p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
 <hr>
 
-<h3>CL-010-13. Sorting with Active Filters</h3>
+<h3>CL-03-13. Sorting with Active Filters</h3>
 <p><b>Test Scenario:</b> Apply filters and then change the sorting order.</p>
 <p><b>Expected Result:</b> Sorting is applied to the filtered results without removing active filters.</p>
 <p><b>Actual Result:</b> Not Executed.</p>
@@ -150,4 +150,10 @@
 <p>Screenshots of active filters, sorting results and price range validation.</p>
 
 <hr>
-<div align="center">**CL-010 | Junior QA Engineer Portfolio**</div>
+<div align="center">**CL-03 | Junior QA Engineer Portfolio**</div>
+
+
+
+
+
+
