@@ -24,6 +24,8 @@ Each report demonstrates defect identification, reproduction, analysis, classifi
 
 <h2>📚 Bug Report Library</h2>
 
+<p>Explore the documented software defects below.</p>
+
 <table>
 <tr>
 <th align="center">ID</th>
@@ -32,57 +34,57 @@ Each report demonstrates defect identification, reproduction, analysis, classifi
 </tr>
 <tr>
 <td align="center">BR-001</td>
-<td>Registration with an Existing Email</td>
+<td><a href="BR-001_Registration.md">Registration with an Existing Email</a></td>
 <td align="center">Registration</td>
 </tr>
 <tr>
 <td align="center">BR-002</td>
-<td>Login with an Incorrect Password</td>
+<td><a href="BR-002_Login_Invalid_Password.md">Login with an Incorrect Password</a></td>
 <td align="center">Authorization</td>
 </tr>
 <tr>
 <td align="center">BR-003</td>
-<td>Password Recovery Link Returns 404</td>
+<td><a href="BR-003_Password_Recovery_Link.md">Password Recovery Link Returns 404</a></td>
 <td align="center">Password Recovery</td>
 </tr>
 <tr>
 <td align="center">BR-004</td>
-<td>Incorrect Shopping Cart Total</td>
+<td><a href="BR-004_Incorrect_Cart_Total.md">Incorrect Shopping Cart Total</a></td>
 <td align="center">Shopping Cart</td>
 </tr>
 <tr>
 <td align="center">BR-005</td>
-<td>Order Created Without Delivery Address</td>
+<td><a href="BR-005_Order_Without_Address.md">Order Created Without Delivery Address</a></td>
 <td align="center">Checkout</td>
 </tr>
 <tr>
 <td align="center">BR-006</td>
-<td>Password Reset Link Remains Valid After Password Change</td>
+<td><a href="BR-006_Password_Reset_Token.md">Password Reset Link Remains Valid After Password Change</a></td>
 <td align="center">Password Recovery</td>
 </tr>
 <tr>
 <td align="center">BR-007</td>
-<td>Promo Code Applied Repeatedly After Order Placement</td>
+<td><a href="BR-007_Promo_Code.md">Promo Code Applied Repeatedly After Order Placement</a></td>
 <td align="center">Checkout</td>
 </tr>
 <tr>
 <td align="center">BR-008</td>
-<td>Order and Payment Allowed for an Out-of-Stock Product</td>
+<td><a href="BR-008_Out_Of_Stock_Order.md">Order and Payment Allowed for an Out-of-Stock Product</a></td>
 <td align="center">Product Catalog</td>
 </tr>
 <tr>
 <td align="center">BR-009</td>
-<td>Duplicate Product on the Second Catalog Page</td>
+<td><a href="BR-009_Duplicate_Product_Pagination.md">Duplicate Product on the Second Catalog Page</a></td>
 <td align="center">Pagination</td>
 </tr>
 <tr>
 <td align="center">BR-010</td>
-<td>Order Confirmation Email Not Sent</td>
+<td><a href="BR-010_Order_Confirmation_Email.md">Order Confirmation Email Not Sent</a></td>
 <td align="center">Notifications</td>
 </tr>
 <tr>
 <td align="center">BR-011</td>
-<td>Profile City Is Not Saved</td>
+<td><a href="BR-011_Profile_City_Not_Saved.md">Profile City Is Not Saved</a></td>
 <td align="center">User Profile</td>
 </tr>
 </table>
