@@ -108,37 +108,37 @@ Testing checklists
 </thead>
 <tbody>
 <tr>
-<td align="center">CL-008</td>
+<td align="center">CL-001</td>
 <td><a href="E-commerce/CL-001_Product-Catalog.md">Product Catalog</a></td>
 <td>Product listing and catalog display</td>
 </tr>
 <tr>
-<td align="center">CL-009</td>
+<td align="center">CL-002</td>
 <td><a href="E-commerce/CL-002_Search.md">Product Search</a></td>
 <td>Search queries and search results</td>
 </tr>
 <tr>
-<td align="center">CL-010</td>
+<td align="center">CL-003</td>
 <td><a href="E-commerce/CL-003_Filters-and-Sorting.md">Filters and Sorting</a></td>
 <td>Product filtering and sorting logic</td>
 </tr>
 <tr>
-<td align="center">CL-011</td>
+<td align="center">CL-004</td>
 <td><a href="E-commerce/CL-004_Product-Card.md">Product Card</a></td>
 <td>Product details and displayed information</td>
 </tr>
 <tr>
-<td align="center">CL-012</td>
+<td align="center">CL-005</td>
 <td><a href="E-commerce/CL-005_Shopping-Cart.md">Shopping Cart</a></td>
 <td>Cart operations and price calculations</td>
 </tr>
 <tr>
-<td align="center">CL-013</td>
+<td align="center">CL-006</td>
 <td><a href="E-commerce/CL-006_Checkout.md">Checkout</a></td>
 <td>Order creation and checkout validation</td>
 </tr>
 <tr>
-<td align="center">CL-014</td>
+<td align="center">CL-007</td>
 <td><a href="E-commerce/CL-007_Payment.md">Payment</a></td>
 <td>Payment processing and transaction results</td>
 </tr>
