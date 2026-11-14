@@ -55,16 +55,16 @@ A collection of practical test cases covering real-world application scenarios.
 <th>Test Case</th>
 <th width="20%">Status</th>
 </tr>
-<tr><td>TC-011</td><td><a href="E-commerce/TC-01_Product_Catalog.md">Product Catalog</a></td><td>Prepared</td></tr>
-<tr><td>TC-012</td><td><a href="E-commerce/TC-02_Product_Search.md">Product Search</a></td><td>Prepared</td></tr>
-<tr><td>TC-013</td><td><a href="E-commerce/TC-03_Product_Filtering.md">Product Filtering</a></td><td>Prepared</td></tr>
-<tr><td>TC-014</td><td><a href="E-commerce/TC-04_Product_Sorting.md">Product Sorting</a></td><td>Prepared</td></tr>
-<tr><td>TC-015</td><td><a href="E-commerce/TC-05_Product_Details.md">Product Details</a></td><td>Prepared</td></tr>
-<tr><td>TC-016</td><td><a href="E-commerce/TC-06_Add_To_Cart.md">Add Product to Cart</a></td><td>Prepared</td></tr>
-<tr><td>TC-017</td><td><a href="E-commerce/TC-07_Update_Cart.md">Update Shopping Cart</a></td><td>Prepared</td></tr>
-<tr><td>TC-018</td><td><a href="E-commerce/TC-08_Checkout_Process.md">Checkout Process</a></td><td>Prepared</td></tr>
-<tr><td>TC-019</td><td><a href="E-commerce/TC-09_Checkout_Validation.md">Checkout Form Validation</a></td><td>Prepared</td></tr>
-<tr><td>TC-020</td><td><a href="E-commerce/TC-010_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
+<tr><td>TC-01</td><td><a href="E-commerce/TC-01_Product_Catalog.md">Product Catalog</a></td><td>Prepared</td></tr>
+<tr><td>TC-02</td><td><a href="E-commerce/TC-02_Product_Search.md">Product Search</a></td><td>Prepared</td></tr>
+<tr><td>TC-03</td><td><a href="E-commerce/TC-03_Product_Filtering.md">Product Filtering</a></td><td>Prepared</td></tr>
+<tr><td>TC-04</td><td><a href="E-commerce/TC-04_Product_Sorting.md">Product Sorting</a></td><td>Prepared</td></tr>
+<tr><td>TC-05</td><td><a href="E-commerce/TC-05_Product_Details.md">Product Details</a></td><td>Prepared</td></tr>
+<tr><td>TC-06</td><td><a href="E-commerce/TC-06_Add_To_Cart.md">Add Product to Cart</a></td><td>Prepared</td></tr>
+<tr><td>TC-07</td><td><a href="E-commerce/TC-07_Update_Cart.md">Update Shopping Cart</a></td><td>Prepared</td></tr>
+<tr><td>TC-08</td><td><a href="E-commerce/TC-08_Checkout_Process.md">Checkout Process</a></td><td>Prepared</td></tr>
+<tr><td>TC-09</td><td><a href="E-commerce/TC-09_Checkout_Validation.md">Checkout Form Validation</a></td><td>Prepared</td></tr>
+<tr><td>TC-010</td><td><a href="E-commerce/TC-010_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
 </table>
 
 <h2>📋 03. Test Case Structure</h2>
