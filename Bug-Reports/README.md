@@ -1,76 +1,151 @@
-🐞 Bug Reports
+<h1 align="center">🐞 Bug Reports</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/QA-Manual%20Testing-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Documentation-Bug%20Reports-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Level-Junior%20QA-success?style=for-the-badge" />
+  <strong>Junior QA Engineer Portfolio</strong>
 </p>
 
 <p align="center">
-  <strong>Practical software testing | Defect identification | Bug documentation</strong>
+  <img src="https://img.shields.io/badge/Total-11%20Bug%20Reports-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Testing-Manual%20QA-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Documentation-Defect%20Tracking-orange?style=for-the-badge">
 </p>
 
-📌 About This Section
+<hr>
 
-This section contains practical bug reports prepared as part of my Junior QA Engineer training and portfolio development.
+<h2>📌 About This Section</h2>
 
-Each report demonstrates the ability to identify defects, analyze application behavior, reproduce issues, and document findings in a structured professional format.
+<p>
+This section contains practical software defect reports prepared as part of my Junior QA Engineer training and portfolio development.
+</p>
 
-🔍 Testing Areas
+<p>
+Each report demonstrates defect identification, reproduction, analysis, classification and structured documentation.
+</p>
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>👤 User Account</h3>
-      <ul>
-        <li>Registration</li>
-        <li>Authorization</li>
-        <li>Password recovery</li>
-        <li>Profile management</li>
-      </ul>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🛒 E-commerce</h3>
-      <ul>
-        <li>Product catalog</li>
-        <li>Shopping cart</li>
-        <li>Order processing</li>
-        <li>Checkout validation</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-📝 Bug Report Documentation
-
-Each defect is documented using the following structure:
+<h2>📚 Bug Report Library</h2>
 
 <table>
-  <tr>
-    <td width="35%"><strong>Identification</strong></td>
-    <td>Bug ID, Title, Environment</td>
-  </tr>
-  <tr>
-    <td><strong>Test Conditions</strong></td>
-    <td>Preconditions, Steps to Reproduce</td>
-  </tr>
-  <tr>
-    <td><strong>Results</strong></td>
-    <td>Actual Result, Expected Result</td>
-  </tr>
-  <tr>
-    <td><strong>Classification</strong></td>
-    <td>Severity, Priority, Reproducibility</td>
-  </tr>
-  <tr>
-    <td><strong>Evidence</strong></td>
-    <td>Screenshots and supporting information</td>
-  </tr>
+<tr>
+<th align="center">ID</th>
+<th align="left">Bug Report</th>
+<th align="center">Module</th>
+</tr>
+<tr>
+<td align="center">BR-001</td>
+<td>Registration with an Existing Email</td>
+<td align="center">Registration</td>
+</tr>
+<tr>
+<td align="center">BR-002</td>
+<td>Login with an Incorrect Password</td>
+<td align="center">Authorization</td>
+</tr>
+<tr>
+<td align="center">BR-003</td>
+<td>Password Recovery Link Returns 404</td>
+<td align="center">Password Recovery</td>
+</tr>
+<tr>
+<td align="center">BR-004</td>
+<td>Incorrect Shopping Cart Total</td>
+<td align="center">Shopping Cart</td>
+</tr>
+<tr>
+<td align="center">BR-005</td>
+<td>Order Created Without Delivery Address</td>
+<td align="center">Checkout</td>
+</tr>
+<tr>
+<td align="center">BR-006</td>
+<td>Password Reset Link Remains Valid After Password Change</td>
+<td align="center">Password Recovery</td>
+</tr>
+<tr>
+<td align="center">BR-007</td>
+<td>Promo Code Applied Repeatedly After Order Placement</td>
+<td align="center">Checkout</td>
+</tr>
+<tr>
+<td align="center">BR-008</td>
+<td>Order and Payment Allowed for an Out-of-Stock Product</td>
+<td align="center">Product Catalog</td>
+</tr>
+<tr>
+<td align="center">BR-009</td>
+<td>Duplicate Product on the Second Catalog Page</td>
+<td align="center">Pagination</td>
+</tr>
+<tr>
+<td align="center">BR-010</td>
+<td>Order Confirmation Email Not Sent</td>
+<td align="center">Notifications</td>
+</tr>
+<tr>
+<td align="center">BR-011</td>
+<td>Profile City Is Not Saved</td>
+<td align="center">User Profile</td>
+</tr>
 </table>
 
-🎯 Portfolio Objective
+<hr>
 
-To demonstrate practical knowledge of defect reporting, analytical thinking, attention to detail, and the ability to communicate software issues clearly and effectively.
+<h2>📝 Bug Report Structure</h2>
+
+<table>
+<tr>
+<td align="center">01</td>
+<td><strong>Bug ID & Title</strong></td>
+<td>Defect identification</td>
+</tr>
+<tr>
+<td align="center">02</td>
+<td><strong>Environment</strong></td>
+<td>Browser and operating system</td>
+</tr>
+<tr>
+<td align="center">03</td>
+<td><strong>Preconditions</strong></td>
+<td>Initial testing conditions</td>
+</tr>
+<tr>
+<td align="center">04</td>
+<td><strong>Steps to Reproduce</strong></td>
+<td>Sequence of actions</td>
+</tr>
+<tr>
+<td align="center">05</td>
+<td><strong>Actual Result</strong></td>
+<td>Observed behavior</td>
+</tr>
+<tr>
+<td align="center">06</td>
+<td><strong>Expected Result</strong></td>
+<td>Expected behavior</td>
+</tr>
+<tr>
+<td align="center">07</td>
+<td><strong>Severity & Priority</strong></td>
+<td>Defect classification</td>
+</tr>
+<tr>
+<td align="center">08</td>
+<td><strong>Reproducibility</strong></td>
+<td>Frequency of occurrence</td>
+</tr>
+<tr>
+<td align="center">09</td>
+<td><strong>Attachments</strong></td>
+<td>Supporting evidence</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>🎯 Portfolio Objective</h2>
+
+<p>
+To demonstrate practical bug reporting skills, analytical thinking, attention to detail and understanding of software quality assurance processes.
+</p>
 
 <p align="center">
   <strong>Every defect is an opportunity to improve software quality.</strong>
