@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 TC-01
+# 🧪 TC-011
 ## Product Catalog Display
 
 <img src="https://img.shields.io/badge/MODULE-PRODUCT%20CATALOG-blue?style=for-the-badge">
@@ -14,7 +14,7 @@
 
 <h2>📌 01. Test Case Overview</h2>
 <table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-01</td></tr>
+<tr><td width="30%"><b>Test Case ID</b></td><td>TC-011</td></tr>
 <tr><td><b>Title</b></td><td>Product Catalog Display</td></tr>
 <tr><td><b>Module</b></td><td>Product Catalog</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
