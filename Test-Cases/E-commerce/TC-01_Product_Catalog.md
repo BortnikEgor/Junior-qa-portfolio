@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 TC-011
+# 🧪 TC-01
 ## Product Catalog Display
 
 <img src="https://img.shields.io/badge/MODULE-PRODUCT%20CATALOG-blue?style=for-the-badge">
