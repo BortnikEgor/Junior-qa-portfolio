@@ -1,7 +1,7 @@
-
 <div align="center">
 
-# 🐞 BR-001 — Registration with an Existing Email
+# 🐞 BR-001
+## Registration with an Existing Email
 
 <img src="https://img.shields.io/badge/MODULE-REGISTRATION-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/SEVERITY-MAJOR-orange?style=for-the-badge">
@@ -11,37 +11,22 @@
 
 </div>
 
----
+<hr>
 
 <h2>📌 01. Bug Overview</h2>
 
 <table>
-<tr>
-<td width="30%"><b>Bug ID</b></td>
-<td>BR-001</td>
-</tr>
-<tr>
-<td><b>Title</b></td>
-<td>Registration with an Existing Email</td>
-</tr>
-<tr>
-<td><b>Module</b></td>
-<td>User Registration</td>
-</tr>
-<tr>
-<td><b>Bug Type</b></td>
-<td>Functional / Validation</td>
-</tr>
-<tr>
-<td><b>Status</b></td>
-<td>Open</td>
-</tr>
+<tr><td width="30%"><b>Bug ID</b></td><td>BR-001</td></tr>
+<tr><td><b>Title</b></td><td>Registration with an Existing Email</td></tr>
+<tr><td><b>Module</b></td><td>User Registration</td></tr>
+<tr><td><b>Bug Type</b></td><td>Functional / Validation</td></tr>
+<tr><td><b>Status</b></td><td>Open</td></tr>
 </table>
 
 <h2>💻 02. Environment</h2>
 
 <table>
-<tr><td><b>Application</b></td><td>Demo E-commerce Website</td></tr>
+<tr><td width="30%"><b>Application</b></td><td>Demo E-commerce Website</td></tr>
 <tr><td><b>Browser</b></td><td>Google Chrome</td></tr>
 <tr><td><b>Operating System</b></td><td>macOS</td></tr>
 <tr><td><b>Testing Type</b></td><td>Manual Testing</td></tr>
@@ -59,8 +44,8 @@
 
 <ol>
 <li>Open the registration page.</li>
-<li>Enter a first name.</li>
-<li>Enter a last name.</li>
+<li>Enter a valid first name.</li>
+<li>Enter a valid last name.</li>
 <li>Enter the existing email address <code>test@example.com</code>.</li>
 <li>Enter a valid password.</li>
 <li>Confirm the password.</li>
@@ -99,7 +84,7 @@ This email address is already registered.
 <h2>🔁 08. Reproducibility</h2>
 
 <p>
-<b>Always (100%)</b> — According to the scenario, the issue occurs every time registration is attempted with an existing email address. Actual reproducibility must be verified during testing.
+<b>Always (100%)</b> — This is the expected reproducibility in the scenario and must be confirmed during actual testing.
 </p>
 
 <h2>📎 09. Attachments</h2>
@@ -108,7 +93,7 @@ This email address is already registered.
 Screenshot or video evidence should be attached after reproducing the defect.
 </p>
 
----
+<hr>
 
 <div align="center">
 
