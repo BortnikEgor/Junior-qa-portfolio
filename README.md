@@ -10,13 +10,6 @@ You can find my professional resume in the following languages:
 
 [View English Resume](Resume/Junior_QA_Engineer_Resume_EN.md)
 
-</td>
-<td align="center" width="50%">
-
-</td>
-</tr>
-</table>
-
 *Качество — это результат систематической работы и тестирования.*
 
 </div>
