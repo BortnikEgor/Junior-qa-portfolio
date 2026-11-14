@@ -10,6 +10,6 @@ You can find my professional resume in the following languages:
 
 [View English Resume](Resume/Junior_QA_Engineer_Resume_EN.md)
 
-*Качество — это результат систематической работы и тестирования.*
+*Quality is the result of systematic work and testing.*
 
 </div>
