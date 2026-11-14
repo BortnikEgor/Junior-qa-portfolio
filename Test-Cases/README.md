@@ -1,8 +1,9 @@
- <div align="center">
 
-🧪 TEST CASE LIBRARY
+<div align="center">
 
-Manual Testing | Functional Testing | QA Documentation
+# 🧪 TEST CASE LIBRARY
+
+**Manual Testing | Functional Testing | QA Documentation**
 
 <img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/TYPE-TEST%20CASES-green?style=for-the-badge">
@@ -29,33 +30,41 @@ A collection of practical test cases covering real-world application scenarios.
 <h3>👤 Account Management</h3>
 
 <table>
-<tr><th width="15%">ID</th><th>Test Case</th><th width="20%">Status</th></tr>
-<tr><td>TC-001</td><td> [Registration with Valid Data](TC-001_Registration_Valid_Data.md)</td><td>Prepared</td></tr>
-<tr><td>TC-002</td><td> [Registration Validation](TC-002_Registration_Validation.md)</td><td>Prepared</td></tr>
-<tr><td>TC-003</td><td> [Email Uniqueness Validation](TC-003_Email_Uniqueness.md)</td><td>Prepared</td></tr>
-<tr><td>TC-004</td><td> [Login with Valid Credentials](TC-004_Login_Valid_Credentials.md)</td><td>Prepared</td></tr>
-<tr><td>TC-005</td><td> [Login with Invalid Credentials](TC-005_Login_Invalid_Credentials.md)</td><td>Prepared</td></tr>
-<tr><td>TC-006</td><td> [Password Recovery](TC-006_Password_Recovery.md)</td><td>Prepared</td></tr>
-<tr><td>TC-007</td><td> [Change Password](TC-007_Change_Password.md)</td><td>Prepared</td></tr>
-<tr><td>TC-008</td><td> [User Logout](TC-008_User_Logout.md)</td><td>Prepared</td></tr>
-<tr><td>TC-009</td><td> [Remember Me and Session Persistence](TC-009_Remember_Me_Session.md)</td><td>Prepared</td></tr>
-<tr><td>TC-010</td><td> [Account Lockout](TC-010_Account_Lockout.md)</td><td>Prepared</td></tr>
+<tr>
+<th width="15%">ID</th>
+<th>Test Case</th>
+<th width="20%">Status</th>
+</tr>
+<tr><td>TC-001</td><td><a href="Account-Management/TC-001_Registration_Valid_Data.md">Registration with Valid Data</a></td><td>Prepared</td></tr>
+<tr><td>TC-002</td><td><a href="Account-Management/TC-002_Registration_Validation.md">Registration Validation</a></td><td>Prepared</td></tr>
+<tr><td>TC-003</td><td><a href="Account-Management/TC-003_Email_Uniqueness.md">Email Uniqueness Validation</a></td><td>Prepared</td></tr>
+<tr><td>TC-004</td><td><a href="Account-Management/TC-004_Login_Valid_Credentials.md">Login with Valid Credentials</a></td><td>Prepared</td></tr>
+<tr><td>TC-005</td><td><a href="Account-Management/TC-005_Login_Invalid_Credentials.md">Login with Invalid Credentials</a></td><td>Prepared</td></tr>
+<tr><td>TC-006</td><td><a href="Account-Management/TC-006_Password_Recovery.md">Password Recovery</a></td><td>Prepared</td></tr>
+<tr><td>TC-007</td><td><a href="Account-Management/TC-007_Change_Password.md">Change Password</a></td><td>Prepared</td></tr>
+<tr><td>TC-008</td><td><a href="Account-Management/TC-008_User_Logout.md">User Logout</a></td><td>Prepared</td></tr>
+<tr><td>TC-009</td><td><a href="Account-Management/TC-009_Remember_Me_Session.md">Remember Me and Session Persistence</a></td><td>Prepared</td></tr>
+<tr><td>TC-010</td><td><a href="Account-Management/TC-010_Account_Lockout.md">Account Lockout</a></td><td>Prepared</td></tr>
 </table>
 
 <h3>🛒 E-commerce</h3>
 
 <table>
-<tr><th width="15%">ID</th><th>Test Case</th><th width="20%">Status</th></tr>
-<tr><td>TC-011</td><td> [Product Catalog](TC-011_Product_Catalog.md)</td><td>Prepared</td></tr>
-<tr><td>TC-012</td><td> [Product Search](TC-012_Product_Search.md)</td><td>Prepared</td></tr>
-<tr><td>TC-013</td><td> [Product Filtering](TC-013_Product_Filtering.md)</td><td>Prepared</td></tr>
-<tr><td>TC-014</td><td> [Product Sorting](TC-014_Product_Sorting.md)</td><td>Prepared</td></tr>
-<tr><td>TC-015</td><td> [Product Details](TC-015_Product_Details.md)</td><td>Prepared</td></tr>
-<tr><td>TC-016</td><td> [Add Product to Cart](TC-016_Add_To_Cart.md)</td><td>Prepared</td></tr>
-<tr><td>TC-017</td><td> [Update Shopping Cart](TC-017_Update_Cart.md)</td><td>Prepared</td></tr>
-<tr><td>TC-018</td><td> [Checkout Process](TC-018_Checkout_Process.md)</td><td>Prepared</td></tr>
-<tr><td>TC-019</td><td> [Checkout Form Validation](TC-019_Checkout_Validation.md)</td><td>Prepared</td></tr>
-<tr><td>TC-020</td><td> [Payment Processing](TC-020_Payment_Processing.md)</td><td>Prepared</td></tr>
+<tr>
+<th width="15%">ID</th>
+<th>Test Case</th>
+<th width="20%">Status</th>
+</tr>
+<tr><td>TC-011</td><td><a href="E-commerce/TC-011_Product_Catalog.md">Product Catalog</a></td><td>Prepared</td></tr>
+<tr><td>TC-012</td><td><a href="E-commerce/TC-012_Product_Search.md">Product Search</a></td><td>Prepared</td></tr>
+<tr><td>TC-013</td><td><a href="E-commerce/TC-013_Product_Filtering.md">Product Filtering</a></td><td>Prepared</td></tr>
+<tr><td>TC-014</td><td><a href="E-commerce/TC-014_Product_Sorting.md">Product Sorting</a></td><td>Prepared</td></tr>
+<tr><td>TC-015</td><td><a href="E-commerce/TC-015_Product_Details.md">Product Details</a></td><td>Prepared</td></tr>
+<tr><td>TC-016</td><td><a href="E-commerce/TC-016_Add_To_Cart.md">Add Product to Cart</a></td><td>Prepared</td></tr>
+<tr><td>TC-017</td><td><a href="E-commerce/TC-017_Update_Cart.md">Update Shopping Cart</a></td><td>Prepared</td></tr>
+<tr><td>TC-018</td><td><a href="E-commerce/TC-018_Checkout_Process.md">Checkout Process</a></td><td>Prepared</td></tr>
+<tr><td>TC-019</td><td><a href="E-commerce/TC-019_Checkout_Validation.md">Checkout Form Validation</a></td><td>Prepared</td></tr>
+<tr><td>TC-020</td><td><a href="E-commerce/TC-020_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
 </table>
 
 <h2>📋 03. Test Case Structure</h2>
@@ -92,6 +101,6 @@ Each test case contains:
 
 <div align="center">
 
-TEST CASE LIBRARY | JUNIOR QA ENGINEER PORTFOLIO
+**TEST CASE LIBRARY | JUNIOR QA ENGINEER PORTFOLIO**
 
 </div>
