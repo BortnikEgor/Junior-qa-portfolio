@@ -1,9 +1,9 @@
 <div align="center">
 
-# 🧪 CL-001
-## Product Search Checklist
+# 🧪 CL-008
+## Product Catalog Checklist
 
-<img src="https://img.shields.io/badge/MODULE-SEARCH-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/MODULE-CATALOG-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
 <img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-green?style=for-the-badge">
 
