@@ -1,134 +1,122 @@
-<div align="center">
+ <div align="center">
 
-# 🧪 CL-001
-## User Registration Checklist
+🧪 CL-001
 
-<img src="https://img.shields.io/badge/MODULE-REGISTRATION-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-green?style=for-the-badge">
+Registration Checklist
 
-**Manual Testing | Account Management**
+<img src="https://img.shields.io/badge/MODULE-ACCOUNT%20MANAGEMENT-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge"> <img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-green?style=for-the-badge">
+
+Manual Testing | User Registration | Checklist
 
 </div>
+
 <hr>
 
 <h2>📌 01. Checklist Overview</h2>
+
 <table>
 <tr><td width="30%"><b>Checklist ID</b></td><td>CL-001</td></tr>
-<tr><td><b>Title</b></td><td>User Registration</td></tr>
+<tr><td><b>Title</b></td><td>Registration Checklist</td></tr>
 <tr><td><b>Module</b></td><td>Account Management</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
-<tr><td><b>Test Type</b></td><td>Functional / UI</td></tr>
-<tr><td><b>Testing Level</b></td><td>UI Testing</td></tr>
+<tr><td><b>Test Type</b></td><td>Functional Testing</td></tr>
+<tr><td><b>Test Level</b></td><td>UI Testing</td></tr>
+<tr><td><b>Checklist Status</b></td><td>Not Executed</td></tr>
+<tr><td><b>Test Application</b></td><td>Automation Exercise</td></tr>
 </table>
 
-<h2>💻 02. Environment</h2>
+<h2>💻 02. Test Environment</h2>
+
 <table>
-<tr><td width="30%"><b>Application</b></td><td>Demo E-commerce Website</td></tr>
-<tr><td><b>Browser</b></td><td>Google Chrome</td></tr>
+<tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr>
 <tr><td><b>Operating System</b></td><td>macOS</td></tr>
-<tr><td><b>Testing Type</b></td><td>Manual Testing</td></tr>
+<tr><td><b>Application</b></td><td>Automation Exercise</td></tr>
+<tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr>
+<tr><td><b>Environment</b></td><td>Public Demo Application</td></tr>
 </table>
 
-<h2>⚙️ 03. Preconditions</h2>
-<ol>
-<li>The application is available.</li>
-<li>The registration page can be opened.</li>
-<li>The user is not logged in.</li>
-<li>A unique test email address is available.</li>
-</ol>
+<h2>🔐 03. Preconditions</h2>
 
-<h2>🧾 04. Test Data</h2>
+The application is available.
+
+The registration page is accessible.
+
+A unique test email address is available.
+
+The user is not logged in.
+
+Test data is prepared.
+
+<h2>📦 04. Test Data</h2>
+
 <table>
-<tr><th>Field</th><th>Value</th></tr>
-<tr><td>First Name</td><td>John</td></tr>
-<tr><td>Last Name</td><td>Smith</td></tr>
-<tr><td>Email</td><td>john.smith.cl001@example.com</td></tr>
-<tr><td>Password</td><td>QaTest@2026!</td></tr>
-<tr><td>Confirm Password</td><td>QaTest@2026!</td></tr>
+<tr><th align="left" width="35%">Parameter</th><th align="left">Test Data</th></tr>
+<tr><td><b>Name</b></td><td>Egor Test</td></tr>
+<tr><td><b>Email</b></td><td>Unique test email address</td></tr>
+<tr><td><b>Password</b></td><td>Valid test password</td></tr>
+<tr><td><b>First Name</b></td><td>Egor</td></tr>
+<tr><td><b>Last Name</b></td><td>Test</td></tr>
+<tr><td><b>Address</b></td><td>Test Street</td></tr>
+<tr><td><b>Country</b></td><td>Available country</td></tr>
+<tr><td><b>City</b></td><td>Los Angeles</td></tr>
+<tr><td><b>ZIP Code</b></td><td>90001</td></tr>
+<tr><td><b>Mobile Number</b></td><td>Valid test number</td></tr>
 </table>
 
-<h2>🔄 05. Test Checklist</h2>
+<h2>🔍 05. Registration Checklist</h2>
 
-<h3>CL-001-01. Registration Page Availability</h3>
-<p><b>Test Scenario:</b> Open the registration page.</p>
-<p><b>Expected Result:</b> The registration page opens successfully and all required form elements are displayed.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-02. Registration with Valid Data</h3>
-<p><b>Test Scenario:</b> Submit the registration form with valid and unique user data.</p>
-<p><b>Expected Result:</b> The account is created successfully and the application displays a confirmation message or email verification request.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-03. Registration with Empty Form</h3>
-<p><b>Test Scenario:</b> Submit the registration form without entering any data.</p>
-<p><b>Expected Result:</b> Registration is rejected and validation messages are displayed for required fields.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-04. Registration with Missing Required Field</h3>
-<p><b>Test Scenario:</b> Fill in all required fields except one and submit the form.</p>
-<p><b>Expected Result:</b> The form is not submitted. The missing required field is identified.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-05. Registration with Unique Email</h3>
-<p><b>Test Scenario:</b> Register using an email address that has not been used before.</p>
-<p><b>Expected Result:</b> The application accepts the email address if it meets the registration requirements.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-06. Password Confirmation</h3>
-<p><b>Test Scenario:</b> Enter the same valid password in both password fields.</p>
-<p><b>Expected Result:</b> The application accepts the matching passwords.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-07. Password Mismatch</h3>
-<p><b>Test Scenario:</b> Enter different values in the Password and Confirm Password fields.</p>
-<p><b>Expected Result:</b> Registration is rejected and a clear password mismatch message is displayed.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-08. Multiple Registration Submissions</h3>
-<p><b>Test Scenario:</b> Click the Register button repeatedly during form submission.</p>
-<p><b>Expected Result:</b> The application prevents duplicate account creation and duplicate form submissions.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> High | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-09. Registration Confirmation</h3>
-<p><b>Test Scenario:</b> Complete registration and inspect the resulting confirmation.</p>
-<p><b>Expected Result:</b> The user receives an appropriate success message or email verification instruction.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
-<hr>
-
-<h3>CL-001-10. Registration Form Responsiveness</h3>
-<p><b>Test Scenario:</b> Open the registration page on desktop and mobile-sized screens.</p>
-<p><b>Expected Result:</b> All form elements remain visible, readable and usable without layout issues.</p>
-<p><b>Actual Result:</b> Not Executed.</p>
-<p><b>Priority:</b> Medium | <b>Status:</b> Not Executed</p>
-
-<h2>📊 06. Execution Summary</h2>
 <table>
-<tr><td><b>Total Checks</b></td><td>10</td></tr>
+<tr>
+<th align="center" width="8%">№</th>
+<th align="left">Verification Point</th>
+<th align="center" width="15%">Status</th>
+</tr>
+<tr><td align="center">1</td><td>Verify that the registration page opens successfully.</td><td>Not Executed</td></tr>
+<tr><td align="center">2</td><td>Verify that the registration form is displayed correctly.</td><td>Not Executed</td></tr>
+<tr><td align="center">3</td><td>Verify that all required fields are available.</td><td>Not Executed</td></tr>
+<tr><td align="center">4</td><td>Verify that the Name field accepts valid input.</td><td>Not Executed</td></tr>
+<tr><td align="center">5</td><td>Verify that the Email field accepts a valid email address.</td><td>Not Executed</td></tr>
+<tr><td align="center">6</td><td>Verify that the Password field accepts a valid password.</td><td>Not Executed</td></tr>
+<tr><td align="center">7</td><td>Verify that personal information can be entered.</td><td>Not Executed</td></tr>
+<tr><td align="center">8</td><td>Verify that address information can be entered.</td><td>Not Executed</td></tr>
+<tr><td align="center">9</td><td>Verify that country selection works correctly.</td><td>Not Executed</td></tr>
+<tr><td align="center">10</td><td>Verify that the registration form can be submitted with valid data.</td><td>Not Executed</td></tr>
+<tr><td align="center">11</td><td>Verify that a new user account is created successfully.</td><td>Not Executed</td></tr>
+<tr><td align="center">12</td><td>Verify that the account creation confirmation is displayed.</td><td>Not Executed</td></tr>
+<tr><td align="center">13</td><td>Verify that the user can proceed after successful registration.</td><td>Not Executed</td></tr>
+<tr><td align="center">14</td><td>Verify that the created account can be used for login.</td><td>Not Executed</td></tr>
+</table>
+
+<h2>📊 06. Expected Result</h2>
+
+The registration form accepts valid user data, creates a new account successfully and displays an appropriate confirmation message.
+
+<h2>🔍 07. Actual Result</h2>
+
+Not executed.
+
+<h2>📋 08. Checklist Execution Status</h2>
+
+<img src="https://img.shields.io/badge/STATUS-NOT%20EXECUTED-lightgrey?style=for-the-badge">
+
+<table>
+<tr><td width="30%"><b>Total Checks</b></td><td>14</td></tr>
 <tr><td><b>Passed</b></td><td>0</td></tr>
 <tr><td><b>Failed</b></td><td>0</td></tr>
-<tr><td><b>Not Executed</b></td><td>10</td></tr>
+<tr><td><b>Blocked</b></td><td>0</td></tr>
+<tr><td><b>Not Executed</b></td><td>14</td></tr>
 </table>
 
-<h2>📎 07. Attachments</h2>
-<p>Screenshots of registration form, validation messages and registration confirmation.</p>
+<h2>📎 09. Attachments</h2>
+
+Not available — checklist has not been executed.
 
 <hr>
-<div align="center">**CL-001 | Junior QA Engineer Portfolio**</div>
+
+<div align="center">
+
+Junior QA Engineer Portfolio
+
+Manual Testing | Account Management | Checklists
+
+</div>
