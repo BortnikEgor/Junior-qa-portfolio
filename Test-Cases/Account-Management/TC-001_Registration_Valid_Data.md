@@ -1,80 +1,56 @@
 <div align="center">
+🧪 TC-001
+Registration with Valid Data
+<img src="https://img.shields.io/badge/MODULE-ACCOUNT%20MANAGEMENT-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge"> <img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-orange?style=for-the-badge">
 
-# 🧪 TC-001
-## Registration with Valid Data
-
-<img src="https://img.shields.io/badge/MODULE-REGISTRATION-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-POSITIVE%20TEST-green?style=for-the-badge">
-
-**Functional Testing | User Registration**
+Functional Testing | User Registration Verification
 
 </div>
+
 <hr>
 
 <h2>📌 01. Test Case Overview</h2>
-<table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr>
-<tr><td><b>Title</b></td><td>Registration with Valid Data</td></tr>
-<tr><td><b>Module</b></td><td>User Registration</td></tr>
-<tr><td><b>Priority</b></td><td>High</td></tr>
-<tr><td><b>Test Type</b></td><td>Positive / Functional</td></tr>
-<tr><td><b>Test Level</b></td><td>UI Testing</td></tr>
-</table>
 
-<h2>💻 02. Environment</h2>
-<table>
-<tr><td width="30%"><b>Application</b></td><td>Demo E-commerce Website</td></tr>
-<tr><td><b>Browser</b></td><td>Google Chrome</td></tr>
-<tr><td><b>Operating System</b></td><td>macOS</td></tr>
-<tr><td><b>Testing Type</b></td><td>Manual Testing</td></tr>
-</table>
+<table> <tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr> <tr><td><b>Title</b></td><td>Registration with Valid Data</td></tr> <tr><td><b>Module</b></td><td>Account Management / Registration</td></tr> <tr><td><b>Priority</b></td><td>High</td></tr> <tr><td><b>Test Type</b></td><td>Functional Testing / Positive</td></tr> <tr><td><b>Test Level</b></td><td>UI Testing</td></tr> <tr><td><b>Test Status</b></td><td>Not Executed</td></tr> </table>
 
-<h2>⚙️ 03. Preconditions</h2>
-<ol>
-<li>The registration page is available.</li>
-<li>The test email address is not registered.</li>
-<li>The user is not logged in.</li>
-</ol>
+<h2>💻 02. Test Environment</h2>
 
-<h2>🧾 04. Test Data</h2>
-<table>
-<tr><th>Field</th><th>Value</th></tr>
-<tr><td>First Name</td><td>John</td></tr>
-<tr><td>Last Name</td><td>Smith</td></tr>
-<tr><td>Email</td><td>john.smith.qa001@example.com</td></tr>
-<tr><td>Password</td><td>QaTest@2026!</td></tr>
-<tr><td>Confirm Password</td><td>QaTest@2026!</td></tr>
-</table>
+<table> <tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr> <tr><td><b>Operating System</b></td><td>macOS</td></tr> <tr><td><b>Application</b></td><td>Automation Exercise</td></tr> <tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr> <tr><td><b>Test Environment</b></td><td>Public Demo Application</td></tr> </table>
 
-<h2>🔄 05. Test Steps</h2>
-<ol>
-<li>Open the registration page.</li>
-<li>Enter John in the First Name field.</li>
-<li>Enter Smith in the Last Name field.</li>
-<li>Enter the unique email address.</li>
-<li>Enter a valid password.</li>
-<li>Confirm the password.</li>
-<li>Accept the required terms and conditions, if applicable.</li>
-<li>Click the Register button.</li>
-</ol>
+<h2>🔐 03. Preconditions</h2>
+1. The application is available.
+2. The user is not logged in.
+3. A unique email address is available for registration.
+<h2>📦 04. Test Data</h2>
 
-<h2>❌ 06. Actual Result</h2>
-<p>Not Executed — to be filled in after test execution.</p>
+<table> <tr> <th align="left" width="35%">Parameter</th> <th align="left">Test Data</th> </tr> <tr><td><b>Name</b></td><td>Egor Test</td></tr> <tr><td><b>Email</b></td><td>Unique test email</td></tr> <tr><td><b>Password</b></td><td>Valid test password</td></tr> <tr><td><b>First Name</b></td><td>Egor</td></tr> <tr><td><b>Last Name</b></td><td>Test</td></tr> <tr><td><b>Address</b></td><td>Test Street</td></tr> <tr><td><b>Country</b></td><td>Available country</td></tr> <tr><td><b>State</b></td><td>California</td></tr> <tr><td><b>City</b></td><td>Los Angeles</td></tr> <tr><td><b>ZIP Code</b></td><td>90001</td></tr> <tr><td><b>Mobile Number</b></td><td>Valid test number</td></tr> </table>
 
-<h2>✅ 07. Expected Result</h2>
-<ul>
-<li>The registration form is submitted successfully.</li>
-<li>A new user account is created.</li>
-<li>A success message or confirmation is displayed.</li>
-<li>The user is redirected to the appropriate page or asked to verify the email, according to the application requirements.</li>
-</ul>
+<h2>⚙️ 05. Test Steps</h2>
 
-<h2>📊 08. Status</h2>
-<p><b>Not Executed</b></p>
+<table> <tr><th width="8%">Step</th><th>Action</th><th>Expected Result</th></tr> <tr><td align="center">1</td><td>Open the application.</td><td>The homepage loads successfully.</td></tr> <tr><td align="center">2</td><td>Click Signup / Login.</td><td>The authentication page is displayed.</td></tr> <tr><td align="center">3</td><td>Enter a name and unique email in New User Signup.</td><td>The input fields accept the entered data.</td></tr> <tr><td align="center">4</td><td>Click Signup.</td><td>The account information form is displayed.</td></tr> <tr><td align="center">5</td><td>Fill in the required registration fields.</td><td>The entered data is accepted.</td></tr> <tr><td align="center">6</td><td>Click Create Account.</td><td>The application processes the registration.</td></tr> <tr><td align="center">7</td><td>Check the confirmation page.</td><td>The account creation confirmation is displayed.</td></tr> </table>
+
+<h2>📊 06. Expected Result</h2>
+
+The application successfully creates a new user account and displays the account creation confirmation.
+
+<h2>🔍 07. Actual Result</h2>
+
+Not executed.
+
+<h2>📋 08. Test Status</h2>
+
+<img src="https://img.shields.io/badge/STATUS-NOT%20EXECUTED-lightgrey?style=for-the-badge">
 
 <h2>📎 09. Attachments</h2>
-<p>Attach screenshots of the completed registration form and registration result.</p>
+
+Not available — test case has not been executed.
 
 <hr>
-<div align="center">**TC-001 | Junior QA Engineer Portfolio**</div>
+
+<div align="center">
+
+Junior QA Engineer Portfolio
+
+Manual Testing | Account Management | Test Cases
+
+</div>
