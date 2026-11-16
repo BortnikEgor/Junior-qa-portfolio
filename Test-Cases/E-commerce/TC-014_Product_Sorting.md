@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🧪 TC-04
+# 🧪 TC-014
 ## Product Sorting
 
 <img src="https://img.shields.io/badge/MODULE-E--COMMERCE-blue?style=for-the-badge">
@@ -17,7 +17,7 @@
 <h2>📌 01. Test Case Overview</h2>
 
 <table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-04</td></tr>
+<tr><td width="30%"><b>Test Case ID</b></td><td>TC-014</td></tr>
 <tr><td><b>Title</b></td><td>Verify Product Sorting Functionality</td></tr>
 <tr><td><b>Module</b></td><td>E-commerce / Product Sorting</td></tr>
 <tr><td><b>Priority</b></td><td>Medium</td></tr>
