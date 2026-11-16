@@ -9,14 +9,14 @@
   <tr>
     <td align="center" width="50%">
       <h3>🇬🇧 English Version</h3>
-      <p>Professional Resume</p>
+      <p>Resume</p>
       <a href="Resume/Junior_QA_Engineer_Resume_EN.md">
         <img src="https://img.shields.io/badge/VIEW_RESUME-2962FF?style=for-the-badge&logo=readthedocs&logoColor=white" alt="View English Resume">
       </a>
     </td>
     <td align="center" width="50%">
       <h3>🇷🇺 Русская версия</h3>
-      <p>Профессиональное резюме</p>
+      <p>Резюме</p>
       <a href="Resume/Junior_QA_Engineer_Resume_RU.md">
         <img src="https://img.shields.io/badge/ОТКРЫТЬ_РЕЗЮМЕ-2E8B57?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Открыть резюме">
       </a>
