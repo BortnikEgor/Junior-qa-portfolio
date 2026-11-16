@@ -1,222 +1,188 @@
  <div align="center">
 
-🧪 SOFTWARE TESTING CHECKLISTS
+🧪 CHECKLIST LIBRARY
 
-Manual QA Engineering Portfolio
+Manual Testing | Functional Testing | QA Documentation
 
-<p>
-<img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-2563EB?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-TEST%20DOCUMENTATION-16A34A?style=for-the-badge">
-<img src="https://img.shields.io/badge/CHECKLISTS-14-7C3AED?style=for-the-badge">
-</p>
+<img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/TYPE-CHECKLISTS-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/TOTAL-14%20CHECKLISTS-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/STATUS-NOT%20EXECUTED-lightgrey?style=for-the-badge">
 
-Functional Testing | UI Testing | Negative Testing | Test Design
-
-A structured collection of software testing checklists designed to evaluate web application functionality, identify potential defects, and verify expected system behavior.
+A structured collection of manual testing checklists for web applications.
 
 </div>
 
-📌 PROJECT OVERVIEW
+<hr>
 
-This section contains practical testing checklists covering two major areas of web application functionality:
+<h2>📌 01. About This Section</h2>
 
-Account Management — registration, authentication, password management and user sessions.
+This section contains a collection of 14 manual testing checklists covering two major areas of web application testing:
 
-E-commerce — product catalog, search, filtering, shopping cart, checkout and payment.
+Account Management — user registration, authentication, password management and session handling.
 
-Each checklist is organized by functionality and includes test scenarios, expected results, priority and execution status.
+E-commerce — product catalog, search, filters, shopping cart, checkout and payment.
 
-📊 PROJECT CONTENT
+Each checklist provides a structured set of verification points designed to support systematic functional testing and identify potential defects.
+
+<h2>🎯 02. Testing Objectives</h2>
+
+<table> <tr> <td width="50%" align="center"> <h3>🔐 Account Management</h3> User registration, login, validation, password recovery and session management. </td> <td width="50%" align="center"> <h3>🛒 E-commerce</h3> Product browsing, search, sorting, cart operations, checkout and payment. </td> </tr> </table>
+
+<h2>📂 03. Checklist Directory</h2>
+
+<h3>🔐 Account Management — 7 Checklists</h3>
 
 <table>
 <tr>
-<td align="center" width="50%">
-<h3>👤 ACCOUNT MANAGEMENT</h3>
-<h2>07</h2>
-Testing checklists
-</td>
-<td align="center" width="50%">
-<h3>🛒 E-COMMERCE</h3>
-<h2>07</h2>
-Testing checklists
-</td>
+<th align="center" width="10%">ID</th>
+<th align="left">Checklist</th>
+<th align="center" width="20%">Priority</th>
 </tr>
-</table>
-
-👤 ACCOUNT MANAGEMENT
-
-<p>Testing user account functionality, authentication and session management.</p>
-
-<table>
-<thead>
-<tr>
-<th align="center">ID</th>
-<th>Checklist</th>
-<th>Testing Scope</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td align="center">CL-001</td>
-<td><a href="Account-Management/CL-001_Registration.md">User Registration</a></td>
-<td>Registration workflow and account creation</td>
+<td><a href="Account-Management/CL-001_Registration.md">Registration Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-002</td>
-<td><a href="Account-Management/CL-002_Registration-Validation.md">Registration Validation</a></td>
-<td>Input validation and error messages</td>
+<td><a href="Account-Management/CL-002_Registration_Validation.md">Registration Validation Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-003</td>
-<td><a href="Account-Management/CL-003_Email-Uniqueness.md">Email Uniqueness</a></td>
-<td>Duplicate email detection</td>
+<td><a href="Account-Management/CL-003_Email_Uniqueness.md">Email Uniqueness Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-004</td>
-<td><a href="Account-Management/CL-004_Login.md">User Login</a></td>
-<td>Authentication and login validation</td>
+<td><a href="Account-Management/CL-004_Login.md">Login Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-005</td>
-<td><a href="Account-Management/CL-005_Password-Recovery.md">Password Recovery</a></td>
-<td>Password reset workflow</td>
+<td><a href="Account-Management/CL-005_Password_Recovery.md">Password Recovery Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-006</td>
-<td><a href="Account-Management/CL-006_Change-Password.md">Change Password</a></td>
-<td>Password update and validation</td>
+<td><a href="Account-Management/CL-006_Change_Password.md">Change Password Checklist</a></td>
+<td align="center">High</td>
 </tr>
 <tr>
 <td align="center">CL-007</td>
-<td><a href="Account-Management/CL-007_Logout-and-Session.md">Logout and Session</a></td>
-<td>Session termination and access control</td>
+<td><a href="Account-Management/CL-007_Logout_and_Session.md">Logout and Session Checklist</a></td>
+<td align="center">Medium</td>
 </tr>
-</tbody>
 </table>
 
-🛒 E-COMMERCE
+<h3>🛒 E-commerce — 7 Checklists</h3>
 
-<p>Testing online shopping functionality and the order processing workflow.</p>
+<table> <tr> <th align="center" width="10%">ID</th> <th align="left">Checklist</th> <th align="center" width="20%">Priority</th> </tr> <tr> <td align="center">CL-008</td> <td><a href="E-commerce/CL-008_Product_Catalog.md">Product Catalog Checklist</a></td> <td align="center">High</td> </tr> <tr> <td align="center">CL-009</td> <td><a href="E-commerce/CL-009_Product_Search.md">Product Search Checklist</a></td> <td align="center">High</td> </tr> <tr> <td align="center">CL-010</td> <td><a href="E-commerce/CL-010_Filters_and_Sorting.md">Filters and Sorting Checklist</a></td> <td align="center">Medium</td> </tr> <tr> <td align="center">CL-011</td> <td><a href="E-commerce/CL-011_Product_Card.md">Product Card Checklist</a></td> <td align="center">Medium</td> </tr> <tr> <td align="center">CL-012</td> <td><a href="E-commerce/CL-012_Shopping_Cart.md">Shopping Cart Checklist</a></td> <td align="center">High</td> </tr> <tr> <td align="center">CL-013</td> <td><a href="E-commerce/CL-013_Checkout.md">Checkout Checklist</a></td> <td align="center">High</td> </tr> <tr> <td align="center">CL-014</td> <td><a href="E-commerce/CL-014_Payment.md">Payment Checklist</a></td> <td align="center">High</td> </tr> </table>
+
+<h2>🛠️ 04. Test Application</h2>
 
 <table>
-<thead>
 <tr>
-<th align="center">ID</th>
-<th>Checklist</th>
-<th>Testing Scope</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">CL-001</td>
-<td><a href="E-commerce/CL-001_Product-Catalog.md">Product Catalog</a></td>
-<td>Product listing and catalog display</td>
+<td width="30%"><b>Application</b></td>
+<td>Automation Exercise</td>
 </tr>
 <tr>
-<td align="center">CL-002</td>
-<td><a href="E-commerce/CL-002_Search.md">Product Search</a></td>
-<td>Search queries and search results</td>
+<td><b>Application Type</b></td>
+<td>E-commerce Web Application</td>
 </tr>
 <tr>
-<td align="center">CL-003</td>
-<td><a href="E-commerce/CL-003_Filters-and-Sorting.md">Filters and Sorting</a></td>
-<td>Product filtering and sorting logic</td>
+<td><b>Testing Approach</b></td>
+<td>Manual Testing</td>
 </tr>
 <tr>
-<td align="center">CL-004</td>
-<td><a href="E-commerce/CL-004_Product-Card.md">Product Card</a></td>
-<td>Product details and displayed information</td>
+<td><b>Testing Type</b></td>
+<td>Functional Testing</td>
 </tr>
 <tr>
-<td align="center">CL-005</td>
-<td><a href="E-commerce/CL-005_Shopping-Cart.md">Shopping Cart</a></td>
-<td>Cart operations and price calculations</td>
+<td><b>Test Environment</b></td>
+<td>Public Demo Application</td>
 </tr>
 <tr>
-<td align="center">CL-006</td>
-<td><a href="E-commerce/CL-006_Checkout.md">Checkout</a></td>
-<td>Order creation and checkout validation</td>
+<td><b>Website</b></td>
+<td><a href="https://automationexercise.com/">https://automationexercise.com/</a></td>
 </tr>
-<tr>
-<td align="center">CL-007</td>
-<td><a href="E-commerce/CL-007_Payment.md">Payment</a></td>
-<td>Payment processing and transaction results</td>
-</tr>
-</tbody>
 </table>
 
-🔍 TESTING METHODOLOGY
+<h2>📊 05. Checklist Status Legend</h2>
 
-Testing Technique
+<table>
+<tr>
+<th align="left">Status</th>
+<th align="left">Description</th>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/PASSED-brightgreen?style=flat-square"></td>
+<td>Verification completed successfully.</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/FAILED-red?style=flat-square"></td>
+<td>Actual result does not match the expected result.</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/BLOCKED-orange?style=flat-square"></td>
+<td>Verification cannot be performed due to a blocking issue.</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/NOT%20EXECUTED-lightgrey?style=flat-square"></td>
+<td>Verification has not been performed yet.</td>
+</tr>
+</table>
 
-Application
+<h2>📋 06. Checklist Structure</h2>
 
-Functional Testing
+Each checklist follows a consistent documentation structure:
 
-Verification of application functionality
+Checklist Overview
 
-Positive Testing
-
-Verification of valid scenarios
-
-Negative Testing
-
-Verification of invalid scenarios
-
-Boundary Value Analysis
-
-Testing input boundaries
-
-Equivalence Partitioning
-
-Testing representative data classes
-
-UI Testing
-
-Verification of interface elements
-
-Error Handling
-
-Verification of error responses
-
-Regression Testing
-
-Verification of previously working functionality
-
-📋 DOCUMENTATION STANDARD
-
-Each checklist contains:
-
-Checklist ID and title
-
-Test objective
-
-Scope of testing
+Test Environment
 
 Preconditions
 
-Test scenarios
+Test Data
 
-Expected results
+Verification Checklist
 
-Priority levels
+Expected Result
 
-Execution status
+Actual Result
 
-Comments and observations
+Checklist Execution Status
 
-Execution Status: Not Run / Passed / Failed / Blocked
+Attachments
 
-Priority: High / Medium / Low
+<h2>📈 07. Portfolio Summary</h2>
 
-🛠 TOOLS & TECHNOLOGIES
+<table>
+<tr>
+<td align="center" width="33%">
+<h2>14</h2>
+<b>Total Checklists</b>
+</td>
+<td align="center" width="33%">
+<h2>7</h2>
+<b>Account Management</b>
+</td>
+<td align="center" width="33%">
+<h2>7</h2>
+<b>E-commerce</b>
+</td>
+</tr>
+</table>
 
-Manual Testing | Browser DevTools | Postman | Swagger UI | SQL | GitHub
+The collection demonstrates practical knowledge of checklist design, functional testing coverage, test documentation and structured QA workflows.
+
+<hr>
 
 <div align="center">
 
-JUNIOR QA ENGINEER PORTFOLIO
+Junior QA Engineer Portfolio
 
-Manual Testing • Test Design • QA Documentation
+Manual Testing | Functional Testing | QA Documentation
 
 </div>
