@@ -1,14 +1,12 @@
+ <div align="center">
 
-<div align="center">
+🧪 TC-001
 
-# 🧪 TC-001
-## Product Catalog Display
+Registration with Valid Data
 
-<img src="https://img.shields.io/badge/MODULE-E--COMMERCE-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/MODULE-ACCOUNT%20MANAGEMENT-blue?style=for-the-badge"> <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge"> <img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-orange?style=for-the-badge">
 
-**Functional Testing | Product Catalog Verification**
+Functional Testing | User Registration Verification
 
 </div>
 
@@ -18,10 +16,10 @@
 
 <table>
 <tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr>
-<tr><td><b>Title</b></td><td>Verify Product Catalog Display</td></tr>
-<tr><td><b>Module</b></td><td>E-commerce / Product Catalog</td></tr>
+<tr><td><b>Title</b></td><td>Registration with Valid Data</td></tr>
+<tr><td><b>Module</b></td><td>Account Management / Registration</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
-<tr><td><b>Test Type</b></td><td>Functional Testing</td></tr>
+<tr><td><b>Test Type</b></td><td>Functional Testing / Positive</td></tr>
 <tr><td><b>Test Level</b></td><td>UI Testing</td></tr>
 <tr><td><b>Test Status</b></td><td>Not Executed</td></tr>
 </table>
@@ -31,79 +29,85 @@
 <table>
 <tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr>
 <tr><td><b>Operating System</b></td><td>macOS</td></tr>
-<tr><td><b>Application</b></td><td>Web Application / Online Store</td></tr>
-<tr><td><b>Test Environment</b></td><td>QA / Test Environment</td></tr>
+<tr><td><b>Application</b></td><td>Automation Exercise</td></tr>
+<tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr>
+<tr><td><b>Test Environment</b></td><td>Public Demo Application</td></tr>
 </table>
 
 <h2>🔐 03. Preconditions</h2>
 
-1. The web application is available.
-2. The user has opened the online store.
-3. The product catalog contains available products.
-4. The user is on the main catalog page.
+The application is available.
+
+The user is not logged in.
+
+A unique email address is available for registration.
 
 <h2>📦 04. Test Data</h2>
 
-| Parameter | Test Data |
-|---|---|
-| Catalog section | All Products |
-| Expected product information | Name, image, price |
-| Product availability | In Stock / Out of Stock |
+Parameter
+
+Test Data
+
+Name
+
+Egor Test
+
+Email
+
+Unique test email
+
+Password
+
+Valid test password
+
+First Name
+
+Egor
+
+Last Name
+
+Test
+
+Address
+
+Test Street
+
+Country
+
+Available country
+
+State
+
+California
+
+City
+
+Los Angeles
+
+ZIP Code
+
+90001
+
+Mobile Number
+
+Valid test number
 
 <h2>⚙️ 05. Test Steps</h2>
 
 <table>
-<tr>
-<th width="8%">Step</th>
-<th>Action</th>
-<th>Expected Result</th>
-</tr>
-<tr>
-<td align="center">1</td>
-<td>Open the online store.</td>
-<td>The main page loads successfully.</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td>Navigate to the product catalog.</td>
-<td>The product catalog is displayed.</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td>Check the product names.</td>
-<td>Each product has a visible and correct name.</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td>Check the product images.</td>
-<td>Product images are displayed without errors.</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td>Check the product prices.</td>
-<td>Each product has a visible price.</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td>Check product availability information.</td>
-<td>Availability is displayed correctly when this information is provided by the application.</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td>Refresh the catalog page.</td>
-<td>The catalog loads again without errors, and product information remains available.</td>
-</tr>
+<tr><th width="8%">Step</th><th>Action</th><th>Expected Result</th></tr>
+<tr><td align="center">1</td><td>Open the application.</td><td>The homepage loads successfully.</td></tr>
+<tr><td align="center">2</td><td>Click Signup / Login.</td><td>The authentication page is displayed.</td></tr>
+<tr><td align="center">3</td><td>Enter a name and unique email in New User Signup.</td><td>The input fields accept the entered data.</td></tr>
+<tr><td align="center">4</td><td>Click Signup.</td><td>The account information form is displayed.</td></tr>
+<tr><td align="center">5</td><td>Fill in the required registration fields.</td><td>The entered data is accepted.</td></tr>
+<tr><td align="center">6</td><td>Click Create Account.</td><td>The application processes the registration.</td></tr>
+<tr><td align="center">7</td><td>Check the confirmation page.</td><td>The account creation confirmation is displayed.</td></tr>
 </table>
 
 <h2>📊 06. Expected Result</h2>
 
-The product catalog loads successfully and displays product information correctly:
-
-- Product names are visible.
-- Product images are displayed.
-- Product prices are available.
-- Product availability is displayed when supported.
-- No broken images or unexpected interface errors appear.
+The application successfully creates a new user account and displays the account creation confirmation.
 
 <h2>🔍 07. Actual Result</h2>
 
@@ -121,10 +125,8 @@ Not available — test case has not been executed.
 
 <div align="center">
 
-**Junior QA Engineer Portfolio**
+Junior QA Engineer Portfolio
 
-*Manual Testing | E-commerce | Test Cases*
+Manual Testing | Account Management | Test Cases
 
 </div>
-
-
