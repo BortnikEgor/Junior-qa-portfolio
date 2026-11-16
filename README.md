@@ -7,7 +7,7 @@
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="50%">
+    <td align="center" width="70%">
       <h3>🇬🇧 English Version</h3>
       <p>Resume</p>
       <br>
@@ -16,7 +16,7 @@
       </a>
       <br><br>
     </td>
-    <td align="center" width="50%">
+    <td align="center" width="70%">
       <h3>🇷🇺 Русская версия</h3>
       <p>Резюме</p>
       <br>
