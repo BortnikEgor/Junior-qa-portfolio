@@ -1,70 +1,121 @@
-<div align="center">
+ <div align="center">
 
-# 🐞 BR-006
-## Password Reset Link Remains Valid After Password Change
+🐞 BR-006
 
-<img src="https://img.shields.io/badge/MODULE-PASSWORD%20RECOVERY-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/SEVERITY-CRITICAL-red?style=for-the-badge">
+Delivery Address Not Displayed Correctly
+
+<img src="https://img.shields.io/badge/MODULE-CHECKOUT-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/SEVERITY-MAJOR-orange?style=for-the-badge">
 <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
+<img src="https://img.shields.io/badge/STATUS-UNVERIFIED-lightgrey?style=for-the-badge">
 
-**Security Testing | Password Reset Token Validation**
+Manual Testing | Checkout | Bug Report
 
 </div>
 
 <hr>
 
-<h2>📌 01. Bug Overview</h2>
+<h2>📌 01. Bug Report Overview</h2>
+
 <table>
-<tr><td width="30%"><b>Bug ID</b></td><td>BR-006</td></tr>
-<tr><td><b>Title</b></td><td>Password Reset Link Remains Valid After Password Change</td></tr>
-<tr><td><b>Module</b></td><td>Password Recovery</td></tr>
-<tr><td><b>Bug Type</b></td><td>Security / Functional</td></tr>
-<tr><td><b>Status</b></td><td>Open</td></tr>
+<tr><td width="32%"><b>Bug ID</b></td><td>BR-006</td></tr>
+<tr><td><b>Title</b></td><td>Delivery Address Not Displayed Correctly</td></tr>
+<tr><td><b>Module</b></td><td>Checkout</td></tr>
+<tr><td><b>Component</b></td><td>Delivery Address</td></tr>
+<tr><td><b>Severity</b></td><td>Major — provisional</td></tr>
+<tr><td><b>Priority</b></td><td>High — provisional</td></tr>
+<tr><td><b>Bug Type</b></td><td>Functional / Data Display</td></tr>
+<tr><td><b>Status</b></td><td>Unverified — example report</td></tr>
+<tr><td><b>Test Application</b></td><td>Automation Exercise</td></tr>
 </table>
 
-<h2>💻 02. Environment</h2>
+<h2>💻 02. Test Environment</h2>
+
 <table>
-<tr><td width="30%"><b>Application</b></td><td>Demo E-commerce Website</td></tr>
+<tr><td width="32%"><b>Operating System</b></td><td>macOS</td></tr>
 <tr><td><b>Browser</b></td><td>Google Chrome</td></tr>
-<tr><td><b>Operating System</b></td><td>macOS</td></tr>
-<tr><td><b>Testing Type</b></td><td>Manual / Security Testing</td></tr>
+<tr><td><b>Application</b></td><td>Automation Exercise</td></tr>
+<tr><td><b>Environment</b></td><td>Public Demo Application</td></tr>
+<tr><td><b>URL</b></td><td><a href="https://automationexercise.com/">https://automationexercise.com/</a></td></tr>
 </table>
 
-<h2>⚙️ 03. Preconditions</h2>
-<ol>
-<li>A registered user account exists.</li>
-<li>The user has access to the registered email address.</li>
-<li>A valid password reset link has been generated.</li>
-</ol>
+<h2>🔐 03. Preconditions</h2>
 
-<h2>🔄 04. Steps to Reproduce</h2>
-<ol>
-<li>Request a password reset link.</li>
-<li>Open the recovery email.</li>
-<li>Open the password reset link in a browser.</li>
-<li>Set a new password successfully.</li>
-<li>Copy or reopen the same password reset link.</li>
-<li>Check whether the reset form is still accessible.</li>
-<li>Attempt to submit another password change using the same link.</li>
-</ol>
+A user account has been registered.
 
-<h2>❌ 05. Actual Result</h2>
-<p>The previously used password reset link remains valid and allows another password change.</p>
+The account contains valid address information.
 
-<h2>✅ 06. Expected Result</h2>
-<p>After a successful password change, the reset token should be invalidated. Reusing the same link should be rejected, and the user should be informed that the link has expired or already been used.</p>
+The user is logged in.
 
-<h2>⚠️ 07. Severity & Priority</h2>
+At least one product is available.
+
+A product has been added to the shopping cart.
+
+<h2>📦 04. Test Data</h2>
+
 <table>
-<tr><td width="30%"><b>Severity</b></td><td><b>Critical</b> — Reusable reset tokens may allow unauthorized password changes if the link is exposed.</td></tr>
-<tr><td><b>Priority</b></td><td><b>High</b> — Password reset token invalidation is an important security requirement.</td></tr>
+<tr><th align="left">Parameter</th><th align="left">Test Data</th></tr>
+<tr><td><b>First Name</b></td><td>Egor</td></tr>
+<tr><td><b>Last Name</b></td><td>Test</td></tr>
+<tr><td><b>Address</b></td><td>123 Test Street</td></tr>
+<tr><td><b>City</b></td><td>Los Angeles</td></tr>
+<tr><td><b>State</b></td><td>California</td></tr>
+<tr><td><b>ZIP Code</b></td><td>90001</td></tr>
+<tr><td><b>Country</b></td><td>United States</td></tr>
 </table>
 
-<h2>🔁 08. Reproducibility</h2>
-<p><b>Always (100%)</b> — Expected scenario frequency; must be confirmed by reusing the same token after a successful reset.</p>
+<h2>🔄 05. Steps to Reproduce</h2>
 
-<h2>📎 09. Attachments</h2>
-<p>Attach screenshots of the successful first reset and the unexpected second reset attempt. Never expose the full reset token.</p>
+<table>
+<tr><th align="center" width="8%">Step</th><th align="left">Action</th></tr>
+<tr><td align="center">1</td><td>Log in using a registered account.</td></tr>
+<tr><td align="center">2</td><td>Add a product to the shopping cart.</td></tr>
+<tr><td align="center">3</td><td>Open the shopping cart.</td></tr>
+<tr><td align="center">4</td><td>Proceed to checkout.</td></tr>
+<tr><td align="center">5</td><td>Locate the Delivery Address section.</td></tr>
+<tr><td align="center">6</td><td>Compare the displayed address with the address saved in the account.</td></tr>
+</table>
+
+<h2>❌ 06. Actual Result</h2>
+
+Hypothetical result — not verified:
+
+The Delivery Address section displays incomplete or incorrect address information that does not match the saved account details.
+
+<h2>✅ 07. Expected Result</h2>
+
+The application should:
+
+Display the correct delivery address.
+
+Show all available address fields.
+
+Preserve the information saved in the user account.
+
+Display consistent address information throughout checkout.
+
+<h2>⚠️ 08. Severity & Priority</h2>
+
+<table>
+<tr><td width="32%"><b>Severity</b></td><td>Major — provisional</td></tr>
+<tr><td><b>Priority</b></td><td>High — provisional</td></tr>
+<tr><td><b>Justification</b></td><td>Incorrect delivery information may result in an order being delivered to the wrong address.</td></tr>
+</table>
+
+<h2>🔁 09. Reproducibility</h2>
+
+Not verified. Repeat the checkout process and compare the displayed address with the saved account information.
+
+<h2>📎 10. Evidence</h2>
+
+Not attached. Add screenshots of the saved account address and the Delivery Address section during checkout. Hide any real personal information.
 
 <hr>
-<div align="center">**BR-006 | Junior QA Engineer Portfolio**</div>
+
+<div align="center">
+
+Junior QA Engineer Portfolio
+
+Manual Testing | E-commerce | Checkout | Bug Reports
+
+</div>
