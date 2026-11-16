@@ -6,151 +6,93 @@
 
 User Logout
 
-<img src="https://img.shields.io/badge/MODULE-AUTHENTICATION-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/MODULE-ACCOUNT%20MANAGEMENT-blue?style=for-the-badge">
 <img src="https://img.shields.io/badge/PRIORITY-HIGH-red?style=for-the-badge">
 <img src="https://img.shields.io/badge/TYPE-FUNCTIONAL-green?style=for-the-badge">
 
-Verify that an authenticated user can log out successfully.
+Functional Testing | User Session Termination
 
 </div>
 
 <hr>
 
-01. Test Case Overview
+<h2>📌 01. Test Case Overview</h2>
 
-Parameter
+<table>
+<tr><td width="30%"><b>Test Case ID</b></td><td>TC-006</td></tr>
+<tr><td><b>Title</b></td><td>User Logout</td></tr>
+<tr><td><b>Module</b></td><td>Account Management / Authentication</td></tr>
+<tr><td><b>Priority</b></td><td>High</td></tr>
+<tr><td><b>Test Type</b></td><td>Functional Testing</td></tr>
+<tr><td><b>Test Level</b></td><td>UI Testing</td></tr>
+<tr><td><b>Test Status</b></td><td>Not Executed</td></tr>
+</table>
 
-Value
+<h2>💻 02. Test Environment</h2>
 
-Test Case ID
+<table>
+<tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr>
+<tr><td><b>Operating System</b></td><td>macOS</td></tr>
+<tr><td><b>Application</b></td><td>Automation Exercise</td></tr>
+<tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr>
+<tr><td><b>Test Environment</b></td><td>Public Demo Application</td></tr>
+</table>
 
-TC-006
-
-Title
-
-User Logout
-
-Module
-
-Authentication
-
-Priority
-
-High
-
-Type
-
-Functional
-
-Preconditions
-
-User has an active account and is logged in
-
-02. Test Environment
-
-Parameter
-
-Value
-
-Browser
-
-Google Chrome
-
-Operating System
-
-macOS
-
-Application
-
-Automation Exercise
-
-URL
-
-https://automationexercise.com/
-
-Test Environment
-
-Public Demo Application
-
-03. Preconditions
+<h2>🔐 03. Preconditions</h2>
 
 A registered test account exists.
 
-The user is logged in.
+The user is logged in successfully.
 
-The application home page is open.
+The application homepage is displayed.
 
-04. Test Data
+The account is used exclusively for testing.
 
-Parameter
+<h2>📦 04. Test Data</h2>
 
-Test Data
+<table>
+<tr><th align="left" width="35%">Parameter</th><th align="left">Test Data</th></tr>
+<tr><td><b>Email</b></td><td>Registered test email</td></tr>
+<tr><td><b>Password</b></td><td>Valid test password</td></tr>
+<tr><td><b>Expected navigation</b></td><td>Login / Signup page</td></tr>
+</table>
 
-Email
+<h2>⚙️ 05. Test Steps</h2>
 
-Registered test email
+<table>
+<tr><th width="8%">Step</th><th>Action</th><th>Expected Result</th></tr>
+<tr><td align="center">1</td><td>Open the application homepage.</td><td>The homepage loads successfully.</td></tr>
+<tr><td align="center">2</td><td>Click Signup / Login.</td><td>The authentication page is displayed.</td></tr>
+<tr><td align="center">3</td><td>Enter valid registered email and password.</td><td>The credentials are entered successfully.</td></tr>
+<tr><td align="center">4</td><td>Click Login.</td><td>The user is authenticated and redirected to the homepage.</td></tr>
+<tr><td align="center">5</td><td>Verify the logged-in user indicator.</td><td>The Logged in as username indicator is displayed.</td></tr>
+<tr><td align="center">6</td><td>Click Logout.</td><td>The user session is terminated and the authentication page is displayed.</td></tr>
+<tr><td align="center">7</td><td>Verify the navigation menu after logout.</td><td>Login / Signup is displayed instead of the logged-in user indicator.</td></tr>
+</table>
 
-Password
+<h2>📊 06. Expected Result</h2>
 
-Valid test password
+The user is successfully logged out. The application terminates the authenticated session and displays the Login / Signup navigation option.
 
-05. Test Steps
-
-Step
-
-Action
-
-Expected Result
-
-1
-
-Open the application home page.
-
-Home page is displayed.
-
-2
-
-Log in using valid credentials.
-
-User is successfully authenticated.
-
-3
-
-Verify that the account name is displayed.
-
-Logged-in user indicator is visible.
-
-4
-
-Click the Logout link.
-
-User is redirected to the login page.
-
-5
-
-Verify the navigation menu.
-
-Login and Signup links are displayed instead of the logged-in indicator.
-
-06. Expected Result
-
-The user is logged out successfully. The application no longer displays the authenticated user indicator.
-
-07. Actual Result
+<h2>🔍 07. Actual Result</h2>
 
 Not executed.
 
-08. Test Status
+<h2>📋 08. Test Status</h2>
 
 <img src="https://img.shields.io/badge/STATUS-NOT%20EXECUTED-lightgrey?style=for-the-badge">
 
-09. Attachments
+<h2>📎 09. Attachments</h2>
 
 Not available — test case has not been executed.
 
 <hr>
 
+<div align="center">
+
 Junior QA Engineer Portfolio
 
 Manual Testing | Account Management | Test Cases
+
+</div>
 
