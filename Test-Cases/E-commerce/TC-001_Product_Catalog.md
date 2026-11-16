@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🧪 TC-01
+# 🧪 TC-001
 ## Product Catalog Display
 
 <img src="https://img.shields.io/badge/MODULE-E--COMMERCE-blue?style=for-the-badge">
@@ -17,7 +17,7 @@
 <h2>📌 01. Test Case Overview</h2>
 
 <table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-01</td></tr>
+<tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr>
 <tr><td><b>Title</b></td><td>Verify Product Catalog Display</td></tr>
 <tr><td><b>Module</b></td><td>E-commerce / Product Catalog</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
