@@ -64,7 +64,7 @@ A collection of practical test cases covering real-world application scenarios.
 <tr><td>TC-07</td><td><a href="E-commerce/TC-07_Update_Cart.md">Update Shopping Cart</a></td><td>Prepared</td></tr>
 <tr><td>TC-08</td><td><a href="E-commerce/TC-08_Checkout_Process.md">Checkout Process</a></td><td>Prepared</td></tr>
 <tr><td>TC-09</td><td><a href="E-commerce/TC-09_Checkout_Validation.md">Checkout Form Validation</a></td><td>Prepared</td></tr>
-<tr><td>TC-010</td><td><a href="E-commerce/TC-010_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
+<tr><td>TC-10</td><td><a href="E-commerce/TC-010_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
 </table>
 
 <h2>📋 03. Test Case Structure</h2>
