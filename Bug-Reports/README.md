@@ -1,154 +1,187 @@
-<h1 align="center">🐞 Bug Reports</h1>
+ <div align="center">
 
-<p align="center">
-  <strong>Junior QA Engineer Portfolio</strong>
-</p>
+🐞 BUG REPORT LIBRARY
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Total-11%20Bug%20Reports-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Testing-Manual%20QA-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Documentation-Defect%20Tracking-orange?style=for-the-badge">
-</p>
+Manual Testing | Functional Testing | Defect Documentation
+
+<img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/TOTAL-7%20REPORTS-green?style=for-the-badge">
+<img src="https://img.shields.io/badge/STATUS-UNVERIFIED-lightgrey?style=for-the-badge">
+
+Junior QA Engineer Portfolio
+
+</div>
 
 <hr>
 
-<h2>📌 About This Section</h2>
+<h2>📌 01. About This Section</h2>
 
-<p>
-This section contains practical software defect reports prepared as part of my Junior QA Engineer training and portfolio development.
-</p>
+This section contains a collection of structured bug reports created as part of practical Manual QA training.
 
-<p>
-Each report demonstrates defect identification, reproduction, analysis, classification and structured documentation.
-</p>
+Each report documents a potential software defect and includes the information required for clear defect identification, analysis, reproduction, and communication.
 
-<h2>📚 Bug Report Library</h2>
+Testing Application: Automation Exercise
 
-<p>Explore the documented software defects below.</p>
+Testing Type: Manual Testing
+
+Documentation Format: Individual Markdown files with HTML formatting.
+
+<h2>📂 02. Bug Report Directory</h2>
 
 <table>
 <tr>
 <th align="center">ID</th>
 <th align="left">Bug Report</th>
 <th align="center">Module</th>
+<th align="center">Severity</th>
 </tr>
 <tr>
-<td align="center">BR-001</td>
-<td><a href="BR-001_Registration.md">Registration with an Existing Email</a></td>
+<td align="center"><b>BR-001</b></td>
+<td><a href="./BR-001_Registration_Existing_Email.md">Registration Allows Duplicate Email Address</a></td>
 <td align="center">Registration</td>
+<td align="center">Major</td>
 </tr>
 <tr>
-<td align="center">BR-002</td>
-<td><a href="BR-002_Login_Invalid_Password.md">Login with an Incorrect Password</a></td>
-<td align="center">Authorization</td>
+<td align="center"><b>BR-002</b></td>
+<td><a href="./BR-002_Registration_Invalid_Data.md">Registration Accepts Invalid Email Address</a></td>
+<td align="center">Registration</td>
+<td align="center">Major</td>
 </tr>
 <tr>
-<td align="center">BR-003</td>
-<td><a href="BR-003_Password_Recovery_Link.md">Password Recovery Link Returns 404</a></td>
-<td align="center">Password Recovery</td>
+<td align="center"><b>BR-003</b></td>
+<td><a href="./BR-003_Login_Invalid_Credentials.md">Login Accepts Invalid Credentials</a></td>
+<td align="center">Authentication</td>
+<td align="center">Critical*</td>
 </tr>
 <tr>
-<td align="center">BR-004</td>
-<td><a href="BR-004_Incorrect_Cart_Total.md">Incorrect Shopping Cart Total</a></td>
+<td align="center"><b>BR-004</b></td>
+<td><a href="./BR-004_Product_Search_Incorrect_Results.md">Product Search Returns Incorrect Results</a></td>
+<td align="center">Product Search</td>
+<td align="center">Major*</td>
+</tr>
+<tr>
+<td align="center"><b>BR-005</b></td>
+<td><a href="./BR-005_Incorrect_Cart_Total.md">Incorrect Cart Total Calculation</a></td>
 <td align="center">Shopping Cart</td>
+<td align="center">Major*</td>
 </tr>
 <tr>
-<td align="center">BR-005</td>
-<td><a href="BR-005_Order_Without_Address.md">Order Created Without Delivery Address</a></td>
+<td align="center"><b>BR-006</b></td>
+<td><a href="./BR-006_Delivery_Address_Not_Displayed.md">Delivery Address Not Displayed Correctly</a></td>
 <td align="center">Checkout</td>
+<td align="center">Major*</td>
 </tr>
 <tr>
-<td align="center">BR-006</td>
-<td><a href="BR-006_Password_Reset_Token.md">Password Reset Link Remains Valid After Password Change</a></td>
-<td align="center">Password Recovery</td>
-</tr>
-<tr>
-<td align="center">BR-007</td>
-<td><a href="BR-007_Promo_Code.md">Promo Code Applied Repeatedly After Order Placement</a></td>
-<td align="center">Checkout</td>
-</tr>
-<tr>
-<td align="center">BR-008</td>
-<td><a href="BR-008_Out_Of_Stock_Order.md">Order and Payment Allowed for an Out-of-Stock Product</a></td>
-<td align="center">Product Catalog</td>
-</tr>
-<tr>
-<td align="center">BR-009</td>
-<td><a href="BR-009_Duplicate_Product_Pagination.md">Duplicate Product on the Second Catalog Page</a></td>
-<td align="center">Pagination</td>
-</tr>
-<tr>
-<td align="center">BR-010</td>
-<td><a href="BR-010_Order_Confirmation_Email.md">Order Confirmation Email Not Sent</a></td>
-<td align="center">Notifications</td>
-</tr>
-<tr>
-<td align="center">BR-011</td>
-<td><a href="BR-011_Profile_City_Not_Saved.md">Profile City Is Not Saved</a></td>
-<td align="center">User Profile</td>
+<td align="center"><b>BR-007</b></td>
+<td><a href="./BR-007_Invalid_Payment_Data.md">Order Submission with Invalid Payment Data</a></td>
+<td align="center">Payment</td>
+<td align="center">Critical*</td>
 </tr>
 </table>
 
-<hr>
+<sub>*Severity is provisional and must be reviewed after actual defect reproduction.</sub>
 
-<h2>📝 Bug Report Structure</h2>
+<h2>🧪 03. Testing Scope</h2>
 
 <table>
 <tr>
-<td align="center">01</td>
-<td><strong>Bug ID & Title</strong></td>
-<td>Defect identification</td>
+<th align="left">Testing Area</th>
+<th align="left">Covered Scenarios</th>
 </tr>
 <tr>
-<td align="center">02</td>
-<td><strong>Environment</strong></td>
-<td>Browser and operating system</td>
+<td><b>User Registration</b></td>
+<td>Duplicate email address, invalid email format</td>
 </tr>
 <tr>
-<td align="center">03</td>
-<td><strong>Preconditions</strong></td>
-<td>Initial testing conditions</td>
+<td><b>Authentication</b></td>
+<td>Login with invalid credentials</td>
 </tr>
 <tr>
-<td align="center">04</td>
-<td><strong>Steps to Reproduce</strong></td>
-<td>Sequence of actions</td>
+<td><b>Product Search</b></td>
+<td>Search result accuracy</td>
 </tr>
 <tr>
-<td align="center">05</td>
-<td><strong>Actual Result</strong></td>
-<td>Observed behavior</td>
+<td><b>Shopping Cart</b></td>
+<td>Cart total calculation</td>
 </tr>
 <tr>
-<td align="center">06</td>
-<td><strong>Expected Result</strong></td>
-<td>Expected behavior</td>
+<td><b>Checkout</b></td>
+<td>Delivery address display</td>
 </tr>
 <tr>
-<td align="center">07</td>
-<td><strong>Severity & Priority</strong></td>
-<td>Defect classification</td>
-</tr>
-<tr>
-<td align="center">08</td>
-<td><strong>Reproducibility</strong></td>
-<td>Frequency of occurrence</td>
-</tr>
-<tr>
-<td align="center">09</td>
-<td><strong>Attachments</strong></td>
-<td>Supporting evidence</td>
+<td><b>Payment</b></td>
+<td>Invalid payment data validation</td>
 </tr>
 </table>
 
+<h2>📋 04. Bug Report Structure</h2>
+
+Each report follows a consistent documentation structure:
+
+Bug ID and Title
+
+Bug Report Overview
+
+Test Environment
+
+Preconditions
+
+Test Data
+
+Steps to Reproduce
+
+Actual Result
+
+Expected Result
+
+Severity and Priority
+
+Reproducibility
+
+Evidence
+
+<h2>⚠️ 05. Verification Status</h2>
+
+All seven reports are currently marked as UNVERIFIED.
+
+They represent practice scenarios and potential defects. The described Actual Results are hypothetical and have not yet been confirmed through execution.
+
+Before treating any report as a real defect:
+
+Execute the described test scenario.
+
+Record the actual application behavior.
+
+Compare the actual result with the expected result.
+
+Attach relevant screenshots or other evidence.
+
+Update the report status and severity based on the observed behavior.
+
+Only reproducible and documented defects should be presented as confirmed findings.
+
+<h2>🎯 06. Portfolio Objectives</h2>
+
+This section demonstrates practical skills in:
+
+Identifying and documenting potential software defects.
+
+Writing clear and reproducible test steps.
+
+Distinguishing Actual Result from Expected Result.
+
+Understanding Severity and Priority.
+
+Preparing structured QA documentation.
+
+Testing registration, authentication, and e-commerce functionality.
+
 <hr>
 
-<h2>🎯 Portfolio Objective</h2>
+<div align="center">
 
-<p>
-To demonstrate practical bug reporting skills, analytical thinking, attention to detail and understanding of software quality assurance processes.
-</p>
+Junior QA Engineer Portfolio
 
-<p align="center">
-  <strong>Every defect is an opportunity to improve software quality.</strong>
-</p>
+Manual Testing | Functional Testing | Bug Reporting
+
+</div>
