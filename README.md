@@ -7,7 +7,7 @@
 
 <table align="center" width="100%">
   <tr>
-    <td align="center" width="45">
+    <td align="center" width="55">
       <h3>🇬🇧 English Version</h3>
       <p>Resume</p>
       <br>
