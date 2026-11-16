@@ -1,4 +1,6 @@
- <div align="center">
+
+
+<div align="center">
 
 🧪 TC-001
 
@@ -14,25 +16,11 @@ Functional Testing | User Registration Verification
 
 <h2>📌 01. Test Case Overview</h2>
 
-<table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr>
-<tr><td><b>Title</b></td><td>Registration with Valid Data</td></tr>
-<tr><td><b>Module</b></td><td>Account Management / Registration</td></tr>
-<tr><td><b>Priority</b></td><td>High</td></tr>
-<tr><td><b>Test Type</b></td><td>Functional Testing / Positive</td></tr>
-<tr><td><b>Test Level</b></td><td>UI Testing</td></tr>
-<tr><td><b>Test Status</b></td><td>Not Executed</td></tr>
-</table>
+<table> <tr><td width="30%"><b>Test Case ID</b></td><td>TC-001</td></tr> <tr><td><b>Title</b></td><td>Registration with Valid Data</td></tr> <tr><td><b>Module</b></td><td>Account Management / Registration</td></tr> <tr><td><b>Priority</b></td><td>High</td></tr> <tr><td><b>Test Type</b></td><td>Functional Testing / Positive</td></tr> <tr><td><b>Test Level</b></td><td>UI Testing</td></tr> <tr><td><b>Test Status</b></td><td>Not Executed</td></tr> </table>
 
 <h2>💻 02. Test Environment</h2>
 
-<table>
-<tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr>
-<tr><td><b>Operating System</b></td><td>macOS</td></tr>
-<tr><td><b>Application</b></td><td>Automation Exercise</td></tr>
-<tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr>
-<tr><td><b>Test Environment</b></td><td>Public Demo Application</td></tr>
-</table>
+<table> <tr><td width="30%"><b>Browser</b></td><td>Google Chrome</td></tr> <tr><td><b>Operating System</b></td><td>macOS</td></tr> <tr><td><b>Application</b></td><td>Automation Exercise</td></tr> <tr><td><b>URL</b></td><td>https://automationexercise.com/</td></tr> <tr><td><b>Test Environment</b></td><td>Public Demo Application</td></tr> </table>
 
 <h2>🔐 03. Preconditions</h2>
 
@@ -44,53 +32,23 @@ A unique email address is available for registration.
 
 <h2>📦 04. Test Data</h2>
 
-Parameter
-
-Test Data
-
-Name
-
-Egor Test
-
-Email
-
-Unique test email
-
-Password
-
-Valid test password
-
-First Name
-
-Egor
-
-Last Name
-
-Test
-
-Address
-
-Test Street
-
-Country
-
-Available country
-
-State
-
-California
-
-City
-
-Los Angeles
-
-ZIP Code
-
-90001
-
-Mobile Number
-
-Valid test number
+<table>
+<tr>
+<th align="left" width="35%">Parameter</th>
+<th align="left">Test Data</th>
+</tr>
+<tr><td><b>Name</b></td><td>Egor Test</td></tr>
+<tr><td><b>Email</b></td><td>Unique test email</td></tr>
+<tr><td><b>Password</b></td><td>Valid test password</td></tr>
+<tr><td><b>First Name</b></td><td>Egor</td></tr>
+<tr><td><b>Last Name</b></td><td>Test</td></tr>
+<tr><td><b>Address</b></td><td>Test Street</td></tr>
+<tr><td><b>Country</b></td><td>Available country</td></tr>
+<tr><td><b>State</b></td><td>California</td></tr>
+<tr><td><b>City</b></td><td>Los Angeles</td></tr>
+<tr><td><b>ZIP Code</b></td><td>90001</td></tr>
+<tr><td><b>Mobile Number</b></td><td>Valid test number</td></tr>
+</table>
 
 <h2>⚙️ 05. Test Steps</h2>
 
