@@ -1,106 +1,267 @@
+ <div align="center">
 
-<div align="center">
+🧪 TEST CASE LIBRARY
 
-# 🧪 TEST CASE LIBRARY
+Manual Testing | Functional Testing | E-commerce Testing
 
-**Manual Testing | Functional Testing | QA Documentation**
-
-<img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-TEST%20CASES-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/LEVEL-JUNIOR%20QA-orange?style=for-the-badge">
-
-A collection of practical test cases covering real-world application scenarios.
+<img src="https://img.shields.io/badge/PROJECT-QA%20PORTFOLIO-2563EB?style=for-the-badge"> <img src="https://img.shields.io/badge/TEST%20CASES-20-16A34A?style=for-the-badge"> <img src="https://img.shields.io/badge/TYPE-MANUAL%20TESTING-7C3AED?style=for-the-badge">
 
 </div>
 
-<hr>
+📌 About This Section
 
-<h2>📚 01. Test Case Overview</h2>
+This section contains a collection of manual test cases created for practical software testing.
 
-<table>
-<tr><td width="30%"><b>Project</b></td><td>Junior QA Engineer Portfolio</td></tr>
-<tr><td><b>Testing Type</b></td><td>Manual / Functional Testing</td></tr>
-<tr><td><b>Documentation</b></td><td>Individual Test Cases</td></tr>
-<tr><td><b>Test Design</b></td><td>Positive / Negative / Boundary Value Testing</td></tr>
-<tr><td><b>Format</b></td><td>HTML-formatted Markdown</td></tr>
-</table>
+The test cases cover two functional areas:
 
-<h2>📂 02. Test Case Categories</h2>
+Account Management — user registration, authentication and account operations.
 
-<h3>👤 Account Management</h3>
+E-commerce — product catalog, search, shopping cart and order processing.
 
-<table>
-<tr>
-<th width="15%">ID</th>
-<th>Test Case</th>
-<th width="20%">Status</th>
-</tr>
-<tr><td>TC-001</td><td><a href="Account-Management/TC-001_Registration_Valid_Data.md">Registration with Valid Data</a></td><td>Prepared</td></tr>
-<tr><td>TC-002</td><td><a href="Account-Management/TC-002_Registration_Validation.md">Registration Validation</a></td><td>Prepared</td></tr>
-<tr><td>TC-003</td><td><a href="Account-Management/TC-003_Email_Uniqueness.md">Email Uniqueness Validation</a></td><td>Prepared</td></tr>
-<tr><td>TC-004</td><td><a href="Account-Management/TC-004_Login_Valid_Credentials.md">Login with Valid Credentials</a></td><td>Prepared</td></tr>
-<tr><td>TC-005</td><td><a href="Account-Management/TC-005_Login_Invalid_Credentials.md">Login with Invalid Credentials</a></td><td>Prepared</td></tr>
-<tr><td>TC-006</td><td><a href="Account-Management/TC-006_Password_Recovery.md">Password Recovery</a></td><td>Prepared</td></tr>
-<tr><td>TC-007</td><td><a href="Account-Management/TC-007_Change_Password.md">Change Password</a></td><td>Prepared</td></tr>
-<tr><td>TC-008</td><td><a href="Account-Management/TC-008_User_Logout.md">User Logout</a></td><td>Prepared</td></tr>
-<tr><td>TC-009</td><td><a href="Account-Management/TC-009_Remember_Me_Session.md">Remember Me and Session Persistence</a></td><td>Prepared</td></tr>
-<tr><td>TC-010</td><td><a href="Account-Management/TC-010_Account_Lockout.md">Account Lockout</a></td><td>Prepared</td></tr>
-</table>
+Application Under Test: Automation Exercise
 
-<h3>🛒 E-commerce</h3>
+Testing Type: Manual Functional Testing
 
-<table>
-<tr>
-<th width="15%">ID</th>
-<th>Test Case</th>
-<th width="20%">Status</th>
-</tr>
-<tr><td>TC-01</td><td><a href="E-commerce/TC-01_Product_Catalog.md">Product Catalog</a></td><td>Prepared</td></tr>
-<tr><td>TC-02</td><td><a href="E-commerce/TC-02_Product_Search.md">Product Search</a></td><td>Prepared</td></tr>
-<tr><td>TC-03</td><td><a href="E-commerce/TC-03_Product_Filtering.md">Product Filtering</a></td><td>Prepared</td></tr>
-<tr><td>TC-04</td><td><a href="E-commerce/TC-04_Product_Sorting.md">Product Sorting</a></td><td>Prepared</td></tr>
-<tr><td>TC-05</td><td><a href="E-commerce/TC-05_Product_Details.md">Product Details</a></td><td>Prepared</td></tr>
-<tr><td>TC-06</td><td><a href="E-commerce/TC-06_Add_To_Cart.md">Add Product to Cart</a></td><td>Prepared</td></tr>
-<tr><td>TC-07</td><td><a href="E-commerce/TC-07_Update_Cart.md">Update Shopping Cart</a></td><td>Prepared</td></tr>
-<tr><td>TC-08</td><td><a href="E-commerce/TC-08_Checkout_Process.md">Checkout Process</a></td><td>Prepared</td></tr>
-<tr><td>TC-09</td><td><a href="E-commerce/TC-09_Checkout_Validation.md">Checkout Form Validation</a></td><td>Prepared</td></tr>
-<tr><td>TC-10</td><td><a href="E-commerce/TC-010_Payment_Processing.md">Payment Processing</a></td><td>Prepared</td></tr>
-</table>
+Documentation Format: Markdown / HTML
 
-<h2>📋 03. Test Case Structure</h2>
+📂 Test Case Directory
+
+👤 Account Management
+
+Testing user account functionality, including registration, login, logout and account management.
+
+ID
+
+Test Case
+
+Priority
+
+Status
+
+TC-001
+
+Registration with Valid Data
+
+High
+
+Not Executed
+
+TC-002
+
+Registration Required Fields
+
+High
+
+Not Executed
+
+TC-003
+
+Registration with Existing Email
+
+High
+
+Not Executed
+
+TC-004
+
+Login with Valid Credentials
+
+High
+
+Not Executed
+
+TC-005
+
+Login with Invalid Credentials
+
+High
+
+Not Executed
+
+TC-006
+
+User Logout
+
+Medium
+
+Not Executed
+
+TC-007
+
+Account Creation Confirmation
+
+High
+
+Not Executed
+
+TC-008
+
+Account Deletion
+
+Medium
+
+Not Executed
+
+TC-009
+
+Registration Newsletter Options
+
+Low
+
+Not Executed
+
+TC-010
+
+Registration Date of Birth
+
+Low
+
+Not Executed
+
+🛒 E-commerce
+
+Testing online shopping functionality, including product browsing, search, cart operations and checkout.
+
+ID
+
+Test Case
+
+Priority
+
+Status
+
+TC-011
+
+Product Catalog
+
+High
+
+Not Executed
+
+TC-012
+
+Product Details
+
+High
+
+Not Executed
+
+TC-013
+
+Product Search
+
+High
+
+Not Executed
+
+TC-014
+
+Category Navigation
+
+Medium
+
+Not Executed
+
+TC-015
+
+Brand Navigation
+
+Medium
+
+Not Executed
+
+TC-016
+
+Add Multiple Products to Cart
+
+High
+
+Not Executed
+
+TC-017
+
+Cart Product Quantity
+
+High
+
+Not Executed
+
+TC-018
+
+Remove Product from Cart
+
+Medium
+
+Not Executed
+
+TC-019
+
+Checkout Address and Order Review
+
+High
+
+Not Executed
+
+TC-020
+
+Payment and Order Confirmation
+
+High
+
+Not Executed
+
+📊 Test Execution Summary
+
+Metric
+
+Count
+
+Total Test Cases
+
+20
+
+Passed
+
+0
+
+Failed
+
+0
+
+Not Executed
+
+20
+
+🛠 Testing Approach
 
 Each test case contains:
 
-<ul>
-<li>Test Case ID</li>
-<li>Title</li>
-<li>Module</li>
-<li>Priority</li>
-<li>Test Type</li>
-<li>Preconditions</li>
-<li>Test Data</li>
-<li>Test Steps</li>
-<li>Expected Result</li>
-<li>Actual Result</li>
-<li>Environment</li>
-<li>Status</li>
-</ul>
+Test Case ID
 
-<h2>🎯 04. Testing Objectives</h2>
+Title
 
-<ul>
-<li>Verify application functionality.</li>
-<li>Validate positive and negative scenarios.</li>
-<li>Check input validation and error handling.</li>
-<li>Verify user authentication and authorization.</li>
-<li>Test shopping cart and checkout functionality.</li>
-<li>Identify functional defects and inconsistencies.</li>
-</ul>
+Module
 
-<hr>
+Priority
 
-<div align="center">
+Test Type
 
-**TEST CASE LIBRARY | JUNIOR QA ENGINEER PORTFOLIO**
+Preconditions
 
-</div>
+Test Data
+
+Test Steps
+
+Expected Result
+
+Actual Result
+
+Environment
+
+Execution Status
+
+⚠️ Important
+
+All test cases initially have the status Not Executed.
+
+Execution results must be updated only after performing the corresponding checks on the application.
