@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧪 TC-02
+# 🧪 TC-002
 ## Product Search
 
 <img src="https://img.shields.io/badge/MODULE-E--COMMERCE-blue?style=for-the-badge">
@@ -16,7 +16,7 @@
 <h2>📌 01. Test Case Overview</h2>
 
 <table>
-<tr><td width="30%"><b>Test Case ID</b></td><td>TC-02</td></tr>
+<tr><td width="30%"><b>Test Case ID</b></td><td>TC-002</td></tr>
 <tr><td><b>Title</b></td><td>Verify Product Search Functionality</td></tr>
 <tr><td><b>Module</b></td><td>E-commerce / Product Search</td></tr>
 <tr><td><b>Priority</b></td><td>High</td></tr>
