@@ -8,8 +8,6 @@
 
 [View English Resume](Resume/Junior_QA_Engineer_Resume_EN.md)
 
-## 📄 Резюме
-
 <table>
 <tr>
 <td align="center" width="50%">
