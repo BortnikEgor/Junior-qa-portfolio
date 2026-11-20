@@ -82,309 +82,304 @@ What is covered?
 </tbody>
 </table>
 
-🟦 02. DATABASE STRUCTURE
+<!-- ==================== 02. DATABASE STRUCTURE ==================== -->
 
-Для практических примеров используется упрощённая база данных интернет-магазина.
+<h2 align="center">🟦 02. DATABASE STRUCTURE</h2>
 
-📁 Table: users — пользователи
+<p align="center">
+  Для практических примеров используется упрощённая база данных интернет-магазина.
+</p>
 
-Column
+<h3>📁 Table: users — пользователи</h3>
 
-Data Type
+<table>
+  <thead>
+    <tr>
+      <th align="left">Column</th>
+      <th align="left">Data Type</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>INTEGER</td><td>Уникальный идентификатор пользователя</td></tr>
+    <tr><td><code>first_name</code></td><td>VARCHAR</td><td>Имя пользователя</td></tr>
+    <tr><td><code>last_name</code></td><td>VARCHAR</td><td>Фамилия пользователя</td></tr>
+    <tr><td><code>email</code></td><td>VARCHAR</td><td>Электронная почта</td></tr>
+    <tr><td><code>city</code></td><td>VARCHAR</td><td>Город</td></tr>
+    <tr><td><code>country</code></td><td>VARCHAR</td><td>Страна</td></tr>
+    <tr><td><code>created_at</code></td><td>DATE</td><td>Дата регистрации</td></tr>
+  </tbody>
+</table>
 
-Description
+<h3>📁 Table: orders — заказы</h3>
 
-id
+<table>
+  <thead>
+    <tr>
+      <th align="left">Column</th>
+      <th align="left">Data Type</th>
+      <th align="left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><code>id</code></td><td>INTEGER</td><td>Идентификатор заказа</td></tr>
+    <tr><td><code>user_id</code></td><td>INTEGER</td><td>Идентификатор пользователя</td></tr>
+    <tr><td><code>total_amount</code></td><td>DECIMAL</td><td>Сумма заказа</td></tr>
+    <tr><td><code>status</code></td><td>VARCHAR</td><td>Статус заказа</td></tr>
+    <tr><td><code>created_at</code></td><td>DATE</td><td>Дата создания заказа</td></tr>
+  </tbody>
+</table>
 
-INTEGER
+<h3>🔗 Database Relationship — связь таблиц</h3>
 
-Уникальный идентификатор
+<table>
+  <thead>
+    <tr>
+      <th align="center">USERS</th>
+      <th align="center">RELATIONSHIP</th>
+      <th align="center">ORDERS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <code>id</code> — PK<br>
+        <code>first_name</code><br>
+        <code>last_name</code><br>
+        <code>email</code><br>
+        <code>city</code><br>
+        <code>country</code>
+      </td>
+      <td align="center"><strong>1 : N</strong></td>
+      <td>
+        <code>id</code> — PK<br>
+        <code>user_id</code> — FK<br>
+        <code>total_amount</code><br>
+        <code>status</code><br>
+        <code>created_at</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-first_name
+<ul>
+  <li><strong>PK — Primary Key (первичный ключ):</strong> уникально идентифицирует запись.</li>
+  <li><strong>FK — Foreign Key (внешний ключ):</strong> связывает запись с другой таблицей.</li>
+  <li><strong>1:N — One-to-Many (один ко многим):</strong> один пользователь может иметь несколько заказов.</li>
+</ul>
 
-VARCHAR
+<hr>
 
-Имя пользователя
+<!-- ==================== 03. SQL FUNDAMENTALS ==================== -->
 
-last_name
+<h2 align="center">🟦 03. SQL FUNDAMENTALS</h2>
 
-VARCHAR
+<p align="center">Основные команды для получения, поиска, фильтрации и сортировки информации.</p>
 
-Фамилия пользователя
+<h3>3.1 — SELECT | Получение данных</h3>
 
-email
+<p><strong>Retrieve all users — получить всех пользователей</strong></p>
 
-VARCHAR
+<pre><code class="language-sql">SELECT *
+FROM users;</code></pre>
 
-Электронная почта
+<p><strong>Retrieve selected columns — получить определённые столбцы</strong></p>
 
-city
+<pre><code class="language-sql">SELECT first_name, last_name, email
+FROM users;</code></pre>
 
-VARCHAR
+<h3>3.2 — WHERE | Фильтрация записей</h3>
 
-Город
+<p><strong>Find users from Germany — найти пользователей из Германии</strong></p>
 
-country
-
-VARCHAR
-
-Страна
-
-created_at
-
-DATE
-
-Дата регистрации
-
-📁 Table: orders — заказы
-
-Column
-
-Data Type
-
-Description
-
-id
-
-INTEGER
-
-Идентификатор заказа
-
-user_id
-
-INTEGER
-
-Идентификатор пользователя
-
-total_amount
-
-DECIMAL
-
-Сумма заказа
-
-status
-
-VARCHAR
-
-Статус заказа
-
-created_at
-
-DATE
-
-Дата создания
-
-Database Relationship — связь таблиц
-
-       USERS                         ORDERS
-  ┌──────────────┐              ┌──────────────┐
-  │ id       PK  │              │ id       PK  │
-  │ first_name   │              │ user_id  FK  │
-  │ last_name    │              │ total_amount │
-  │ email        │              │ status       │
-  │ city         │              │ created_at   │
-  │ country      │              └──────┬───────┘
-  └──────┬───────┘                     │
-         └────────── 1 : N ────────────┘
-
-<sub>PK — Primary Key (первичный ключ). FK — Foreign Key (внешний ключ). Связь 1:N означает, что один пользователь может иметь несколько заказов.</sub>
-
-🟦 03. SQL FUNDAMENTALS
-
-Основные команды для получения, поиска, фильтрации и сортировки информации.
-
-3.1 — SELECT | Получение данных
-
-Retrieve all users — получить всех пользователей
-
-SELECT *
-FROM users;
-
-Retrieve selected columns — получить определённые столбцы
-
-SELECT first_name, last_name, email
-FROM users;
-
-3.2 — WHERE | Фильтрация записей
-
-Find users from Germany — найти пользователей из Германии
-
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE country = 'Germany';
+WHERE country = 'Germany';</code></pre>
 
-Find users registered after a specific date — найти пользователей, зарегистрированных после определённой даты
+<p><strong>Find users registered after a specific date — найти пользователей, зарегистрированных после определённой даты</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE created_at >= '2025-01-01';
+WHERE created_at >= '2025-01-01';</code></pre>
 
-3.3 — AND / OR / NOT | Логические операторы
+<h3>3.3 — AND / OR / NOT | Логические операторы</h3>
 
-AND — оба условия должны выполняться
+<p><strong>AND — оба условия должны выполняться</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
 WHERE country = 'Germany'
-  AND city = 'Berlin';
+  AND city = 'Berlin';</code></pre>
 
-OR — достаточно выполнения одного условия
+<p><strong>OR — достаточно выполнения одного условия</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
 WHERE country = 'Germany'
-   OR country = 'Spain';
+   OR country = 'Spain';</code></pre>
 
-NOT — исключение записей по условию
+<p><strong>NOT — исключение записей по условию</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE NOT country = 'Germany';
+WHERE NOT country = 'Germany';</code></pre>
 
-3.4 — ORDER BY | Сортировка
+<h3>3.4 — ORDER BY | Сортировка</h3>
 
-Newest users first — сначала новые пользователи
+<p><strong>Newest users first — сначала новые пользователи</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-ORDER BY created_at DESC;
+ORDER BY created_at DESC;</code></pre>
 
-Alphabetical order — сортировка по фамилии
+<p><strong>Alphabetical order — сортировка по фамилии</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-ORDER BY last_name ASC;
+ORDER BY last_name ASC;</code></pre>
 
-3.5 — LIMIT | Ограничение результата
+<h3>3.5 — LIMIT | Ограничение результата</h3>
 
-Return only five records — получить только пять записей
+<p><strong>Return only five records — получить только пять записей</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-LIMIT 5;
+LIMIT 5;</code></pre>
 
-3.6 — LIKE | Поиск по шаблону
+<h3>3.6 — LIKE | Поиск по шаблону</h3>
 
-Find Gmail addresses — найти адреса Gmail
+<p><strong>Find Gmail addresses — найти адреса Gmail</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE email LIKE '%@gmail.com';
+WHERE email LIKE '%@gmail.com';</code></pre>
 
-Find names starting with A — найти имена на букву A
+<p><strong>Find names starting with A — найти имена на букву A</strong></p>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE first_name LIKE 'A%';
+WHERE first_name LIKE 'A%';</code></pre>
 
-🟦 04. AGGREGATE FUNCTIONS
+<hr>
 
-Агрегатные функции позволяют выполнять расчёты и анализировать группы записей.
+<!-- ==================== 04. AGGREGATE FUNCTIONS ==================== -->
 
-COUNT — подсчёт записей
+<h2 align="center">🟦 04. AGGREGATE FUNCTIONS</h2>
 
-SELECT COUNT(*) AS total_users
-FROM users;
+<p>Агрегатные функции позволяют выполнять расчёты и анализировать группы записей.</p>
 
-SUM — сумма значений
+<h3>COUNT — подсчёт записей</h3>
 
-SELECT SUM(total_amount) AS total_revenue
-FROM orders;
+<pre><code class="language-sql">SELECT COUNT(*) AS total_users
+FROM users;</code></pre>
 
-AVG — среднее значение
+<h3>SUM — сумма значений</h3>
 
-SELECT AVG(total_amount) AS average_order
-FROM orders;
+<pre><code class="language-sql">SELECT SUM(total_amount) AS total_revenue
+FROM orders;</code></pre>
 
-GROUP BY — группировка записей
+<h3>AVG — среднее значение</h3>
 
-Count users by country — подсчитать пользователей по странам
+<pre><code class="language-sql">SELECT AVG(total_amount) AS average_order
+FROM orders;</code></pre>
 
-SELECT
-    country,
-    COUNT(*) AS users_count
+<h3>GROUP BY — группировка записей</h3>
+
+<p><strong>Count users by country — подсчитать пользователей по странам</strong></p>
+
+<pre><code class="language-sql">SELECT country, COUNT(*) AS users_count
 FROM users
-GROUP BY country;
+GROUP BY country;</code></pre>
 
-HAVING — фильтрация групп
+<h3>HAVING — фильтрация групп</h3>
 
-Find countries with more than five users — найти страны, в которых более пяти пользователей
+<p><strong>Find countries with more than five users — найти страны, в которых более пяти пользователей</strong></p>
 
-SELECT
-    country,
-    COUNT(*) AS users_count
+<pre><code class="language-sql">SELECT country, COUNT(*) AS users_count
 FROM users
 GROUP BY country
-HAVING COUNT(*) > 5;
+HAVING COUNT(*) &gt; 5;</code></pre>
 
-🟦 05. JOIN OPERATIONS
+<hr>
 
-JOIN позволяет получать данные из нескольких связанных таблиц.
+<!-- ==================== 05. JOIN OPERATIONS ==================== -->
 
-INNER JOIN — внутреннее объединение
+<h2 align="center">🟦 05. JOIN OPERATIONS</h2>
 
-Возвращает записи, для которых найдено соответствие в обеих таблицах.
+<p>JOIN позволяет получать данные из нескольких связанных таблиц.</p>
 
-SELECT
+<h3>INNER JOIN — внутреннее объединение</h3>
+
+<p>Возвращает записи, для которых найдено соответствие в обеих таблицах.</p>
+
+<pre><code class="language-sql">SELECT
     users.id,
     users.email,
     orders.id AS order_id,
     orders.total_amount
 FROM users
 INNER JOIN orders
-    ON users.id = orders.user_id;
+    ON users.id = orders.user_id;</code></pre>
 
-LEFT JOIN — левое объединение
+<h3>LEFT JOIN — левое объединение</h3>
 
-Возвращает все записи из левой таблицы и соответствующие записи из правой. Если соответствия нет, значения правой таблицы будут NULL.
+<p>Возвращает все записи из левой таблицы и соответствующие записи из правой. Если соответствия нет, значения правой таблицы будут NULL.</p>
 
-SELECT
+<pre><code class="language-sql">SELECT
     users.id,
     users.email,
     orders.id AS order_id
 FROM users
 LEFT JOIN orders
-    ON users.id = orders.user_id;
+    ON users.id = orders.user_id;</code></pre>
 
-Find users without orders — пользователи без заказов
+<h3>🔎 Find users without orders — найти пользователей без заказов</h3>
 
-SELECT
+<pre><code class="language-sql">SELECT
     users.id,
     users.email
 FROM users
 LEFT JOIN orders
     ON users.id = orders.user_id
-WHERE orders.id IS NULL;
+WHERE orders.id IS NULL;</code></pre>
 
-🟦 06. SUBQUERIES — ПОДЗАПРОСЫ
+<hr>
 
-Подзапрос — запрос, который выполняется внутри другого SQL-запроса.
+<!-- ==================== 06. SUBQUERIES ==================== -->
 
-Find orders above average — найти заказы выше средней суммы
+<h2 align="center">🟦 06. SUBQUERIES — ПОДЗАПРОСЫ</h2>
 
-SELECT *
+<p>Подзапрос — запрос, который выполняется внутри другого SQL-запроса.</p>
+
+<h3>Find orders above average — найти заказы выше средней суммы</h3>
+
+<pre><code class="language-sql">SELECT *
 FROM orders
-WHERE total_amount > (
+WHERE total_amount &gt; (
     SELECT AVG(total_amount)
     FROM orders
-);
+);</code></pre>
 
-Find users who have orders — найти пользователей с заказами
+<h3>Find users who have orders — найти пользователей с заказами</h3>
 
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
 WHERE id IN (
     SELECT user_id
     FROM orders
-);
+);</code></pre>
 
-🟦 07. DATA MODIFICATION
+<hr>
 
-Команды для добавления, изменения и удаления записей в базе данных.
+<!-- ==================== 07. DATA MODIFICATION ==================== -->
 
-INSERT — добавление записи
+<h2 align="center">🟦 07. DATA MODIFICATION</h2>
 
-INSERT INTO users (
+<p>Команды для добавления, изменения и удаления записей в базе данных.</p>
+
+<h3>INSERT — добавление записи</h3>
+
+<pre><code class="language-sql">INSERT INTO users (
     first_name,
     last_name,
     email,
@@ -399,184 +394,142 @@ VALUES (
     'Berlin',
     'Germany',
     '2025-01-15'
-);
+);</code></pre>
 
-UPDATE — изменение записи
+<h3>UPDATE — изменение записи</h3>
 
-UPDATE users
+<pre><code class="language-sql">UPDATE users
 SET city = 'Madrid'
-WHERE id = 1;
+WHERE id = 1;</code></pre>
 
-DELETE — удаление записи
+<h3>DELETE — удаление записи</h3>
 
-DELETE FROM users
-WHERE id = 1;
+<pre><code class="language-sql">DELETE FROM users
+WHERE id = 1;</code></pre>
 
-⚠️ IMPORTANT — ВАЖНО
+<h3>⚠️ IMPORTANT — ВАЖНО</h3>
 
-Команды INSERT, UPDATE и DELETE следует выполнять только в тестовой базе данных. Перед изменением или удалением записей необходимо проверить целевые данные через SELECT и убедиться, что условие WHERE выбрано правильно.
+<p>Команды <code>INSERT</code>, <code>UPDATE</code> и <code>DELETE</code> следует выполнять только в тестовой базе данных.</p>
 
-🟩 08. PRACTICAL QA SCENARIOS
+<ol>
+  <li>Перед изменением или удалением проверить целевые данные с помощью <code>SELECT</code>.</li>
+  <li>Убедиться, что условие <code>WHERE</code> выбрано правильно.</li>
+  <li>После операции повторно выполнить <code>SELECT</code> и проверить результат.</li>
+</ol>
 
-Практические примеры проверки данных после действий пользователя в веб-приложении.
+<hr>
 
-🧪 QA-01. Registration Verification
+<!-- ==================== 08. PRACTICAL QA SCENARIOS ==================== -->
 
-Проверка регистрации пользователя
+<h2 align="center">🟩 08. PRACTICAL QA SCENARIOS</h2>
 
-Parameter
+<p align="center">Практические примеры проверки данных после действий пользователя в веб-приложении.</p>
 
-Description
+<h3>🧪 QA-01. Registration Verification</h3>
+<p><strong>Проверка регистрации пользователя</strong></p>
 
-Test Objective
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Убедиться, что пользователь сохранён после регистрации</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>SELECT</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Найдена одна запись с ожидаемыми данными</td></tr>
+  </tbody>
+</table>
 
-Убедиться, что пользователь сохранён после регистрации
-
-SQL Operation
-
-SELECT
-
-Expected Result
-
-Найдена одна запись с ожидаемыми данными
-
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE email = 'test@example.com';
+WHERE email = 'test@example.com';</code></pre>
 
-🧪 QA-02. Duplicate Email Verification
+<h3>🧪 QA-02. Duplicate Email Verification</h3>
+<p><strong>Проверка повторяющихся email</strong></p>
 
-Проверка повторяющихся email
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Найти повторяющиеся адреса электронной почты</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>GROUP BY / HAVING</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Нет дубликатов, если email должен быть уникальным</td></tr>
+  </tbody>
+</table>
 
-Parameter
-
-Description
-
-Test Objective
-
-Найти повторяющиеся адреса электронной почты
-
-SQL Operation
-
-GROUP BY / HAVING
-
-Expected Result
-
-Нет дубликатов, если email должен быть уникальным
-
-SELECT
+<pre><code class="language-sql">SELECT
     email,
     COUNT(*) AS duplicate_count
 FROM users
 GROUP BY email
-HAVING COUNT(*) > 1;
+HAVING COUNT(*) &gt; 1;</code></pre>
 
-🧪 QA-03. Profile Update Verification
+<h3>🧪 QA-03. Profile Update Verification</h3>
+<p><strong>Проверка изменения профиля</strong></p>
 
-Проверка изменения профиля
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Проверить сохранение нового города</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>SELECT / WHERE</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Значение city совпадает с сохранённым в приложении</td></tr>
+  </tbody>
+</table>
 
-Parameter
-
-Description
-
-Test Objective
-
-Проверить сохранение нового города
-
-SQL Operation
-
-SELECT / WHERE
-
-Expected Result
-
-Значение city совпадает с сохранённым в приложении
-
-SELECT
-    id,
-    email,
-    city
+<pre><code class="language-sql">SELECT id, email, city
 FROM users
-WHERE id = 1;
+WHERE id = 1;</code></pre>
 
-🧪 QA-04. Order Total Verification
+<h3>🧪 QA-04. Order Total Verification</h3>
+<p><strong>Проверка суммы заказа</strong></p>
 
-Проверка суммы заказа
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Сравнить сумму заказа в приложении и БД</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>SELECT / WHERE</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Сумма в БД совпадает с суммой в приложении</td></tr>
+  </tbody>
+</table>
 
-Parameter
-
-Description
-
-Test Objective
-
-Сравнить сумму заказа в приложении и БД
-
-SQL Operation
-
-SELECT / WHERE
-
-Expected Result
-
-Сумма в БД совпадает с суммой в приложении
-
-SELECT
-    id,
-    total_amount,
-    status
+<pre><code class="language-sql">SELECT id, total_amount, status
 FROM orders
-WHERE id = 1001;
+WHERE id = 1001;</code></pre>
 
-🧪 QA-05. Users Without Orders
+<h3>🧪 QA-05. Users Without Orders</h3>
+<p><strong>Поиск пользователей без заказов</strong></p>
 
-Поиск пользователей без заказов
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Найти пользователей без связанных заказов</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>LEFT JOIN / IS NULL</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Возвращаются только пользователи без заказов</td></tr>
+  </tbody>
+</table>
 
-Parameter
-
-Description
-
-Test Objective
-
-Найти пользователей без связанных заказов
-
-SQL Operation
-
-LEFT JOIN / IS NULL
-
-Expected Result
-
-Возвращаются только пользователи без заказов
-
-SELECT
+<pre><code class="language-sql">SELECT
     users.id,
     users.email
 FROM users
 LEFT JOIN orders
     ON users.id = orders.user_id
-WHERE orders.id IS NULL;
+WHERE orders.id IS NULL;</code></pre>
 
-🧪 QA-06. Deleted Record Verification
+<h3>🧪 QA-06. Deleted Record Verification</h3>
+<p><strong>Проверка удаления пользователя</strong></p>
 
-Проверка удаления пользователя
+<table>
+  <tbody>
+    <tr><th align="left">Test Objective</th><td>Убедиться, что удалённая запись отсутствует</td></tr>
+    <tr><th align="left">SQL Operation</th><td><code>SELECT / WHERE</code></td></tr>
+    <tr><th align="left">Expected Result</th><td>Запрос не возвращает удалённого пользователя</td></tr>
+  </tbody>
+</table>
 
-Parameter
-
-Description
-
-Test Objective
-
-Убедиться, что удалённая запись отсутствует
-
-SQL Operation
-
-SELECT / WHERE
-
-Expected Result
-
-Запрос не возвращает удалённого пользователя
-
-SELECT *
+<pre><code class="language-sql">SELECT *
 FROM users
-WHERE id = 1;
+WHERE id = 1;</code></pre>
 
+<hr>
+
+<p align="center">
+  <strong>SQL PRACTICE · MANUAL QA · DATABASE TESTING</strong><br>
+  <sub>Практические SQL-запросы для проверки данных в веб-приложениях</sub>
+</p>
+
+<p><em>Примечание: значения ID, email и другие тестовые данные в примерах условные. Для реальных проверок их необходимо заменить данными тестового окружения.</em></p>
 🟦 09. SQL QUICK REFERENCE
 
 <div align="center">
