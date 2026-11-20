@@ -169,11 +169,6 @@ HTTP request logging
 <td>Retrieve user by ID</td>
 </tr>
 <tr>
-<td><img src="https://img.shields.io/badge/POST-2563EB?style=flat-square"></td>
-<td><code>/users/{id}</code></td>
-<td>—</td>
-</tr>
-<tr>
 <td><img src="https://img.shields.io/badge/PUT-D97706?style=flat-square"></td>
 <td><code>/users/{id}</code></td>
 <td>Replace user data</td>
