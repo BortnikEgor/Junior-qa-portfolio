@@ -1,27 +1,95 @@
-<div align="center">
+ <div align="center">
 
-🧪 Test API — QA Practice Project
+🧪 TEST API
 
-REST API for Manual Testing Practice
+REST API · QA PRACTICE PROJECT
 
-<img src="https://img.shields.io/badge/PROJECT-QA%20PRACTICE-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/NODE.JS-25.2.1-green?style=for-the-badge">
-<img src="https://img.shields.io/badge/EXPRESS-5.2.1-lightgrey?style=for-the-badge">
-<img src="https://img.shields.io/badge/OPENAPI-3.0-orange?style=for-the-badge">
+<p>
+  <img src="https://img.shields.io/badge/QA-PORTFOLIO-2563EB?style=for-the-badge">
+  <img src="https://img.shields.io/badge/NODE.JS-25.2.1-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
+  <img src="https://img.shields.io/badge/EXPRESS-5.2.1-444444?style=for-the-badge&logo=express">
+  <img src="https://img.shields.io/badge/OPENAPI-3.0-85EA2D?style=for-the-badge&logo=swagger&logoColor=black">
+</p>
 
-A practical REST API project designed to demonstrate manual API testing skills.
+A custom REST API built for practical Manual QA testing.
+
+<p>
+  <a href="#overview">Overview</a> •
+  <a href="#technologies">Technologies</a> •
+  <a href="#endpoints">API Endpoints</a> •
+  <a href="#validation">Validation</a> •
+  <a href="#testing">QA Testing</a>
+</p>
 
 </div>
 
-📌 About the Project
+<a id="overview"></a>
 
-This project is a custom REST API developed for practicing and demonstrating Manual QA (ручное тестирование) skills.
+📌 01. Project Overview
 
-The API provides user management functionality and allows testing different HTTP methods, request parameters, data validation rules, response codes, and error handling.
+<table>
+<tr>
+<td width="65%" valign="top">
 
-The project is documented using Swagger UI and can be used for practical testing with Swagger or Postman.
+About the Project
 
-🛠️ Technologies
+Test API is a practical REST API project developed to demonstrate and improve Manual QA Engineer skills.
+
+The application provides user management functionality and supports CRUD operations, filtering, pagination, request validation and error handling.
+
+The API is documented using Swagger UI and is designed for hands-on testing of HTTP requests and responses.
+
+</td>
+<td width="35%" valign="top" align="center">
+
+Project Status
+
+<img src="https://img.shields.io/badge/STATUS-ACTIVE-16A34A?style=for-the-badge">
+
+<br><br>
+
+API Documentation
+
+<a href="http://localhost:3000/api-docs">Swagger UI</a>
+
+<br>
+
+Environment
+
+Local Development
+
+</td>
+</tr>
+</table>
+
+<a id="technologies"></a>
+
+🛠️ 02. Technology Stack
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/nodedotjs/339933" width="42"><br>
+<strong>Node.js</strong><br>
+<sub>Runtime Environment</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/express/FFFFFF" width="42"><br>
+<strong>Express.js</strong><br>
+<sub>Backend Framework</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/swagger/85EA2D" width="42"><br>
+<strong>Swagger UI</strong><br>
+<sub>API Documentation</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/yaml/CB171E" width="42"><br>
+<strong>YAML</strong><br>
+<sub>API Specification</sub>
+</td>
+</tr>
+</table>
 
 Technology
 
@@ -33,7 +101,7 @@ JavaScript runtime environment
 
 Express.js
 
-REST API framework
+REST API development
 
 Swagger UI
 
@@ -45,13 +113,343 @@ API specification
 
 YAML
 
-API documentation format
+API description format
 
 Morgan
 
 HTTP request logging
 
-📂 Project Structure
+<a id="endpoints"></a>
+
+🔗 03. API Endpoints
+
+👥 User Management
+
+<table>
+<thead>
+<tr>
+<th width="12%">Method</th>
+<th width="33%">Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://img.shields.io/badge/GET-16A34A?style=flat-square"></td>
+<td><code>/users</code></td>
+<td>Retrieve all users</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/POST-2563EB?style=flat-square"></td>
+<td><code>/users</code></td>
+<td>Create one or multiple users</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/DELETE-DC2626?style=flat-square"></td>
+<td><code>/users</code></td>
+<td>Delete users by filters</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/GET-16A34A?style=flat-square"></td>
+<td><code>/users/search</code></td>
+<td>Search, filter and paginate users</td>
+</tr>
+</tbody>
+</table>
+
+👤 User Operations by ID
+
+<table>
+<thead>
+<tr>
+<th width="12%">Method</th>
+<th width="33%">Endpoint</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://img.shields.io/badge/GET-16A34A?style=flat-square"></td>
+<td><code>/users/{id}</code></td>
+<td>Retrieve user by ID</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/POST-2563EB?style=flat-square"></td>
+<td><code>/users/{id}</code></td>
+<td>—</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/PUT-D97706?style=flat-square"></td>
+<td><code>/users/{id}</code></td>
+<td>Replace user data</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/PATCH-9333EA?style=flat-square"></td>
+<td><code>/users/{id}</code></td>
+<td>Partially update user data</td>
+</tr>
+<tr>
+<td><img src="https://img.shields.io/badge/DELETE-DC2626?style=flat-square"></td>
+<td><code>/users/{id}</code></td>
+<td>Delete user by ID</td>
+</tr>
+</tbody>
+</table>
+
+<a id="validation"></a>
+
+🛡️ 04. Data Validation
+
+The API implements server-side validation for all user fields.
+
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Validation Rules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>firstName</code></td>
+<td>String</td>
+<td>3–10 Latin letters</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td>String</td>
+<td>5–12 Latin letters</td>
+</tr>
+<tr>
+<td><code>age</code></td>
+<td>Integer</td>
+<td>1–100</td>
+</tr>
+<tr>
+<td><code>city</code></td>
+<td>String</td>
+<td>3–20 characters; Latin letters, dots and hyphens</td>
+</tr>
+<tr>
+<td><code>country</code></td>
+<td>String</td>
+<td>3–20 Latin letters</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td>String</td>
+<td>3–15 Latin letters</td>
+</tr>
+</tbody>
+</table>
+
+Additional Validation Rules
+
+All six fields are required when creating a user.
+
+Empty and missing values are rejected.
+
+Invalid data types and formats are rejected.
+
+User IDs must be positive integers.
+
+Existing user IDs cannot be changed through PATCH.
+
+Empty update requests are rejected.
+
+Invalid pagination parameters are rejected.
+
+Bulk creation validates all records before saving any of them.
+
+<a id="features"></a>
+
+⚙️ 05. Implemented Functionality
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+CRUD Operations
+
+Create users
+
+Retrieve users
+
+Update users
+
+Delete users
+
+Single user operations
+
+Bulk user creation
+
+</td>
+<td width="50%" valign="top">
+
+Search & Data Processing
+
+Search by user fields
+
+Multiple filtering parameters
+
+Case-insensitive search
+
+Pagination
+
+Page and limit validation
+
+Exact-match deletion filters
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+Request Validation
+
+Required field checks
+
+Data type validation
+
+String length validation
+
+Regular expression validation
+
+Boundary value checks
+
+</td>
+<td width="50%" valign="top">
+
+Error Handling
+
+Invalid request handling
+
+Resource not found
+
+Invalid JSON handling
+
+Validation error messages
+
+HTTP status codes
+
+</td>
+</tr>
+</table>
+
+<a id="testing"></a>
+
+🧪 06. QA Testing Scope
+
+This project provides practical experience with:
+
+<table>
+<tr>
+<td>✅ Positive API Testing</td>
+<td>✅ Negative API Testing</td>
+</tr>
+<tr>
+<td>✅ CRUD Verification</td>
+<td>✅ Request / Response Validation</td>
+</tr>
+<tr>
+<td>✅ Boundary Value Analysis</td>
+<td>✅ Equivalence Partitioning</td>
+</tr>
+<tr>
+<td>✅ Required Field Testing</td>
+<td>✅ Data Type Validation</td>
+</tr>
+<tr>
+<td>✅ Pagination Testing</td>
+<td>✅ Filtering Testing</td>
+</tr>
+<tr>
+<td>✅ Error Handling Verification</td>
+<td>✅ API Documentation Testing</td>
+</tr>
+</table>
+
+📊 07. HTTP Status Codes
+
+Code
+
+Meaning
+
+Usage
+
+<img src="https://img.shields.io/badge/200-OK-16A34A?style=flat-square">
+
+OK
+
+Successful request
+
+<img src="https://img.shields.io/badge/201-CREATED-16A34A?style=flat-square">
+
+Created
+
+Resource created
+
+<img src="https://img.shields.io/badge/400-BAD_REQUEST-D97706?style=flat-square">
+
+Bad Request
+
+Invalid input or parameters
+
+<img src="https://img.shields.io/badge/404-NOT_FOUND-DC2626?style=flat-square">
+
+Not Found
+
+Resource does not exist
+
+<img src="https://img.shields.io/badge/500-SERVER_ERROR-DC2626?style=flat-square">
+
+Internal Server Error
+
+Unexpected server error
+
+<a id="installation"></a>
+
+🚀 08. Installation & запуск
+
+Requirements
+
+Node.js
+
+npm
+
+Installation
+
+Step 1. Clone the repository
+
+git clone YOUR_REPOSITORY_URL
+
+Step 2. Navigate to the project folder
+
+cd test-api
+
+Step 3. Install dependencies
+
+npm install
+
+Step 4. Start the API server
+
+npm start
+
+Access the API
+
+<table>
+<tr>
+<td width="35%"><strong>API Base URL</strong></td>
+<td><a href="http://localhost:3000">http://localhost:3000</a></td>
+</tr>
+<tr>
+<td><strong>Swagger Documentation</strong></td>
+<td><a href="http://localhost:3000/api-docs">http://localhost:3000/api-docs</a></td>
+</tr>
+</table>
+
+📁 09. Project Structure
 
 test-api/
 │
@@ -62,236 +460,30 @@ test-api/
 ├── .gitignore
 └── README.md
 
-🚀 Getting Started
-
-1. Clone the repository
-
-git clone YOUR_REPOSITORY_URL
-
-2. Open the project directory
-
-cd test-api
-
-3. Install dependencies
-
-npm install
-
-4. Start the server
-
-npm start
-
-5. Open Swagger UI
-
-http://localhost:3000/api-docs
-
-Base URL:
-
-http://localhost:3000
-
-🔗 API Endpoints
-
-Users
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/users
-
-Retrieve all users
-
-POST
-
-/users
-
-Create one or multiple users
-
-DELETE
-
-/users
-
-Delete users by filters
-
-GET
-
-/users/search
-
-Search and filter users
-
-User by ID
-
-Method
-
-Endpoint
-
-Description
-
-GET
-
-/users/{id}
-
-Retrieve a user by ID
-
-PUT
-
-/users/{id}
-
-Replace user data
-
-PATCH
-
-/users/{id}
-
-Partially update user data
-
-DELETE
-
-/users/{id}
-
-Delete a user by ID
-
-⚙️ Implemented Features
-
-CRUD operations (создание, чтение, обновление и удаление данных).
-
-Single and bulk user creation.
-
-User search and filtering.
-
-Pagination using page and limit.
-
-Filtering by user fields.
-
-Request body validation.
-
-Required field validation.
-
-Data type and format validation.
-
-ID validation.
-
-Protection against changing user ID.
-
-Error handling for invalid requests.
-
-HTTP request logging.
-
-🧩 Data Validation
-
-The API validates the following user fields:
-
-Field
-
-Validation Rules
-
-firstName
-
-3–10 Latin letters
-
-lastName
-
-5–12 Latin letters
-
-age
-
-Integer from 1 to 100
-
-city
-
-3–20 characters, Latin letters, dots and hyphens
-
-country
-
-3–20 Latin letters
-
-nationality
-
-3–15 Latin letters
-
-All six fields are required when creating a user.
-
-📊 HTTP Status Codes
-
-Status Code
-
-Description
-
-200
-
-OK — Request successful
-
-201
-
-Created — Resource created
-
-400
-
-Bad Request — Invalid request data
-
-404
-
-Not Found — Resource not found
-
-500
-
-Internal Server Error
-
-🔍 QA Testing Scope
-
-This project is designed for practicing the following testing activities:
-
-Positive and negative API testing.
-
-HTTP methods verification.
-
-Request and response validation.
-
-Boundary Value Analysis (анализ граничных значений).
-
-Equivalence Partitioning (разбиение на классы эквивалентности).
-
-Required field validation.
-
-Invalid data and parameter testing.
-
-Pagination and filtering verification.
-
-Error response verification.
-
-API documentation verification.
-
-📝 API Documentation
-
-Interactive API documentation is available through Swagger UI:
-
-http://localhost:3000/api-docs
-
-The documentation describes available endpoints, request parameters, request bodies, response schemas, and HTTP status codes.
-
-⚠️ Project Limitations
+⚠️ 10. Project Limitations
 
 User data is stored in memory.
 
-Data is reset when the server restarts.
-
-The project uses a local development environment.
+Data is reset after server restart.
 
 No persistent database is connected.
 
-👨‍💻 Author
+The API is configured for local development and testing.
+
+<div align="center">
+
+👨‍💻 AUTHOR
 
 Egor Bortnik
 
 Junior QA Engineer | Manual QA
 
-GitHub: BortnikEgor
+<a href="https://github.com/BortnikEgor">
+<img src="https://img.shields.io/badge/GitHub-BortnikEgor-181717?style=for-the-badge&logo=github">
+</a>
 
-<div align="center">
+<br><br>
 
-QA Practice Project | 2026
+<sub>QA Practice Project · 2026</sub>
 
 </div>
