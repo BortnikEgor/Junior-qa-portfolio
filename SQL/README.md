@@ -1,151 +1,517 @@
-<div align="center">
+ <div align="center">
 
-<h1>🗄️ SQL DATABASE TESTING</h1>
+🗄️ SQL FOR QA ENGINEER
 
-<h3>Junior QA Engineer Portfolio</h3>
+Практика работы с базами данных для тестирования ПО
 
-<p><strong>SQL · PostgreSQL · Database Testing · Data Validation</strong></p>
+<img src="https://img.shields.io/badge/SQL-Database%20Testing-336791?style=for-the-badge&logo=postgresql&logoColor=white">
+<img src="https://img.shields.io/badge/LEVEL-Junior%20QA-2E8B57?style=for-the-badge">
+<img src="https://img.shields.io/badge/TYPE-Practical%20Examples-6C63FF?style=for-the-badge">
 
-<img src="https://img.shields.io/badge/SQL-PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white">
-<img src="https://img.shields.io/badge/FOCUS-DATABASE%20TESTING-245A81?style=for-the-badge">
-<img src="https://img.shields.io/badge/LEVEL-JUNIOR%20QA-27865B?style=for-the-badge">
-
-<p><em>Practical SQL skills for investigating defects and verifying application data.</em></p>
+SQL queries · Database validation · QA scenarios
 
 </div>
 
-<h2>01. 📌 Overview</h2>
+📌 01. About This Section
 
-<p>This section demonstrates practical SQL skills used in software testing and database validation.</p>
+This section demonstrates practical SQL knowledge used in manual software testing and database verification.
 
-<p>The exercises are based on a relational e-commerce database built with PostgreSQL. They cover data retrieval, filtering, joins, aggregation, data modification and QA-oriented database checks.</p>
+The examples cover data retrieval, filtering, sorting, aggregation, table relationships, data modification, and validation of application data stored in a database.
 
-<h2>02. 🎯 Core Competencies</h2>
+Main QA objective: verify that data entered or modified through the application is correctly processed and stored in the database.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<h3>🔍 Data Retrieval</h3>
-<ul>
-<li>SELECT and WHERE</li>
-<li>ORDER BY and LIMIT</li>
-<li>DISTINCT</li>
-<li>Conditional filtering</li>
-</ul>
-</td>
-<td width="50%" valign="top">
-<h3>🔗 Relational Queries</h3>
-<ul>
-<li>INNER JOIN</li>
-<li>LEFT JOIN</li>
-<li>Table relationships</li>
-<li>Cross-table validation</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<h3>📊 Data Analysis</h3>
-<ul>
-<li>GROUP BY and HAVING</li>
-<li>COUNT and AVG</li>
-<li>Aggregate functions</li>
-<li>Subqueries</li>
-</ul>
-</td>
-<td width="50%" valign="top">
-<h3>🧪 QA Database Testing</h3>
-<ul>
-<li>Duplicate detection</li>
-<li>NULL value checks</li>
-<li>Data integrity validation</li>
-<li>Database defect investigation</li>
-</ul>
-</td>
-</tr>
-</table>
-
-<h2>03. 📂 Project Structure</h2>
-
-<h3>🗃️ Database</h3>
-<ul>
-<li><a href="Database/01_Create_Database_Schema.sql">01_Create_Database_Schema.sql</a> — relational database schema.</li>
-<li><a href="Database/02_Insert_Test_Data.sql">02_Insert_Test_Data.sql</a> — sample test data.</li>
-</ul>
-
-<h3>🔍 Basic Queries</h3>
-<ul>
-<li><a href="Basic_Queries/01_SELECT_Basic_Queries.sql">01_SELECT_Basic_Queries.sql</a> — basic data retrieval.</li>
-<li><a href="Basic_Queries/02_WHERE_AND_Conditions.sql">02_WHERE_AND_Conditions.sql</a> — conditional filtering.</li>
-</ul>
-
-<h3>📊 Data Analysis</h3>
-<ul>
-<li><a href="Data_Analysis/03_JOIN_Queries.sql">03_JOIN_Queries.sql</a> — relational data verification.</li>
-<li><a href="Data_Analysis/04_GROUP_BY_HAVING.sql">04_GROUP_BY_HAVING.sql</a> — grouping and aggregation.</li>
-<li><a href="Data_Analysis/05_Subqueries_Products_Above_Category_Average.sql">05_Subqueries_Products_Above_Category_Average.sql</a> — subqueries and comparisons.</li>
-</ul>
-
-<h3>✏️ Data Modification</h3>
-<ul>
-<li><a href="Data_Modification/06_UPDATE_Order_Status.sql">06_UPDATE_Order_Status.sql</a> — controlled record updates.</li>
-<li><a href="Data_Modification/07_DELETE_Expired_Unverified_Users.sql">07_DELETE_Expired_Unverified_Users.sql</a> — controlled deletion and verification.</li>
-</ul>
-
-<h3>🧪 QA Scenarios</h3>
-<ul>
-<li><a href="QA_Scenarios/08_UI_API_Database_Profile_Update.sql">08_UI_API_Database_Profile_Update.sql</a> — profile data verification workflow.</li>
-</ul>
-
-<h2>04. 🧪 QA Testing Scenarios</h2>
+📚 02. SQL Topics Covered
 
 <table>
-<tr><th>Scenario</th><th>Testing Objective</th></tr>
-<tr><td>User registration</td><td>Verify that a new user record is stored.</td></tr>
-<tr><td>Email uniqueness</td><td>Identify duplicate email addresses.</td></tr>
-<tr><td>Profile update</td><td>Verify changes to user information.</td></tr>
-<tr><td>Order management</td><td>Validate order statuses and relationships.</td></tr>
-<tr><td>Product catalog</td><td>Check product prices, categories and stock.</td></tr>
-<tr><td>Data integrity</td><td>Identify missing or inconsistent records.</td></tr>
+<tr><th width="35%">Topic</th><th>Description</th></tr>
+<tr><td><code>SELECT</code></td><td>Retrieve data from database tables</td></tr>
+<tr><td><code>WHERE</code></td><td>Filter records by conditions</td></tr>
+<tr><td><code>AND / OR / NOT</code></td><td>Combine and exclude conditions</td></tr>
+<tr><td><code>ORDER BY</code></td><td>Sort query results</td></tr>
+<tr><td><code>LIMIT</code></td><td>Restrict the number of returned records</td></tr>
+<tr><td><code>LIKE</code></td><td>Search using patterns</td></tr>
+<tr><td><code>COUNT / SUM / AVG</code></td><td>Aggregate and calculate data</td></tr>
+<tr><td><code>GROUP BY / HAVING</code></td><td>Group records and filter grouped results</td></tr>
+<tr><td><code>INNER JOIN / LEFT JOIN</code></td><td>Retrieve related data from multiple tables</td></tr>
+<tr><td><code>Subqueries</code></td><td>Use nested queries</td></tr>
+<tr><td><code>INSERT / UPDATE / DELETE</code></td><td>Modify database records</td></tr>
 </table>
 
-<h2>05. 🔄 Data Verification Workflow</h2>
+🧱 03. Database Structure
+
+The examples use a simplified database of an online store.
+
+Table: users
+
+Column
+
+Data type
+
+Description
+
+id
+
+INT
+
+Unique user identifier
+
+first_name
+
+VARCHAR
+
+User first name
+
+last_name
+
+VARCHAR
+
+User last name
+
+email
+
+VARCHAR
+
+User email
+
+city
+
+VARCHAR
+
+User city
+
+country
+
+VARCHAR
+
+User country
+
+created_at
+
+DATE
+
+Registration date
+
+Table: orders
+
+Column
+
+Data type
+
+Description
+
+id
+
+INT
+
+Unique order identifier
+
+user_id
+
+INT
+
+Reference to users.id
+
+total_amount
+
+DECIMAL
+
+Order total
+
+status
+
+VARCHAR
+
+Order status
+
+created_at
+
+DATE
+
+Order creation date
+
+Relationship: orders.user_id references users.id.
+
+🔍 04. Basic Data Retrieval
+
+SELECT — получение данных
+
+-- Retrieve all users
+SELECT *
+FROM users;
+
+-- Retrieve specific columns
+SELECT first_name, last_name, email
+FROM users;
+
+WHERE — фильтрация данных
+
+-- Find users from Germany
+SELECT *
+FROM users
+WHERE country = 'Germany';
+
+-- Find users older than a specified registration date
+SELECT *
+FROM users
+WHERE created_at >= '2025-01-01';
+
+AND / OR / NOT — логические операторы
+
+-- Both conditions must be true
+SELECT *
+FROM users
+WHERE country = 'Germany'
+AND city = 'Berlin';
+
+-- At least one condition must be true
+SELECT *
+FROM users
+WHERE country = 'Germany'
+OR country = 'Spain';
+
+-- Exclude a specific country
+SELECT *
+FROM users
+WHERE NOT country = 'Germany';
+
+ORDER BY — сортировка
+
+-- Sort users by registration date
+SELECT *
+FROM users
+ORDER BY created_at DESC;
+
+-- Sort by last name alphabetically
+SELECT *
+FROM users
+ORDER BY last_name ASC;
+
+LIMIT — ограничение количества записей
+
+-- Return only 5 users
+SELECT *
+FROM users
+LIMIT 5;
+
+LIKE — поиск по шаблону
+
+-- Find emails ending with gmail.com
+SELECT *
+FROM users
+WHERE email LIKE '%@gmail.com';
+
+-- Find users whose first name starts with A
+SELECT *
+FROM users
+WHERE first_name LIKE 'A%';
+
+📊 05. Aggregate Functions
+
+COUNT — подсчёт записей
+
+-- Count all users
+SELECT COUNT(*) AS total_users
+FROM users;
+
+-- Count orders with completed status
+SELECT COUNT(*) AS completed_orders
+FROM orders
+WHERE status = 'completed';
+
+SUM / AVG — сумма и среднее значение
+
+-- Calculate total order amount
+SELECT SUM(total_amount) AS total_revenue
+FROM orders;
+
+-- Calculate average order amount
+SELECT AVG(total_amount) AS average_order
+FROM orders;
+
+GROUP BY — группировка данных
+
+-- Count users in each country
+SELECT country, COUNT(*) AS users_count
+FROM users
+GROUP BY country;
+
+HAVING — фильтрация групп
+
+-- Find countries with more than 5 users
+SELECT country, COUNT(*) AS users_count
+FROM users
+GROUP BY country
+HAVING COUNT(*) > 5;
+
+🔗 06. JOIN — работа со связанными таблицами
+
+INNER JOIN
+
+Возвращает только записи, для которых найдены совпадения в обеих таблицах.
+
+-- Retrieve users and their orders
+SELECT
+    users.id,
+    users.email,
+    orders.id AS order_id,
+    orders.total_amount
+FROM users
+INNER JOIN orders
+    ON users.id = orders.user_id;
+
+LEFT JOIN
+
+Возвращает все записи из левой таблицы, даже если связанных записей в правой таблице нет.
+
+-- Find all users, including users without orders
+SELECT
+    users.id,
+    users.email,
+    orders.id AS order_id
+FROM users
+LEFT JOIN orders
+    ON users.id = orders.user_id;
+
+Find users without orders
+
+SELECT
+    users.id,
+    users.email
+FROM users
+LEFT JOIN orders
+    ON users.id = orders.user_id
+WHERE orders.id IS NULL;
+
+🔎 07. Subqueries — подзапросы
+
+Подзапрос — это запрос, который используется внутри другого SQL-запроса.
+
+-- Find orders with an amount above the average
+SELECT *
+FROM orders
+WHERE total_amount > (
+    SELECT AVG(total_amount)
+    FROM orders
+);
+
+-- Find users who have at least one order
+SELECT *
+FROM users
+WHERE id IN (
+    SELECT user_id
+    FROM orders
+);
+
+✏️ 08. Data Modification
+
+⚠️ Команды изменения данных следует выполнять только в тестовой базе данных и с учётом ограничений тестового окружения.
+
+INSERT — добавление записи
+
+INSERT INTO users (
+    first_name,
+    last_name,
+    email,
+    city,
+    country,
+    created_at
+)
+VALUES (
+    'Alex',
+    'Petrov',
+    'alex@example.com',
+    'Berlin',
+    'Germany',
+    '2025-01-15'
+);
+
+UPDATE — изменение записи
+
+UPDATE users
+SET city = 'Madrid'
+WHERE id = 1;
+
+DELETE — удаление записи
+
+DELETE FROM users
+WHERE id = 1;
+
+QA note: before executing UPDATE or DELETE, verify the target records with a SELECT query and ensure that the WHERE condition identifies only the intended records.
+
+🧪 09. Practical SQL for QA Testing
+
+Scenario 1 — Registration Verification
+
+Цель: проверить, что после регистрации пользователь появился в базе данных.
+
+SELECT *
+FROM users
+WHERE email = 'test@example.com';
+
+Expected result: one record with the expected user information.
+
+Scenario 2 — Duplicate Email Verification
+
+Цель: проверить отсутствие дубликатов email.
+
+SELECT
+    email,
+    COUNT(*) AS duplicate_count
+FROM users
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+Expected result: no records returned, если email должен быть уникальным.
+
+Scenario 3 — Profile Update Verification
+
+Цель: проверить, что изменение города сохранилось в базе данных.
+
+SELECT id, email, city
+FROM users
+WHERE id = 1;
+
+Expected result: the city value matches the value saved through the application.
+
+Scenario 4 — Users Without Orders
+
+Цель: найти пользователей, у которых нет заказов.
+
+SELECT users.id, users.email
+FROM users
+LEFT JOIN orders
+    ON users.id = orders.user_id
+WHERE orders.id IS NULL;
+
+Expected result: only users without related orders are returned.
+
+Scenario 5 — Order Total Verification
+
+Цель: проверить сумму заказов.
+
+SELECT
+    id,
+    total_amount,
+    status
+FROM orders
+WHERE id = 1001;
+
+Expected result: the database order amount matches the amount displayed in the application.
+
+Scenario 6 — Deleted Record Verification
+
+Цель: убедиться, что удалённая запись отсутствует в базе данных.
+
+SELECT *
+FROM users
+WHERE id = 1;
+
+Expected result: no records returned.
+
+🛠️ 10. SQL Commands Quick Reference
+
+Command
+
+Purpose
+
+SELECT
+
+Retrieve data
+
+WHERE
+
+Filter records
+
+AND / OR / NOT
+
+Combine conditions
+
+ORDER BY
+
+Sort results
+
+LIMIT
+
+Limit results
+
+LIKE
+
+Pattern matching
+
+COUNT
+
+Count records
+
+SUM
+
+Calculate total
+
+AVG
+
+Calculate average
+
+GROUP BY
+
+Group records
+
+HAVING
+
+Filter groups
+
+INNER JOIN
+
+Match related records
+
+LEFT JOIN
+
+Include all left-side records
+
+INSERT
+
+Add records
+
+UPDATE
+
+Modify records
+
+DELETE
+
+Remove records
+
+Subquery
+
+Nested query
+
+🎯 11. QA Skills Demonstrated
+
+Retrieving and filtering database records.
+
+Sorting and grouping data.
+
+Using aggregate functions.
+
+Joining related database tables.
+
+Writing subqueries.
+
+Verifying user registration data.
+
+Checking duplicate records.
+
+Validating profile updates.
+
+Comparing application data with database values.
+
+Checking records after deletion.
 
 <div align="center">
-<table>
-<tr>
-<td align="center"><h3>🖥️ UI</h3><sub>User Interface</sub></td>
-<td align="center">➜</td>
-<td align="center"><h3>🔌 API</h3><sub>Application Interface</sub></td>
-<td align="center">➜</td>
-<td align="center"><h3>🗄️ Database</h3><sub>Stored Data</sub></td>
-</tr>
-</table>
-</div>
 
-<p>Example: verify that a profile change is correctly transmitted and stored in the database. Actual UI and API execution must be performed separately from the SQL scripts.</p>
+👨‍💻 Author
 
-<h2>06. ⚙️ Technical Environment</h2>
+Egor Bortnik
 
-<table>
-<tr><td><strong>DBMS</strong></td><td>PostgreSQL</td></tr>
-<tr><td><strong>Query Language</strong></td><td>SQL</td></tr>
-<tr><td><strong>Database Type</strong></td><td>Relational</td></tr>
-<tr><td><strong>Testing Focus</strong></td><td>Database Testing & Data Validation</td></tr>
-<tr><td><strong>Portfolio Level</strong></td><td>Junior QA Engineer</td></tr>
-</table>
+Junior QA Engineer | Manual QA
 
-<h2>07. ⚠️ Execution Notes</h2>
+SQL Practice · Database Testing · Quality Assurance
 
-<ul>
-<li>Execute the database schema script before inserting test data.</li>
-<li>Use a clean practice database for the initial data setup.</li>
-<li>Data modification examples use transactions and ROLLBACK for safety.</li>
-<li>SQL examples are educational materials and must be executed against PostgreSQL to confirm their behavior.</li>
-</ul>
-
-<div align="center">
-<h3>💻 SQL DATABASE TESTING PORTFOLIO</h3>
-<p><strong>Learning through practice. Testing through evidence.</strong></p>
-<sub>Part of the Junior QA Engineer Portfolio</sub>
 </div>
