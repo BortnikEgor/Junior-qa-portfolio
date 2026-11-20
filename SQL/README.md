@@ -1,161 +1,276 @@
  <div align="center">
 
-🗄️ SQL FOR QA ENGINEER
+<img src="https://img.shields.io/badge/QA%20PORTFOLIO-DATABASE%20TESTING-172B4D?style=for-the-badge">
+<img src="https://img.shields.io/badge/SQL-PRACTICE-2563EB?style=for-the-badge">
+<img src="https://img.shields.io/badge/JUNIOR-QA%20ENGINEER-16845B?style=for-the-badge">
 
-Практика работы с базами данных для тестирования ПО
+<br><br>
 
-<img src="https://img.shields.io/badge/SQL-Database%20Testing-336791?style=for-the-badge&logo=postgresql&logoColor=white">
-<img src="https://img.shields.io/badge/LEVEL-Junior%20QA-2E8B57?style=for-the-badge">
-<img src="https://img.shields.io/badge/TYPE-Practical%20Examples-6C63FF?style=for-the-badge">
+🗄️ SQL & DATABASE TESTING
 
-SQL queries · Database validation · QA scenarios
+Практика работы с базами данных для тестирования программного обеспечения
+
+SQL Queries · Data Validation · Database Testing
+
+<br>
 
 </div>
 
-📌 01. About This Section
+<div align="center">
 
-This section demonstrates practical SQL knowledge used in manual software testing and database verification.
+01 · FUNDAMENTALS
 
-The examples cover data retrieval, filtering, sorting, aggregation, table relationships, data modification, and validation of application data stored in a database.
+02 · DATA ANALYSIS
 
-Main QA objective: verify that data entered or modified through the application is correctly processed and stored in the database.
+03 · RELATIONSHIPS
 
-📚 02. SQL Topics Covered
+04 · QA PRACTICE
+
+SELECT / WHERE
+
+COUNT / GROUP BY
+
+JOIN / Subqueries
+
+Database Checks
+
+</div>
+
+<div align="center">
+
+📑 CONTENTS
+
+</div>
 
 <table>
-<tr><th width="35%">Topic</th><th>Description</th></tr>
-<tr><td><code>SELECT</code></td><td>Retrieve data from database tables</td></tr>
-<tr><td><code>WHERE</code></td><td>Filter records by conditions</td></tr>
-<tr><td><code>AND / OR / NOT</code></td><td>Combine and exclude conditions</td></tr>
-<tr><td><code>ORDER BY</code></td><td>Sort query results</td></tr>
-<tr><td><code>LIMIT</code></td><td>Restrict the number of returned records</td></tr>
-<tr><td><code>LIKE</code></td><td>Search using patterns</td></tr>
-<tr><td><code>COUNT / SUM / AVG</code></td><td>Aggregate and calculate data</td></tr>
-<tr><td><code>GROUP BY / HAVING</code></td><td>Group records and filter grouped results</td></tr>
-<tr><td><code>INNER JOIN / LEFT JOIN</code></td><td>Retrieve related data from multiple tables</td></tr>
-<tr><td><code>Subqueries</code></td><td>Use nested queries</td></tr>
-<tr><td><code>INSERT / UPDATE / DELETE</code></td><td>Modify database records</td></tr>
+<tr>
+<td width="50%" valign="top">
+
+01. PROJECT OVERVIEW
+
+About This Section
+
+Database Structure
+
+SQL Fundamentals
+
+02. DATA ANALYSIS
+
+Aggregate Functions
+
+JOIN Operations
+
+Subqueries
+
+</td>
+<td width="50%" valign="top">
+
+03. DATABASE OPERATIONS
+
+Data Modification
+
+Practical QA Scenarios
+
+SQL Quick Reference
+
+04. SKILLS
+
+QA Skills Demonstrated
+
+</td>
+</tr>
 </table>
 
-🧱 03. Database Structure
+<a id="-01-about-this-section"></a>
 
-The examples use a simplified database of an online store.
+<img src="https://img.shields.io/badge/01-OVERVIEW-2563EB?style=flat-square"> About This Section
 
-Table: users
+This section presents practical SQL examples used in Manual QA (ручном тестировании) to verify application data, investigate inconsistencies, and validate database operations.
+
+The examples are based on a simplified online store database and demonstrate how SQL can be used during different stages of software testing.
+
+<div align="center">
+
+AREA
+
+PRACTICAL APPLICATION
+
+Data Retrieval
+
+Получение информации из базы данных
+
+Data Filtering
+
+Поиск записей по условиям
+
+Data Analysis
+
+Подсчёт и анализ данных
+
+Table Relationships
+
+Проверка связанных записей
+
+Data Modification
+
+Добавление, изменение и удаление данных
+
+Database Validation
+
+Проверка результатов действий пользователя
+
+</div>
+
+<a id="-02-database-structure"></a>
+
+<img src="https://img.shields.io/badge/02-DATABASE-2563EB?style=flat-square"> Database Structure
+
+Для практических примеров используется база данных интернет-магазина.
+
+users — таблица пользователей
 
 Column
 
-Data type
+Data Type
 
 Description
 
 id
 
-INT
+INTEGER
 
-Unique user identifier
+Уникальный идентификатор
 
 first_name
 
 VARCHAR
 
-User first name
+Имя пользователя
 
 last_name
 
 VARCHAR
 
-User last name
+Фамилия пользователя
 
 email
 
 VARCHAR
 
-User email
+Электронная почта
 
 city
 
 VARCHAR
 
-User city
+Город
 
 country
 
 VARCHAR
 
-User country
+Страна
 
 created_at
 
 DATE
 
-Registration date
+Дата регистрации
 
-Table: orders
+orders — таблица заказов
 
 Column
 
-Data type
+Data Type
 
 Description
 
 id
 
-INT
+INTEGER
 
-Unique order identifier
+Идентификатор заказа
 
 user_id
 
-INT
+INTEGER
 
-Reference to users.id
+Идентификатор пользователя
 
 total_amount
 
 DECIMAL
 
-Order total
+Сумма заказа
 
 status
 
 VARCHAR
 
-Order status
+Статус заказа
 
 created_at
 
 DATE
 
-Order creation date
+Дата создания
 
-Relationship: orders.user_id references users.id.
+<div align="center">
 
-🔍 04. Basic Data Retrieval
+┌──────────────────────┐
+│        users         │
+├──────────────────────┤
+│ id          PK       │
+│ first_name           │
+│ last_name            │
+│ email                │
+│ city                 │
+│ country              │
+└──────────┬───────────┘
+           │
+           │ 1 : N
+           │
+┌──────────▼───────────┐
+│        orders        │
+├──────────────────────┤
+│ id          PK       │
+│ user_id     FK       │
+│ total_amount         │
+│ status               │
+│ created_at           │
+└──────────────────────┘
 
-SELECT — получение данных
+<sup>PK — Primary Key (первичный ключ) · FK — Foreign Key (внешний ключ)</sup>
+
+</div>
+
+<a id="-03-sql-fundamentals"></a>
+
+<img src="https://img.shields.io/badge/03-FUNDAMENTALS-2563EB?style=flat-square"> SQL Fundamentals
+
+3.1 SELECT — получение данных
 
 -- Retrieve all users
 SELECT *
 FROM users;
 
--- Retrieve specific columns
+-- Retrieve selected columns
 SELECT first_name, last_name, email
 FROM users;
 
-WHERE — фильтрация данных
+3.2 WHERE — фильтрация записей
 
 -- Find users from Germany
 SELECT *
 FROM users
 WHERE country = 'Germany';
 
--- Find users older than a specified registration date
+-- Find users registered after a specific date
 SELECT *
 FROM users
 WHERE created_at >= '2025-01-01';
 
-AND / OR / NOT — логические операторы
+3.3 AND / OR / NOT — логические операторы
 
 -- Both conditions must be true
 SELECT *
@@ -169,87 +284,88 @@ FROM users
 WHERE country = 'Germany'
 OR country = 'Spain';
 
--- Exclude a specific country
+-- Exclude users from Germany
 SELECT *
 FROM users
 WHERE NOT country = 'Germany';
 
-ORDER BY — сортировка
+3.4 ORDER BY — сортировка
 
--- Sort users by registration date
+-- Newest users first
 SELECT *
 FROM users
 ORDER BY created_at DESC;
 
--- Sort by last name alphabetically
+-- Alphabetical order
 SELECT *
 FROM users
 ORDER BY last_name ASC;
 
-LIMIT — ограничение количества записей
+3.5 LIMIT — ограничение результата
 
--- Return only 5 users
+-- Return only five records
 SELECT *
 FROM users
 LIMIT 5;
 
-LIKE — поиск по шаблону
+3.6 LIKE — поиск по шаблону
 
--- Find emails ending with gmail.com
+-- Find Gmail addresses
 SELECT *
 FROM users
 WHERE email LIKE '%@gmail.com';
 
--- Find users whose first name starts with A
+-- Find names starting with A
 SELECT *
 FROM users
 WHERE first_name LIKE 'A%';
 
-📊 05. Aggregate Functions
+<a id="-04-aggregate-functions"></a>
+
+<img src="https://img.shields.io/badge/04-AGGREGATION-2563EB?style=flat-square"> Aggregate Functions
 
 COUNT — подсчёт записей
 
--- Count all users
 SELECT COUNT(*) AS total_users
 FROM users;
 
--- Count orders with completed status
-SELECT COUNT(*) AS completed_orders
-FROM orders
-WHERE status = 'completed';
+SUM — сумма значений
 
-SUM / AVG — сумма и среднее значение
-
--- Calculate total order amount
 SELECT SUM(total_amount) AS total_revenue
 FROM orders;
 
--- Calculate average order amount
+AVG — среднее значение
+
 SELECT AVG(total_amount) AS average_order
 FROM orders;
 
-GROUP BY — группировка данных
+GROUP BY — группировка записей
 
--- Count users in each country
-SELECT country, COUNT(*) AS users_count
+-- Count users by country
+SELECT
+    country,
+    COUNT(*) AS users_count
 FROM users
 GROUP BY country;
 
 HAVING — фильтрация групп
 
--- Find countries with more than 5 users
-SELECT country, COUNT(*) AS users_count
+-- Find countries with more than five users
+SELECT
+    country,
+    COUNT(*) AS users_count
 FROM users
 GROUP BY country
 HAVING COUNT(*) > 5;
 
-🔗 06. JOIN — работа со связанными таблицами
+<a id="-05-join-operations"></a>
 
-INNER JOIN
+<img src="https://img.shields.io/badge/05-JOIN-2563EB?style=flat-square"> JOIN Operations
 
-Возвращает только записи, для которых найдены совпадения в обеих таблицах.
+INNER JOIN — внутреннее объединение
 
--- Retrieve users and their orders
+Возвращает записи, для которых найдено соответствие в обеих таблицах.
+
 SELECT
     users.id,
     users.email,
@@ -259,11 +375,10 @@ FROM users
 INNER JOIN orders
     ON users.id = orders.user_id;
 
-LEFT JOIN
+LEFT JOIN — левое объединение
 
-Возвращает все записи из левой таблицы, даже если связанных записей в правой таблице нет.
+Возвращает все записи из левой таблицы и соответствующие записи из правой.
 
--- Find all users, including users without orders
 SELECT
     users.id,
     users.email,
@@ -272,7 +387,7 @@ FROM users
 LEFT JOIN orders
     ON users.id = orders.user_id;
 
-Find users without orders
+Find users without orders — поиск пользователей без заказов
 
 SELECT
     users.id,
@@ -282,11 +397,14 @@ LEFT JOIN orders
     ON users.id = orders.user_id
 WHERE orders.id IS NULL;
 
-🔎 07. Subqueries — подзапросы
+<a id="-06-subqueries"></a>
 
-Подзапрос — это запрос, который используется внутри другого SQL-запроса.
+<img src="https://img.shields.io/badge/06-SUBQUERIES-2563EB?style=flat-square"> Subqueries — подзапросы
 
--- Find orders with an amount above the average
+Find orders above average
+
+Поиск заказов, сумма которых выше средней суммы всех заказов.
+
 SELECT *
 FROM orders
 WHERE total_amount > (
@@ -294,7 +412,10 @@ WHERE total_amount > (
     FROM orders
 );
 
--- Find users who have at least one order
+Find users who have orders
+
+Поиск пользователей, у которых есть хотя бы один заказ.
+
 SELECT *
 FROM users
 WHERE id IN (
@@ -302,9 +423,11 @@ WHERE id IN (
     FROM orders
 );
 
-✏️ 08. Data Modification
+<a id="-07-data-modification"></a>
 
-⚠️ Команды изменения данных следует выполнять только в тестовой базе данных и с учётом ограничений тестового окружения.
+<img src="https://img.shields.io/badge/07-OPERATIONS-2563EB?style=flat-square"> Data Modification
+
+<sub>Добавление, изменение и удаление записей в тестовой базе данных.</sub>
 
 INSERT — добавление записи
 
@@ -336,23 +459,37 @@ DELETE — удаление записи
 DELETE FROM users
 WHERE id = 1;
 
-QA note: before executing UPDATE or DELETE, verify the target records with a SELECT query and ensure that the WHERE condition identifies only the intended records.
+<div align="center">
 
-🧪 09. Practical SQL for QA Testing
+<img src="https://img.shields.io/badge/IMPORTANT-TEST%20DATABASE%20ONLY-E0A12D?style=flat-square">
 
-Scenario 1 — Registration Verification
+</div>
 
-Цель: проверить, что после регистрации пользователь появился в базе данных.
+Перед выполнением UPDATE или DELETE необходимо проверить целевые записи через SELECT и убедиться, что условие WHERE выбрано правильно.
+
+<a id="-08-practical-qa-scenarios"></a>
+
+<img src="https://img.shields.io/badge/08-QA%20PRACTICE-16845B?style=flat-square"> Practical QA Scenarios
+
+Практические примеры проверки данных после действий пользователя в веб-приложении.
+
+<img src="https://img.shields.io/badge/QA--01-REGISTRATION-16845B?style=flat-square">
+
+Registration Verification — проверка регистрации
+
+Test Objective: убедиться, что после регистрации пользователь сохранён в базе данных.
 
 SELECT *
 FROM users
 WHERE email = 'test@example.com';
 
-Expected result: one record with the expected user information.
+Expected Result: должна быть найдена одна запись с ожидаемыми данными пользователя.
 
-Scenario 2 — Duplicate Email Verification
+<img src="https://img.shields.io/badge/QA--02-DUPLICATE%20DATA-16845B?style=flat-square">
 
-Цель: проверить отсутствие дубликатов email.
+Duplicate Email Verification — проверка дубликатов
+
+Test Objective: найти повторяющиеся адреса электронной почты.
 
 SELECT
     email,
@@ -361,33 +498,28 @@ FROM users
 GROUP BY email
 HAVING COUNT(*) > 1;
 
-Expected result: no records returned, если email должен быть уникальным.
+Expected Result: запрос не должен возвращать записи, если email обязан быть уникальным.
 
-Scenario 3 — Profile Update Verification
+<img src="https://img.shields.io/badge/QA--03-PROFILE%20UPDATE-16845B?style=flat-square">
 
-Цель: проверить, что изменение города сохранилось в базе данных.
+Profile Update Verification — проверка изменения профиля
 
-SELECT id, email, city
+Test Objective: проверить сохранение нового города пользователя.
+
+SELECT
+    id,
+    email,
+    city
 FROM users
 WHERE id = 1;
 
-Expected result: the city value matches the value saved through the application.
+Expected Result: значение city должно совпадать с городом, сохранённым через интерфейс приложения.
 
-Scenario 4 — Users Without Orders
+<img src="https://img.shields.io/badge/QA--04-ORDER%20VALIDATION-16845B?style=flat-square">
 
-Цель: найти пользователей, у которых нет заказов.
+Order Total Verification — проверка суммы заказа
 
-SELECT users.id, users.email
-FROM users
-LEFT JOIN orders
-    ON users.id = orders.user_id
-WHERE orders.id IS NULL;
-
-Expected result: only users without related orders are returned.
-
-Scenario 5 — Order Total Verification
-
-Цель: проверить сумму заказов.
+Test Objective: сравнить сумму заказа в приложении и базе данных.
 
 SELECT
     id,
@@ -396,122 +528,150 @@ SELECT
 FROM orders
 WHERE id = 1001;
 
-Expected result: the database order amount matches the amount displayed in the application.
+Expected Result: сумма в базе данных должна соответствовать сумме, отображаемой в приложении.
 
-Scenario 6 — Deleted Record Verification
+<img src="https://img.shields.io/badge/QA--05-USER%20ORDERS-16845B?style=flat-square">
 
-Цель: убедиться, что удалённая запись отсутствует в базе данных.
+Users Without Orders — пользователи без заказов
+
+Test Objective: найти пользователей, для которых не создано ни одного заказа.
+
+SELECT
+    users.id,
+    users.email
+FROM users
+LEFT JOIN orders
+    ON users.id = orders.user_id
+WHERE orders.id IS NULL;
+
+Expected Result: возвращаются только пользователи без связанных заказов.
+
+<img src="https://img.shields.io/badge/QA--06-DELETE%20VALIDATION-16845B?style=flat-square">
+
+Deleted Record Verification — проверка удаления
+
+Test Objective: убедиться, что удалённый пользователь отсутствует в базе данных.
 
 SELECT *
 FROM users
 WHERE id = 1;
 
-Expected result: no records returned.
+Expected Result: запрос не должен возвращать удалённую запись.
 
-🛠️ 10. SQL Commands Quick Reference
+<a id="-09-sql-quick-reference"></a>
 
-Command
+<img src="https://img.shields.io/badge/09-REFERENCE-2563EB?style=flat-square"> SQL Quick Reference
+
+SQL Command
 
 Purpose
 
 SELECT
 
-Retrieve data
+Получение данных
 
 WHERE
 
-Filter records
+Фильтрация записей
 
 AND / OR / NOT
 
-Combine conditions
+Логические условия
 
 ORDER BY
 
-Sort results
+Сортировка
 
 LIMIT
 
-Limit results
+Ограничение результата
 
 LIKE
 
-Pattern matching
+Поиск по шаблону
 
 COUNT
 
-Count records
+Подсчёт записей
 
 SUM
 
-Calculate total
+Суммирование
 
 AVG
 
-Calculate average
+Среднее значение
 
 GROUP BY
 
-Group records
+Группировка
 
 HAVING
 
-Filter groups
+Фильтрация групп
 
 INNER JOIN
 
-Match related records
+Объединение совпадающих записей
 
 LEFT JOIN
 
-Include all left-side records
+Объединение с сохранением всех левых записей
 
 INSERT
 
-Add records
+Добавление данных
 
 UPDATE
 
-Modify records
+Изменение данных
 
 DELETE
 
-Remove records
+Удаление данных
 
 Subquery
 
-Nested query
+Подзапрос
 
-🎯 11. QA Skills Demonstrated
+<a id="-10-qa-skills-demonstrated"></a>
 
-Retrieving and filtering database records.
+<img src="https://img.shields.io/badge/10-QA%20SKILLS-16845B?style=flat-square"> QA Skills Demonstrated
 
-Sorting and grouping data.
+В рамках этой практики рассматриваются следующие навыки:
 
-Using aggregate functions.
+Получение и фильтрация данных из базы.
 
-Joining related database tables.
+Сортировка и группировка записей.
 
-Writing subqueries.
+Использование агрегатных функций.
 
-Verifying user registration data.
+Объединение связанных таблиц.
 
-Checking duplicate records.
+Написание вложенных запросов.
 
-Validating profile updates.
+Проверка регистрации пользователя.
 
-Comparing application data with database values.
+Поиск дублирующихся записей.
 
-Checking records after deletion.
+Проверка изменения данных профиля.
+
+Сопоставление данных интерфейса и базы данных.
+
+Проверка результатов удаления.
 
 <div align="center">
 
-👨‍💻 Author
+👨‍💻 AUTHOR
 
-Egor Bortnik
+EGOR BORTNIK
 
 Junior QA Engineer | Manual QA
 
-SQL Practice · Database Testing · Quality Assurance
+<sub>SQL Practice · Database Testing · Quality Assurance</sub>
+
+<br>
+
+<img src="https://img.shields.io/badge/QA%20PORTFOLIO-2026-172B4D?style=flat-square">
 
 </div>
