@@ -400,15 +400,19 @@ Unexpected server error
 
 <a id="installation"></a>
 
-🚀 08. Installation & запуск
+<div align="center">
 
-Requirements
+🚀 08. Installation & Setup
+
+</div>
+
+📋 Requirements
 
 Node.js
 
 npm
 
-Installation
+⚙️ Installation
 
 Step 1. Clone the repository
 
@@ -426,17 +430,25 @@ Step 4. Start the API server
 
 npm start
 
-Access the API
+🌐 Access the API
 
 <table>
+<thead>
 <tr>
-<td width="35%"><strong>API Base URL</strong></td>
+<th>Resource</th>
+<th>URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>API Base URL</strong></td>
 <td><a href="http://localhost:3000">http://localhost:3000</a></td>
 </tr>
 <tr>
 <td><strong>Swagger Documentation</strong></td>
 <td><a href="http://localhost:3000/api-docs">http://localhost:3000/api-docs</a></td>
 </tr>
+</tbody>
 </table>
 
 📁 09. Project Structure
