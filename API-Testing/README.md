@@ -412,11 +412,11 @@ Installation
 
 Step 1. Clone the repository
 
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/BortnikEgor/Junior-qa-portfolio.git
 
 Step 2. Navigate to the project folder
 
-cd test-api
+cd Junior-qa-portfolio/test-api
 
 Step 3. Install dependencies
 
