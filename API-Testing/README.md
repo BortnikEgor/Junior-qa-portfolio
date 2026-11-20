@@ -140,11 +140,6 @@ HTTP request logging
 <td>Retrieve all users</td>
 </tr>
 <tr>
-<td><img src="https://img.shields.io/badge/POST-2563EB?style=flat-square"></td>
-<td><code>/users</code></td>
-<td>Create one or multiple users</td>
-</tr>
-<tr>
 <td><img src="https://img.shields.io/badge/DELETE-DC2626?style=flat-square"></td>
 <td><code>/users</code></td>
 <td>Delete users by filters</td>
