@@ -579,77 +579,47 @@ WHERE id = 1;
 
 🟦 09. SQL QUICK REFERENCE
 
-SQL Command
+<div align="center">
 
-Purpose
+SQL COMMANDS & OPERATORS
 
-SELECT
+Краткий справочник основных SQL-команд, используемых при тестировании баз данных.
 
-Получение данных
+</div>
 
-WHERE
+<table>
+<thead>
+<tr>
+<th width="28%">SQL COMMAND</th>
+<th width="72%">PURPOSE / НАЗНАЧЕНИЕ</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><code>SELECT</code></td><td>Получение данных из таблиц</td></tr>
+<tr><td><code>WHERE</code></td><td>Фильтрация записей по условиям</td></tr>
+<tr><td><code>AND / OR / NOT</code></td><td>Объединение и исключение условий</td></tr>
+<tr><td><code>ORDER BY</code></td><td>Сортировка результатов запроса</td></tr>
+<tr><td><code>LIMIT</code></td><td>Ограничение количества результатов</td></tr>
+<tr><td><code>LIKE</code></td><td>Поиск данных по заданному шаблону</td></tr>
+<tr><td><code>COUNT()</code></td><td>Подсчёт количества записей</td></tr>
+<tr><td><code>SUM()</code></td><td>Вычисление суммы значений</td></tr>
+<tr><td><code>AVG()</code></td><td>Вычисление среднего значения</td></tr>
+<tr><td><code>GROUP BY</code></td><td>Группировка записей по значениям</td></tr>
+<tr><td><code>HAVING</code></td><td>Фильтрация сгруппированных результатов</td></tr>
+<tr><td><code>INNER JOIN</code></td><td>Объединение таблиц по совпадающим записям</td></tr>
+<tr><td><code>LEFT JOIN</code></td><td>Объединение таблиц с сохранением всех записей левой таблицы</td></tr>
+<tr><td><code>Subquery</code></td><td>Использование вложенных SQL-запросов</td></tr>
+<tr><td><code>INSERT</code></td><td>Добавление новых записей</td></tr>
+<tr><td><code>UPDATE</code></td><td>Изменение существующих записей</td></tr>
+<tr><td><code>DELETE</code></td><td>Удаление записей из таблицы</td></tr>
+</tbody>
+</table>
 
-Фильтрация записей
+<div align="center">
 
-AND / OR / NOT
+<sub>SQL Reference · Manual QA · Database Testing</sub>
 
-Логические условия
-
-ORDER BY
-
-Сортировка
-
-LIMIT
-
-Ограничение результата
-
-LIKE
-
-Поиск по шаблону
-
-COUNT
-
-Подсчёт записей
-
-SUM
-
-Суммирование
-
-AVG
-
-Среднее значение
-
-GROUP BY
-
-Группировка
-
-HAVING
-
-Фильтрация групп
-
-INNER JOIN
-
-Объединение совпадающих записей
-
-LEFT JOIN
-
-Объединение с сохранением всех левых записей
-
-Subquery
-
-Подзапрос
-
-INSERT
-
-Добавление данных
-
-UPDATE
-
-Изменение данных
-
-DELETE
-
-Удаление данных
+</div>
 
 🟩 10. QA SKILLS DEMONSTRATED
 
