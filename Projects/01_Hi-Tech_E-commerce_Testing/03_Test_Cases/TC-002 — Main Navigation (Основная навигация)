@@ -1,0 +1,114 @@
+TC-002 — Main Navigation (Основная навигация)
+
+<div align="center">
+  <h1>🧭 MAIN NAVIGATION</h1>
+  <p><strong>HI-TECH · E-COMMERCE TESTING</strong></p>
+  <p>Проверка основной навигации интернет-магазина</p>
+</div>
+
+<table>
+  <tr>
+    <td><strong>Test Case ID</strong></td>
+    <td>TC-002</td>
+    <td><strong>Priority</strong></td>
+    <td>Medium</td>
+  </tr>
+  <tr>
+    <td><strong>Module</strong></td>
+    <td>Navigation</td>
+    <td><strong>Status</strong></td>
+    <td>Not Executed</td>
+  </tr>
+  <tr>
+    <td><strong>Test Type</strong></td>
+    <td colspan="3">UI / Functional Testing</td>
+  </tr>
+</table>
+
+<h2>🎯 01. OBJECTIVE — ЦЕЛЬ</h2>
+
+Проверить корректность работы основных элементов навигации сайта: отображение пунктов меню, переходы между доступными разделами и открытие соответствующих страниц.
+
+<h2>📋 02. PRECONDITIONS — ПРЕДУСЛОВИЯ</h2>
+
+Есть подключение к интернету.
+
+Браузер запущен.
+
+Открыта главная страница https://hi-tech.md/.
+
+Основные элементы навигации отображаются на странице.
+
+<h2>💻 03. TEST ENVIRONMENT — ТЕСТОВОЕ ОКРУЖЕНИЕ</h2>
+
+<table>
+  <tr><td><strong>Website — Сайт</strong></td><td>https://hi-tech.md/</td></tr>
+  <tr><td><strong>Browser — Браузер</strong></td><td>To be specified</td></tr>
+  <tr><td><strong>Operating System — ОС</strong></td><td>To be specified</td></tr>
+  <tr><td><strong>Device — Устройство</strong></td><td>To be specified</td></tr>
+  <tr><td><strong>Test Date — Дата проверки</strong></td><td>To be specified</td></tr>
+</table>
+
+<h2>🔍 04. TEST STEPS — ШАГИ ТЕСТИРОВАНИЯ</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th width="10%">Step</th>
+      <th>Action — Действие</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td align="center">01</td><td>Открыть главную страницу сайта.</td></tr>
+    <tr><td align="center">02</td><td>Найти основное меню навигации.</td></tr>
+    <tr><td align="center">03</td><td>Проверить отображение доступных пунктов меню.</td></tr>
+    <tr><td align="center">04</td><td>Выбрать один из пунктов меню.</td></tr>
+    <tr><td align="center">05</td><td>Проверить открытие соответствующей страницы или раздела.</td></tr>
+    <tr><td align="center">06</td><td>Вернуться на главную страницу.</td></tr>
+    <tr><td align="center">07</td><td>Повторить проверку для остальных доступных пунктов меню.</td></tr>
+  </tbody>
+</table>
+
+<h2>✅ 05. EXPECTED RESULT — ОЖИДАЕМЫЙ РЕЗУЛЬТАТ</h2>
+
+Основное меню навигации отображается корректно.
+
+Пункты меню доступны для взаимодействия.
+
+При выборе пункта открывается соответствующая страница или раздел.
+
+Переходы выполняются без критических ошибок.
+
+Пользователь может вернуться на главную страницу.
+
+<h2>📝 06. ACTUAL RESULT — ФАКТИЧЕСКИЙ РЕЗУЛЬТАТ</h2>
+
+Заполняется после выполнения тестирования.
+
+<h2>📊 07. TEST EXECUTION STATUS — СТАТУС ВЫПОЛНЕНИЯ</h2>
+
+Not Executed — Не выполнен
+
+Status
+
+Значение
+
+Pass
+
+Пройден
+
+Fail
+
+Не пройден
+
+Blocked
+
+Заблокирован
+
+Not Executed
+
+Не выполнен
+
+<div align="center">
+  <sub>QA Portfolio · Hi-Tech E-commerce Testing · TC-002</sub>
+</div>
