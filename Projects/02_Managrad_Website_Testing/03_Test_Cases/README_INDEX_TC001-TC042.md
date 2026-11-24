@@ -130,8 +130,8 @@
 <h3>11. Payment Method — Способы оплаты (2 test cases)</h3>
 <table>
 <tr><th width="12%">ID</th><th align="left">Test Case — Тест-кейс</th><th width="25%">Status — Статус</th></tr>
-<tr><td>TC-041</td><td><a href="./Payment_Method/TC-041_Payment_Method_Display_and_Selection.md">Payment Method Display and Selection — Отображение и выбор способа оплаты</a></td><td>Not Executed — Не выполнен</td></tr>
-<tr><td>TC-042</td><td><a href="./Payment_Method/TC-042_Payment_Cancellation_and_Error_Handling.md">Payment Cancellation and Error Handling — Отмена оплаты и обработка ошибок</a></td><td>Not Executed — Не выполнен</td></tr>
+<tr><td>TC-041</td><td><a href="11_Payment_Method/TC-041_Payment_Method_Display_and_Selection.md">Payment Method Display and Selection — Отображение и выбор способа оплаты</a></td><td>Not Executed — Не выполнен</td></tr>
+<tr><td>TC-042</td><td><a href="11_Payment_Method/TC-042_Payment_Cancellation_and_Error_Handling.md">Payment Cancellation and Error Handling — Отмена оплаты и обработка ошибок</a></td><td>Not Executed — Не выполнен</td></tr>
 </table>
 
 <h2>📊 04. TEST CASE SUMMARY — СВОДКА ПО ТЕСТ-КЕЙСАМ</h2>
