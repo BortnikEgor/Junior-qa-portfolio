@@ -10,6 +10,7 @@
 <img src="https://img.shields.io/badge/Passed-20-brightgreen">
 <img src="https://img.shields.io/badge/Failed-0-red">
 <img src="https://img.shields.io/badge/Blocked-0-yellow">
+<img src="https://img.shields.io/badge/Bug_Reports-3-orange">
 
 </div>
 
@@ -34,7 +35,9 @@
 
 <h2>2. Testing Scope — Область тестирования</h2>
 
-<p>В рамках тестирования проверялись следующие функциональные возможности Users API:</p>
+<p>
+В рамках тестирования проверялись следующие функциональные возможности Users API:
+</p>
 
 <table>
 <tr><th>Area — Область</th><th>Description — Описание</th></tr>
@@ -68,6 +71,8 @@
 <img src="https://img.shields.io/badge/BLOCKED-0-yellow">
 
 <h3>100% TEST EXECUTION SUCCESS</h3>
+
+<p><strong>Все 20 тест-кейсов завершились успешно.</strong></p>
 
 </div>
 
@@ -105,12 +110,12 @@
 
 <table>
 <tr><th>Metric — Показатель</th><th>Result — Результат</th></tr>
+<tr><td>Total Bug Reports — Всего Bug Reports</td><td>3</td></tr>
+<tr><td>Demonstration Reports — Демонстрационные отчёты</td><td>3</td></tr>
 <tr><td>Confirmed Defects — Подтверждённые дефекты</td><td>0</td></tr>
 <tr><td>Open Defects — Открытые дефекты</td><td>0</td></tr>
 <tr><td>Closed Defects — Закрытые дефекты</td><td>0</td></tr>
 </table>
-
-<p><strong>Note — Примечание:</strong> Три подготовленных демонстрационных Bug Reports не включены в статистику обнаруженных дефектов, поскольку не были подтверждены фактическим тестированием API.</p>
 
 <h2>7. Bug Reports — Отчёты об ошибках</h2>
 
@@ -159,7 +164,12 @@ Bug Reports для проверки обработки ошибочных и н�
 <tr><td>Confirmed Defects — Подтверждённые дефекты</td><td>0</td></tr>
 </table>
 
-<p><strong>Note — Примечание:</strong> Все три Bug Reports подготовлены в демонстрационных целях. Фактическое наличие описанных дефектов в локальном API не подтверждено.</p>
+<p>
+<strong>Note — Примечание:</strong>
+Все три Bug Reports подготовлены в демонстрационных целях.
+Фактическое наличие описанных дефектов в локальном API не подтверждено.
+Они не включены в статистику FAILED тест-кейсов.
+</p>
 
 <h2>8. Final Result — Итоговый результат</h2>
 
@@ -176,6 +186,11 @@ Bug Reports для проверки обработки ошибочных и н�
 <p>
 В ходе выполнения тестирования все запланированные тест-кейсы завершились успешно.
 Ошибок, препятствующих выполнению проверенных операций API, не обнаружено.
+</p>
+
+<p>
+Дополнительно подготовлены три демонстрационных отчёта об ошибках,
+которые показывают навыки оформления и документирования дефектов API.
 </p>
 
 <hr>
