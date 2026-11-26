@@ -1,8 +1,8 @@
 <div align="center">
 
 <h1>🧪 TEST CASE TC-API-002</h1>
-<h2>CREATE USER WITH INVALID AGE</h2>
-<p><strong>Создание пользователя с некорректным возрастом</strong></p>
+<h2>CREATE USER WITH MISSING REQUIRED FIELD</h2>
+<p><strong>Создание пользователя без обязательного поля</strong></p>
 
 <img src="https://img.shields.io/badge/Project-Users_API-blue">
 <img src="https://img.shields.io/badge/Method-POST-orange">
@@ -19,7 +19,7 @@
 <table>
 <tr><th>Parameter — Параметр</th><th>Value — Значение</th></tr>
 <tr><td>Test Case ID — ID тест-кейса</td><td>TC-API-002</td></tr>
-<tr><td>Title — Название</td><td>Create User With Invalid Age</td></tr>
+<tr><td>Title — Название</td><td>Create User With Missing Required Field</td></tr>
 <tr><td>Priority — Приоритет</td><td>High — Высокий</td></tr>
 <tr><td>Test Type — Тип проверки</td><td>Negative — Негативный</td></tr>
 <tr><td>HTTP Method — HTTP-метод</td><td>POST</td></tr>
@@ -37,24 +37,17 @@
 
 <h2>3. Request — Запрос</h2>
 
-<p><strong>Request Headers — Заголовки запроса</strong></p>
-
-<table>
-<tr><th>Header — Заголовок</th><th>Value — Значение</th><th>Purpose — Назначение</th></tr>
-<tr><td>Content-Type</td><td><code>application/json</code></td><td>Указывает формат тела запроса</td></tr>
-<tr><td>Accept</td><td><code>application/json</code></td><td>Указывает предпочтительный формат ответа</td></tr>
-</table>
-
 <p><strong>Request Body — Тело запроса</strong></p>
 
 <pre><code>{
   "firstName": "Egor",
   "lastName": "Bortnik",
-  "age": 150,
+  "age": 35,
   "city": "Tiraspol",
-  "country": "Pridnestrovie",
   "nationality": "Russian"
 }</code></pre>
+
+<p><strong>Примечание:</strong> Поле <code>country</code> отсутствует.</p>
 
 <h2>4. Test Steps — Шаги тестирования</h2>
 
@@ -62,31 +55,30 @@
 <li>Открыть Postman.</li>
 <li>Выбрать метод POST.</li>
 <li>Указать URL <code>http://localhost:3000/users</code>.</li>
-<li>Добавить заголовки запроса.</li>
 <li>Перейти в Body и выбрать raw → JSON.</li>
-<li>Вставить подготовленные тестовые данные с возрастом 150.</li>
+<li>Вставить JSON без обязательного поля <code>country</code>.</li>
 <li>Отправить запрос.</li>
-<li>Проверить HTTP-статус и Response Body.</li>
+<li>Проверить статус ответа и сообщение об ошибке.</li>
 </ol>
 
 <h2>5. Expected Result — Ожидаемый результат</h2>
 
 <ol>
-<li>API отклоняет запрос с некорректным значением поля age.</li>
-<li>Пользователь не создаётся.</li>
+<li>API проверяет наличие обязательных полей.</li>
+<li>Запрос отклоняется из-за отсутствующего поля <code>country</code>.</li>
 <li>Возвращается HTTP-статус <strong>400 Bad Request</strong>.</li>
-<li>Тело ответа содержит сообщение об ошибке валидации возраста.</li>
-<li>Некорректная запись не добавляется в список пользователей.</li>
+<li>В ответе содержится сообщение об ошибке валидации.</li>
+<li>Новая запись пользователя не создаётся.</li>
 </ol>
 
 <h2>6. Actual Result — Фактический результат</h2>
 
 <ol>
-<li>Запрос успешно обработан сервером с точки зрения проверки валидации.</li>
-<li>Создание пользователя отклонено.</li>
+<li>Запрос обработан сервером.</li>
+<li>Отсутствующее обязательное поле обнаружено.</li>
 <li>Получен HTTP-статус <strong>400 Bad Request</strong>.</li>
-<li>В ответе присутствует сообщение об ошибке недопустимого значения возраста.</li>
-<li>Пользователь не был создан.</li>
+<li>API вернул сообщение об ошибке валидации.</li>
+<li>Пользователь не создан.</li>
 </ol>
 
 <h2>7. Environment — Окружение</h2>
