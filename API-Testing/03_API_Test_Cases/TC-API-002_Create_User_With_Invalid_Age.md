@@ -28,11 +28,11 @@
 <h2>4. TEST DATA — Тестовые данные</h2>
 <pre><code>{
   "firstName": "Egor",
-  "lastName": "Ivanov",
+  "lastName": "Bortnik",
   "age": 150,
   "city": "Tiraspol",
-  "country": "Moldova",
-  "nationality": "Moldovan"
+  "country": "Pridnestrovie",
+  "nationality": "Russian"
 }</code></pre>
 <h2>5. TEST STEPS — Шаги тестирования</h2>
 <table>
