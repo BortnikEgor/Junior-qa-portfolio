@@ -1,4 +1,4 @@
- <div align="center">
+<div align="center">
 
 <h1>🧪 TEST CASE TC-API-001</h1>
 <h2>CREATE USER WITH VALID DATA</h2>
@@ -37,14 +37,6 @@
 
 <h2>3. Request — Запрос</h2>
 
-<p><strong>Request Headers — Заголовки запроса</strong></p>
-
-<table>
-<tr><th>Header — Заголовок</th><th>Value — Значение</th><th>Purpose — Назначение</th></tr>
-<tr><td>Content-Type</td><td><code>application/json</code></td><td>Указывает формат тела запроса</td></tr>
-<tr><td>Accept</td><td><code>application/json</code></td><td>Указывает предпочтительный формат ответа</td></tr>
-</table>
-
 <p><strong>Request Body — Тело запроса</strong></p>
 
 <pre><code>{
@@ -62,7 +54,6 @@
 <li>Открыть Postman.</li>
 <li>Выбрать метод POST.</li>
 <li>Указать URL <code>http://localhost:3000/users</code>.</li>
-<li>Добавить заголовки запроса.</li>
 <li>Перейти в Body и выбрать raw → JSON.</li>
 <li>Вставить подготовленные тестовые данные.</li>
 <li>Отправить запрос.</li>
@@ -110,7 +101,7 @@
 
 <img src="https://img.shields.io/badge/TEST%20RESULT-PASSED-brightgreen">
 
-<h3> PASSED — ТЕСТ ПРОЙДЕН </h3>
+<h3>PASSED — ТЕСТ ПРОЙДЕН</h3>
 
 </div>
 
