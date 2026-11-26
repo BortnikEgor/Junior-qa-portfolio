@@ -1,32 +1,109 @@
 <div align="center">
+
 <h1>🧪 TEST CASE TC-API-012</h1>
 <h2>SEARCH USER BY MULTIPLE PARAMETERS</h2>
 <p><strong>Поиск пользователя по нескольким параметрам</strong></p>
+
 <img src="https://img.shields.io/badge/Project-Users_API-blue">
 <img src="https://img.shields.io/badge/Method-GET-blue">
-<img src="https://img.shields.io/badge/Priority-High-red">
+<img src="https://img.shields.io/badge/Priority-Medium-yellow">
+<img src="https://img.shields.io/badge/Type-Positive-success">
 <img src="https://img.shields.io/badge/Status-PASSED-brightgreen">
+
 </div>
+
 <hr>
-<h2>1. TEST CASE INFORMATION — Информация о тест-кейсе</h2>
+
+<h2>1. Test Case Information — Информация о тест-кейсе</h2>
+
 <table>
-<tr><th>Field — Поле</th><th>Value — Значение</th></tr>
-<tr><td>ID</td><td>TC-API-012</td></tr><tr><td>Module — Модуль</td><td>User Search — Поиск пользователей</td></tr><tr><td>Method — Метод</td><td>GET</td></tr><tr><td>Endpoint — Конечная точка</td><td><code>/users/search</code></td></tr><tr><td>Type — Тип</td><td>Positive — Позитивный</td></tr><tr><td>Priority — Приоритет</td><td>High — Высокий</td></tr><tr><td>Expected Status — Ожидаемый статус</td><td>200 OK</td></tr><tr><td>Environment — Окружение</td><td>Localhost / Postman</td></tr>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th></tr>
+<tr><td>Test Case ID — ID тест-кейса</td><td>TC-API-012</td></tr>
+<tr><td>Title — Название</td><td>Search User By Multiple Parameters</td></tr>
+<tr><td>Priority — Приоритет</td><td>Medium — Средний</td></tr>
+<tr><td>Test Type — Тип проверки</td><td>Positive — Позитивный</td></tr>
+<tr><td>HTTP Method — HTTP-метод</td><td>GET</td></tr>
+<tr><td>Endpoint — Конечная точка</td><td><code>/users/search</code></td></tr>
+<tr><td>Full URL — Полный URL</td><td><code>http://localhost:3000/users/search?firstName=Egor&amp;city=Tiraspol</code></td></tr>
 </table>
-<h2>2. OBJECTIVE — Цель</h2>
-<p>Проверить одновременную фильтрацию пользователей по нескольким параметрам.</p>
-<h2>3. PRECONDITIONS — Предусловия</h2>
-<ul><li>API-сервер запущен.</li><li>В системе существует пользователь, соответствующий заданным фильтрам.</li></ul>
-<h2>4. TEST DATA — Тестовые данные</h2>
-<pre><code>firstName=Egor
-country=Moldova</code></pre>
-<h2>5. TEST STEPS — Шаги тестирования</h2>
+
+<h2>2. Preconditions — Предусловия</h2>
+
+<ol>
+<li>API-сервер запущен.</li>
+<li>Endpoint <code>/users/search</code> доступен.</li>
+<li>В системе существует пользователь с именем <code>Egor</code> и городом <code>Tiraspol</code>.</li>
+</ol>
+
+<h2>3. Request — Запрос</h2>
+
+<p><strong>Request Body — Тело запроса</strong></p>
+
+<p>N/A — Не требуется.</p>
+
+<p><strong>Query Parameters — Параметры запроса</strong></p>
+
 <table>
-<tr><th>№</th><th>Action — Действие</th><th>Expected Result — Ожидаемый результат</th></tr>
-<tr><td>1</td><td>Выбрать GET</td><td>Метод выбран</td></tr><tr><td>2</td><td>Указать <code>/users/search</code></td><td>Endpoint указан</td></tr><tr><td>3</td><td>Передать firstName=Egor</td><td>Первый фильтр установлен</td></tr><tr><td>4</td><td>Передать country=Moldova</td><td>Второй фильтр установлен</td></tr><tr><td>5</td><td>Отправить запрос</td><td>Запрос обработан</td></tr><tr><td>6</td><td>Проверить статус и результаты</td><td>200 OK; результаты соответствуют обоим фильтрам</td></tr>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th><th>Description — Описание</th></tr>
+<tr><td>firstName</td><td><code>Egor</code></td><td>Поиск по имени</td></tr>
+<tr><td>city</td><td><code>Tiraspol</code></td><td>Поиск по городу</td></tr>
 </table>
-<h2>6. ACTUAL RESULT — Фактический результат</h2>
-<p>Поиск по нескольким параметрам выполнен корректно. Сервер вернул статус 200 OK и записи, соответствующие переданным фильтрам.</p>
-<h2>7. FINAL STATUS — Итоговый статус</h2>
-<p><img src="https://img.shields.io/badge/Status-PASSED-brightgreen"></p><p><strong>PASSED — ПРОЙДЕН</strong></p>
-<hr><div align="center">Users API | API Testing Portfolio</div>
+
+<h2>4. Test Steps — Шаги тестирования</h2>
+
+<ol>
+<li>Открыть Postman.</li>
+<li>Выбрать метод GET.</li>
+<li>Указать URL <code>http://localhost:3000/users/search?firstName=Egor&amp;city=Tiraspol</code>.</li>
+<li>Отправить запрос.</li>
+<li>Проверить статус ответа.</li>
+<li>Проверить список найденных пользователей.</li>
+<li>Убедиться, что каждый результат соответствует обоим параметрам поиска.</li>
+</ol>
+
+<h2>5. Expected Result — Ожидаемый результат</h2>
+
+<ol>
+<li>API принимает оба параметра поиска.</li>
+<li>Возвращается HTTP-статус <strong>200 OK</strong>.</li>
+<li>Результаты соответствуют одновременно имени <code>Egor</code> и городу <code>Tiraspol</code>.</li>
+<li>Пользователи, соответствующие только одному параметру, не включаются в результат.</li>
+<li>Структура ответа соответствует формату API.</li>
+</ol>
+
+<h2>6. Actual Result — Фактический результат</h2>
+
+<ol>
+<li>Запрос успешно обработан сервером.</li>
+<li>Получен HTTP-статус <strong>200 OK</strong>.</li>
+<li>В ответе присутствуют пользователи, соответствующие обоим параметрам.</li>
+<li>Результаты поиска возвращены корректно.</li>
+<li>Ошибок при выполнении запроса не обнаружено.</li>
+</ol>
+
+<h2>7. Environment — Окружение</h2>
+
+<table>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th></tr>
+<tr><td>Operating System — ОС</td><td>macOS</td></tr>
+<tr><td>API Server — Сервер API</td><td>Node.js / Express</td></tr>
+<tr><td>Base URL — Базовый URL</td><td><code>http://localhost:3000</code></td></tr>
+<tr><td>API Documentation — Документация API</td><td>Swagger UI</td></tr>
+<tr><td>Swagger URL</td><td><code>http://localhost:3000/api-docs</code></td></tr>
+<tr><td>Testing Tool — Инструмент тестирования</td><td>Postman</td></tr>
+<tr><td>Data Format — Формат данных</td><td>JSON</td></tr>
+</table>
+
+<h2>8. Test Execution — Результат выполнения</h2>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/TEST%20RESULT-PASSED-brightgreen">
+
+<h3>PASSED — ТЕСТ ПРОЙДЕН</h3>
+
+</div>
+
+<hr>
+
+<p align="center"><i>Users API — API Testing Portfolio</i></p>
