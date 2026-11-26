@@ -112,7 +112,56 @@
 
 <p><strong>Note — Примечание:</strong> Три подготовленных демонстрационных Bug Reports не включены в статистику обнаруженных дефектов, поскольку не были подтверждены фактическим тестированием API.</p>
 
-<h2>7. Final Result — Итоговый результат</h2>
+<h2>7. Bug Reports — Отчёты об ошибках</h2>
+
+<p>
+В рамках подготовки API Testing Portfolio оформлены три демонстрационных
+Bug Reports для проверки обработки ошибочных и нестандартных запросов.
+</p>
+
+<table>
+<tr>
+<th>Bug ID</th>
+<th>Title — Название</th>
+<th>Endpoint</th>
+<th>Severity</th>
+<th>Status</th>
+</tr>
+<tr>
+<td>BR-API-001</td>
+<td>Incorrect HTTP Status Code When User Is Not Found</td>
+<td>GET /users/{id}</td>
+<td>Medium</td>
+<td>Example</td>
+</tr>
+<tr>
+<td>BR-API-002</td>
+<td>API Accepts Invalid Pagination Limit</td>
+<td>GET /users/search</td>
+<td>Medium</td>
+<td>Example</td>
+</tr>
+<tr>
+<td>BR-API-003</td>
+<td>DELETE Endpoint Returns Incorrect Response for Non-Existing User</td>
+<td>DELETE /users/{id}</td>
+<td>Medium</td>
+<td>Example</td>
+</tr>
+</table>
+
+<h3>Bug Report Statistics — Статистика отчётов об ошибках</h3>
+
+<table>
+<tr><th>Metric — Показатель</th><th>Result — Результат</th></tr>
+<tr><td>Total Bug Reports — Всего отчётов</td><td>3</td></tr>
+<tr><td>Demonstration Reports — Демонстрационные отчёты</td><td>3</td></tr>
+<tr><td>Confirmed Defects — Подтверждённые дефекты</td><td>0</td></tr>
+</table>
+
+<p><strong>Note — Примечание:</strong> Все три Bug Reports подготовлены в демонстрационных целях. Фактическое наличие описанных дефектов в локальном API не подтверждено.</p>
+
+<h2>8. Final Result — Итоговый результат</h2>
 
 <div align="center">
 
