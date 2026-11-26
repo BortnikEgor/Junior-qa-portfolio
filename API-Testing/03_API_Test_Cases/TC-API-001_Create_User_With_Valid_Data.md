@@ -1,101 +1,111 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>TC-API-001 — Create User With Valid Data</title>
-</head>
-<body>
-
 <div align="center">
 
 <h1>🧪 TEST CASE TC-API-001</h1>
 <h2>CREATE USER WITH VALID DATA</h2>
-<p><strong>Создание пользователя с корректными данными</strong></p>
+<p>Создание пользователя с корректными данными</p>
 
 <img src="https://img.shields.io/badge/Project-Users_API-blue">
 <img src="https://img.shields.io/badge/Method-POST-orange">
 <img src="https://img.shields.io/badge/Priority-High-red">
-<img src="https://img.shields.io/badge/Status-Passed-brightgreen">
+<img src="https://img.shields.io/badge/Type-Positive-success">
+<img src="https://img.shields.io/badge/Status-PASSED-brightgreen">
 
 </div>
 
 <hr>
 
-<h2>1. TEST CASE INFORMATION — Информация о тест-кейсе</h2>
+<h2>1. Test Case Information — Информация о тест-кейсе</h2>
 
 <table>
-<tr><th>Field — Поле</th><th>Value — Значение</th></tr>
-<tr><td>Test Case ID — ID тест-кейса</td><td>TC-API-001</td></tr>
-<tr><td>Project — Проект</td><td>Users API</td></tr>
-<tr><td>Module — Модуль</td><td>User Management — Управление пользователями</td></tr>
-<tr><td>Method — Метод</td><td>POST</td></tr>
-<tr><td>Endpoint — Конечная точка</td><td><code>/users</code></td></tr>
-<tr><td>Test Type — Тип проверки</td><td>Positive — Позитивный</td></tr>
-<tr><td>Priority — Приоритет</td><td>High — Высокий</td></tr>
-<tr><td>Expected Status — Ожидаемый статус</td><td>201 Created</td></tr>
-<tr><td>Actual Status — Фактический статус</td><td>201 Created</td></tr>
-<tr><td>Environment — Окружение</td><td>Localhost / Postman</td></tr>
+<tr><td><b>Test Case ID</b></td><td>TC-API-001</td></tr>
+<tr><td><b>Title</b></td><td>Create User With Valid Data</td></tr>
+<tr><td><b>Priority</b></td><td>High — Высокий</td></tr>
+<tr><td><b>Test Type</b></td><td>Positive — Позитивный</td></tr>
+<tr><td><b>HTTP Method</b></td><td>POST</td></tr>
+<tr><td><b>Endpoint</b></td><td><code>/users</code></td></tr>
+<tr><td><b>Full URL</b></td><td><code>http://localhost:3000/users</code></td></tr>
 </table>
 
-<h2>2. OBJECTIVE — Цель тестирования</h2>
+<h2>2. Preconditions — Предусловия</h2>
 
-<p>Проверить возможность успешного создания нового пользователя при передаче всех обязательных полей с корректными значениями.</p>
-
-<h2>3. PRECONDITIONS — Предусловия</h2>
-
-<ul>
+<ol>
 <li>API-сервер запущен.</li>
-<li>Swagger UI доступен.</li>
-<li>Postman открыт.</li>
 <li>Endpoint <code>/users</code> доступен.</li>
-</ul>
+<li>Postman готов к отправке HTTP-запросов.</li>
+</ol>
 
-<h2>4. TEST DATA — Тестовые данные</h2>
+<h2>3. Request — Запрос</h2>
+
+<p><b>Request Headers — Заголовки запроса</b></p>
+
+<pre><code>Content-Type: application/json</code></pre>
+
+<p><b>Request Body — Тело запроса</b></p>
 
 <pre><code>{
   "firstName": "Egor",
-  "lastName": "Ivanov",
-  "age": 30,
+  "lastName": "Bortnik",
+  "age": 35,
   "city": "Tiraspol",
   "country": "Moldova",
   "nationality": "Moldovan"
 }</code></pre>
 
-<h2>5. TEST STEPS — Шаги тестирования</h2>
+<h2>4. Test Steps — Шаги тестирования</h2>
+
+<ol>
+<li>Открыть Postman.</li>
+<li>Выбрать HTTP-метод POST.</li>
+<li>Указать URL <code>http://localhost:3000/users</code>.</li>
+<li>Установить заголовок <code>Content-Type: application/json</code>.</li>
+<li>В разделе Body выбрать raw и формат JSON.</li>
+<li>Вставить корректные данные пользователя.</li>
+<li>Отправить запрос.</li>
+<li>Проверить статус ответа и содержимое Response Body.</li>
+</ol>
+
+<h2>5. Expected Result — Ожидаемый результат</h2>
+
+<ol>
+<li>Сервер принимает запрос с корректными данными.</li>
+<li>Создаётся новая запись пользователя.</li>
+<li>Возвращается HTTP-статус <b>201 Created</b>.</li>
+<li>Тело ответа содержит массив с объектом созданного пользователя.</li>
+<li>Объект содержит все переданные поля и автоматически присвоенный уникальный <code>id</code>.</li>
+<li>Созданный пользователь доступен при последующем GET-запросе.</li>
+</ol>
+
+<h2>6. Actual Result — Фактический результат</h2>
+
+<ol>
+<li>Запрос успешно обработан сервером.</li>
+<li>Пользователь создан.</li>
+<li>Получен HTTP-статус <b>201 Created</b>.</li>
+<li>В ответе возвращены данные созданного пользователя с присвоенным ID.</li>
+<li>Ошибок при выполнении запроса не обнаружено.</li>
+</ol>
+
+<h2>7. Environment — Окружение</h2>
 
 <table>
-<tr>
-<th>№</th>
-<th>Action — Действие</th>
-<th>Expected Result — Ожидаемый результат</th>
-</tr>
-<tr><td>1</td><td>Выбрать метод POST в Postman</td><td>Метод POST выбран</td></tr>
-<tr><td>2</td><td>Указать URL <code>/users</code></td><td>Адрес запроса указан корректно</td></tr>
-<tr><td>3</td><td>Выбрать Body → raw → JSON</td><td>Выбран формат JSON</td></tr>
-<tr><td>4</td><td>Вставить тестовые данные</td><td>Тело запроса заполнено корректно</td></tr>
-<tr><td>5</td><td>Нажать Send — Отправить</td><td>Запрос успешно обработан</td></tr>
-<tr><td>6</td><td>Проверить HTTP-статус</td><td>Возвращён статус 201 Created</td></tr>
-<tr><td>7</td><td>Проверить тело ответа</td><td>Возвращён массив с созданным пользователем</td></tr>
-<tr><td>8</td><td>Проверить поля пользователя</td><td>Переданные значения и ID присутствуют в ответе</td></tr>
+<tr><td><b>Operating System</b></td><td>macOS</td></tr>
+<tr><td><b>API Server</b></td><td>Node.js / Express</td></tr>
+<tr><td><b>Base URL</b></td><td><code>http://localhost:3000</code></td></tr>
+<tr><td><b>API Documentation</b></td><td>Swagger UI — <code>http://localhost:3000/api-docs</code></td></tr>
+<tr><td><b>Testing Tool</b></td><td>Postman</td></tr>
+<tr><td><b>Data Format</b></td><td>JSON</td></tr>
 </table>
 
-<h2>6. ACTUAL RESULT — Фактический результат</h2>
+<h2>8. Test Execution — Выполнение теста</h2>
 
-<p>Пользователь успешно создан. Сервер вернул HTTP 201 Created. В ответе присутствует массив с данными созданного пользователя и присвоенным идентификатором.</p>
+<div align="center">
 
-<h2>7. FINAL STATUS — Итоговый статус</h2>
+<img src="https://img.shields.io/badge/RESULT-PASSED-brightgreen">
 
-<p><img src="https://img.shields.io/badge/RESULT-PASSED-brightgreen"></p>
+<h3>PASS — ТЕСТ ПРОЙДЕН</h3>
 
-<p><strong>PASSED — ПРОЙДЕН</strong></p>
+</div>
 
 <hr>
 
-<div align="center">
-<p><strong>Users API | API Testing Portfolio</strong></p>
-<p>Junior QA Engineer Portfolio</p>
-</div>
-
-</body>
-</html>
+<p align="center"><i>Users API — API Testing Portfolio</i></p>
