@@ -1,1 +1,187 @@
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    patch:
+      tags:
+        - Users
+      summary: Partially update a user
+      description: |
+        Updates only the supplied fields. At least one field must be provided.
+        The ID cannot be changed. After merging the supplied fields with the
+        existing user, the complete resulting user is validated.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdate'
+            example:
+              city: Madrid
+              age: 40
+      responses:
+        '200':
+          description: User updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid user data, empty body, or attempt to change ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+    delete:
+      tags:
+        - Users
+      summary: Delete user by ID
+      responses:
+        '200':
+          description: User deleted
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - message
+                properties:
+                  message:
+                    type: string
+              example:
+                message: User deleted
+        '400':
+          description: Invalid user ID
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '404':
+          description: User not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+
+components:
+  schemas:
+    UserInput:
+      type: object
+      description: |
+        User data required for creation or full replacement.
+        The current server validates the listed fields but does not reject
+        additional properties.
+      required:
+        - firstName
+        - lastName
+        - age
+        - city
+        - country
+        - nationality
+      properties:
+        firstName:
+          type: string
+          minLength: 3
+          maxLength: 10
+          pattern: '^[A-Za-z]+$'
+          example: Egor
+        lastName:
+          type: string
+          minLength: 5
+          maxLength: 12
+          pattern: '^[A-Za-z]+$'
+          example: Ivanov
+        age:
+          type: integer
+          minimum: 1
+          maximum: 100
+          example: 30
+        city:
+          type: string
+          minLength: 3
+          maxLength: 20
+          pattern: '^(?=.*[A-Za-z])[A-Za-z.-]+$'
+          example: Berlin
+        country:
+          type: string
+          minLength: 3
+          maxLength: 20
+          pattern: '^[A-Za-z]+$'
+          example: Germany
+        nationality:
+          type: string
+          minLength: 3
+          maxLength: 15
+          pattern: '^[A-Za-z]+$'
+          example: Russian
+
+    UserUpdate:
+      type: object
+      description: |
+        Partial set of user fields. At least one property is required.
+        The server validates the complete user after applying the update.
+        The ID property is not allowed in PATCH requests. The current server
+        does not reject other additional properties.
+      minProperties: 1
+      properties:
+        firstName:
+          type: string
+          minLength: 3
+          maxLength: 10
+          pattern: '^[A-Za-z]+$'
+        lastName:
+          type: string
+          minLength: 5
+          maxLength: 12
+          pattern: '^[A-Za-z]+$'
+        age:
+          type: integer
+          minimum: 1
+          maximum: 100
+        city:
+          type: string
+          minLength: 3
+          maxLength: 20
+          pattern: '^(?=.*[A-Za-z])[A-Za-z.-]+$'
+        country:
+          type: string
+          minLength: 3
+          maxLength: 20
+          pattern: '^[A-Za-z]+$'
+        nationality:
+          type: string
+          minLength: 3
+          maxLength: 15
+          pattern: '^[A-Za-z]+$'
+
+    User:
+      allOf:
+        - $ref: '#/components/schemas/UserInput'
+        - type: object
+          required:
+            - id
+          properties:
+            id:
+              type: integer
+              minimum: 1
+
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          type: string
+          example: User not found
 
