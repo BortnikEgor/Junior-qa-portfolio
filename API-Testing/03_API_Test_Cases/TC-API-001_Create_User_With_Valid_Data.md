@@ -52,7 +52,7 @@
   "lastName": "Bortnik",
   "age": 35,
   "city": "Tiraspol",
-  "country": "Moldova",
+  "country": "Pridnestrovie",
   "nationality": "Russian"
 }</code></pre>
 
