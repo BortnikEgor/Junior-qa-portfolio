@@ -1,32 +1,109 @@
 <div align="center">
+
 <h1>🧪 TEST CASE TC-API-013</h1>
 <h2>VERIFY SEARCH PAGINATION</h2>
 <p><strong>Проверка пагинации результатов поиска</strong></p>
+
 <img src="https://img.shields.io/badge/Project-Users_API-blue">
 <img src="https://img.shields.io/badge/Method-GET-blue">
 <img src="https://img.shields.io/badge/Priority-Medium-yellow">
+<img src="https://img.shields.io/badge/Type-Positive-success">
 <img src="https://img.shields.io/badge/Status-PASSED-brightgreen">
+
 </div>
+
 <hr>
-<h2>1. TEST CASE INFORMATION — Информация о тест-кейсе</h2>
+
+<h2>1. Test Case Information — Информация о тест-кейсе</h2>
+
 <table>
-<tr><th>Field — Поле</th><th>Value — Значение</th></tr>
-<tr><td>ID</td><td>TC-API-013</td></tr><tr><td>Module — Модуль</td><td>Search / Pagination — Поиск / Пагинация</td></tr><tr><td>Method — Метод</td><td>GET</td></tr><tr><td>Endpoint — Конечная точка</td><td><code>/users/search</code></td></tr><tr><td>Type — Тип</td><td>Positive — Позитивный</td></tr><tr><td>Priority — Приоритет</td><td>Medium — Средний</td></tr><tr><td>Expected Status — Ожидаемый статус</td><td>200 OK</td></tr><tr><td>Environment — Окружение</td><td>Localhost / Postman</td></tr>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th></tr>
+<tr><td>Test Case ID — ID тест-кейса</td><td>TC-API-013</td></tr>
+<tr><td>Title — Название</td><td>Verify Search Pagination</td></tr>
+<tr><td>Priority — Приоритет</td><td>Medium — Средний</td></tr>
+<tr><td>Test Type — Тип проверки</td><td>Positive — Позитивный</td></tr>
+<tr><td>HTTP Method — HTTP-метод</td><td>GET</td></tr>
+<tr><td>Endpoint — Конечная точка</td><td><code>/users/search</code></td></tr>
+<tr><td>Full URL — Полный URL</td><td><code>http://localhost:3000/users/search?page=1&amp;limit=2</code></td></tr>
 </table>
-<h2>2. OBJECTIVE — Цель</h2>
-<p>Проверить работу параметров page и limit при получении списка пользователей.</p>
-<h2>3. PRECONDITIONS — Предусловия</h2>
-<ul><li>API-сервер запущен.</li><li>В системе создано несколько пользователей.</li></ul>
-<h2>4. TEST DATA — Тестовые данные</h2>
-<pre><code>page=1
-limit=2</code></pre>
-<h2>5. TEST STEPS — Шаги тестирования</h2>
+
+<h2>2. Preconditions — Предусловия</h2>
+
+<ol>
+<li>API-сервер запущен.</li>
+<li>Endpoint <code>/users/search</code> доступен.</li>
+<li>В системе существует не менее двух пользователей.</li>
+</ol>
+
+<h2>3. Request — Запрос</h2>
+
+<p><strong>Request Body — Тело запроса</strong></p>
+
+<p>N/A — Не требуется.</p>
+
+<p><strong>Query Parameters — Параметры запроса</strong></p>
+
 <table>
-<tr><th>№</th><th>Action — Действие</th><th>Expected Result — Ожидаемый результат</th></tr>
-<tr><td>1</td><td>Выбрать GET</td><td>Метод выбран</td></tr><tr><td>2</td><td>Указать <code>/users/search</code></td><td>Endpoint указан</td></tr><tr><td>3</td><td>Передать page=1 и limit=2</td><td>Параметры пагинации установлены</td></tr><tr><td>4</td><td>Отправить запрос</td><td>Запрос обработан</td></tr><tr><td>5</td><td>Проверить статус</td><td>200 OK</td></tr><tr><td>6</td><td>Проверить количество записей</td><td>Возвращено не более двух пользователей</td></tr>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th><th>Description — Описание</th></tr>
+<tr><td>page</td><td><code>1</code></td><td>Номер страницы</td></tr>
+<tr><td>limit</td><td><code>2</code></td><td>Максимальное количество записей на странице</td></tr>
 </table>
-<h2>6. ACTUAL RESULT — Фактический результат</h2>
-<p>Пагинация работает корректно. Сервер обработал параметры page и limit, вернул статус 200 OK и количество записей в соответствии с установленным лимитом.</p>
-<h2>7. FINAL STATUS — Итоговый статус</h2>
-<p><img src="https://img.shields.io/badge/Status-PASSED-brightgreen"></p><p><strong>PASSED — ПРОЙДЕН</strong></p>
-<hr><div align="center">Users API | API Testing Portfolio</div>
+
+<h2>4. Test Steps — Шаги тестирования</h2>
+
+<ol>
+<li>Открыть Postman.</li>
+<li>Выбрать метод GET.</li>
+<li>Указать URL <code>http://localhost:3000/users/search?page=1&amp;limit=2</code>.</li>
+<li>Отправить запрос.</li>
+<li>Проверить статус ответа.</li>
+<li>Проверить количество пользователей в ответе.</li>
+<li>Убедиться, что количество записей не превышает установленный лимит.</li>
+</ol>
+
+<h2>5. Expected Result — Ожидаемый результат</h2>
+
+<ol>
+<li>API принимает параметры пагинации.</li>
+<li>Возвращается HTTP-статус <strong>200 OK</strong>.</li>
+<li>Возвращается первая страница результатов.</li>
+<li>Количество пользователей в ответе не превышает двух.</li>
+<li>Структура ответа соответствует формату API.</li>
+</ol>
+
+<h2>6. Actual Result — Фактический результат</h2>
+
+<ol>
+<li>Запрос успешно обработан сервером.</li>
+<li>Получен HTTP-статус <strong>200 OK</strong>.</li>
+<li>Возвращена первая страница результатов.</li>
+<li>Количество записей не превышает установленный лимит.</li>
+<li>Пагинация работает корректно.</li>
+</ol>
+
+<h2>7. Environment — Окружение</h2>
+
+<table>
+<tr><th>Parameter — Параметр</th><th>Value — Значение</th></tr>
+<tr><td>Operating System — ОС</td><td>macOS</td></tr>
+<tr><td>API Server — Сервер API</td><td>Node.js / Express</td></tr>
+<tr><td>Base URL — Базовый URL</td><td><code>http://localhost:3000</code></td></tr>
+<tr><td>API Documentation — Документация API</td><td>Swagger UI</td></tr>
+<tr><td>Swagger URL</td><td><code>http://localhost:3000/api-docs</code></td></tr>
+<tr><td>Testing Tool — Инструмент тестирования</td><td>Postman</td></tr>
+<tr><td>Data Format — Формат данных</td><td>JSON</td></tr>
+</table>
+
+<h2>8. Test Execution — Результат выполнения</h2>
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/TEST%20RESULT-PASSED-brightgreen">
+
+<h3>PASSED — ТЕСТ ПРОЙДЕН</h3>
+
+</div>
+
+<hr>
+
+<p align="center"><i>Users API — API Testing Portfolio</i></p>
